@@ -1,0 +1,40 @@
+/* Top bar */
+.topbar {
+    height: 56px;
+    background: #fff;
+    border-bottom: 1px solid var(--line);
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+.btn-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    border: 1px solid transparent;
+    background: transparent;
+}
+
+.btn-icon:hover {
+    background: #f3f4f6;
+    border-color: #f3f4f6;
+}
+
+.badge-float {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    font-size: 11px;
+}
+
+.rounded-circle {
+    width: 24px;
+}
+
+.user-btn {
+    background-color: #fff;
+    padding-right: 1rem;
+}
