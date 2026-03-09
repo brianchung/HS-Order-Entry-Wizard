@@ -1,7 +1,5 @@
 function setRouteUI() {
     const isDomestic = $('#routeDomestic').is(':checked');
-    console.log('set route ui');
-
     $('.domestic').toggle(isDomestic);
     $('.international').toggle(!isDomestic);
 }

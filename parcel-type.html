@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HypaShip - Order Entry</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Add this in <head> BEFORE your CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+
+<body>
+  <!-- Top bar -->
+  <div class="topbar d-flex align-items-center px-3">
+    <button class="btn-icon" type="button" aria-label="Menu">
+      <i class="bi bi-list fs-4"></i>
+    </button>
+
+    <div class="d-flex align-items-center gap-2 ms-2">
+      <i class="bi bi-box-seam text-primary"></i>
+      <div class="fw-bold small">Order Entry</div>
+    </div>
+
+    <div class="ms-auto d-flex align-items-center gap-2">
+      <div class="position-relative">
+        <button class="btn-icon" type="button" aria-label="Cart">
+          <i class="bi bi-cart3 fs-5"></i>
+        </button>
+        <span class="badge text-bg-warning rounded-pill badge-float">2</span>
+      </div>
+
+      <button class="user-btn d-flex align-items-center gap-2 border rounded-pill px-2 py-1" type="button"
+        aria-label="Cart">
+        <div class="bg-light border rounded-circle d-grid">
+          <i class="bi bi-person"></i>
+        </div>
+        <div class="fw-bold small">Guest</div>
+      </button>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row app-row g-0">
+
+      <!-- Left stepper -->
+      <aside class="col-xxl-2 col-xl-2 col-lg-2 left-rail">
+        <ul class="stepper">
+          <li class="step active">
+            <div class="dotwrap"><div class="dot"></div><div class="vline"></div></div>
+            <div>Quote</div>
+          </li>
+          <li class="step">
+            <div class="dotwrap"><div class="dot"></div><div class="vline"></div></div>
+            <div>Parcel</div>
+          </li>
+          <li class="step">
+            <div class="dotwrap"><div class="dot"></div><div class="vline"></div></div>
+            <div>Sender</div>
+          </li>
+          <li class="step">
+            <div class="dotwrap"><div class="dot"></div><div class="vline"></div></div>
+            <div>Recipient</div>
+          </li>
+          <li class="step">
+            <div class="dotwrap"><div class="dot"></div><div class="vline"></div></div>
+            <div>Extra</div>
+          </li>
+          <li class="step">
+            <div class="dotwrap"><div class="dot"></div></div>
+            <div>Cart</div>
+          </li>
+        </ul>
+
+        <!-- Help box -->
+        <div class="helpbox">
+          <div class="mb-1">Need help with your shipment?</div>
+          <a href="#">Contact Support</a>
+        </div>
+      </aside>
+
+      <!-- Main -->
+      <main class="col-xxl-8 col-xl-8 col-lg-8 main">
+        <div class="page-title">Parcel Type</div>
+        <div class="page-sub">What types of parcel are you sending?</div>
+
+        <div class="row g-3">
+          <div class="col-md-6">
+            
+            <div class="radio-card disable-selection">
+              <input type="radio" name="parcelType" id="typeMail">
+              <label class="w-100" for="typeMail">
+                <div class="radio-card-container d-flex gap-3 align-items-center">
+                  <div class="ring" aria-hidden="true"></div>
+                  <div class="icon-tile">
+                    <span class="material-symbols-outlined">mail</span>
+                  </div>
+                  <div>
+                    <p class="radio-card-name">Mail</p>
+                    <p class="radio-card-desc">Letters or flat mail</p>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="radio-card disable-selection">
+              <input type="radio" name="parcelType" id="typePackage">
+              <label class="w-100" for="typePackage">
+                <div class="radio-card-container d-flex gap-3 align-items-center">
+                  <div class="ring" aria-hidden="true"></div>
+                  <div class="icon-tile">
+                    <span class="material-symbols-outlined">box</span>
+                  </div>
+                  <div>
+                    <p class="radio-card-name">Package</p>
+                    <p class="radio-card-desc">Parcels, boxes, or goods with value</p>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Continue -->
+        <div class="btn-container">
+          <a class="backlink" href="quote-location.html">Back</a>
+          <button class="btn btn-primary float-end">
+            Continue <i class="bi bi-chevron-right ms-1"></i>
+          </button>
+        </div>
+      </main>
+
+      <!-- Summary -->
+      <aside class="col-xxl-2 col-xl-2 col-lg-2 right-rail">
+        <div class="summary-top">
+          <div>Summary</div>
+          <button class="btn btn-sm btn-light border" type="button" aria-label="Expand">
+            <i class="bi bi-box-arrow-up-right"></i>
+          </button>
+        </div>
+
+        <div class="summary-acc">
+          <div class="accordion" id="summaryAcc">
+            <div class="accordion-item border-0">
+              <h2 class="accordion-header" id="routeHead">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#routeBody"
+                  aria-expanded="true" aria-controls="routeBody">
+                  <span class="material-symbols-outlined">route</span>
+                  Route
+                  <i class="bi bi-chevron-up chev" aria-hidden="true"></i>
+                </button>
+              </h2>
+
+              <div id="routeBody" class="accordion-collapse collapse show" aria-labelledby="routeHead"
+                data-bs-parent="#summaryAcc">
+                <div class="accordion-body">
+                  <div class="route-grid">
+                    <div>
+                      <p class="route-label">Singapore</p>
+                      <p class="route-val">521156</p>
+                    </div>
+
+                    <div class="arrow">→</div>
+
+                    <div>
+                      <p class="route-label">Malaysia</p>
+                      <p class="route-val">63000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</body>
+
+</html>
