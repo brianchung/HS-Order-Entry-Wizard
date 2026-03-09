@@ -1,0 +1,3 @@
+$('#collapseSummary').collapse({
+  toggle: false
+})
