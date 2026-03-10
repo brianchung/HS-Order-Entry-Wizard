@@ -155,15 +155,14 @@
             <span class="bar"></span>
             <span>Postcode Details</span>
           </div>
-
-          <div class="row g-4 align-items-center">
+                
+          <div class="row align-items-center">
             <div class="col-lg-4">
               <!-- Replace with your illustration asset -->
               <img class="illus" src="images/quote-domestic.png" alt="Illustration (placeholder)">
             </div>
-
             <div class="col-lg-8">
-              <div class="row align-items-end">
+              <div class="d-flex">
                 <div class="form-floating col-sm-5">
                   <input type="text" class="form-control" id="from-postcode" value="" placeholder="From Postcode">
                   <label for="from-postcode">From Postcode</label>
@@ -198,7 +197,7 @@
             <span>Sending From &amp; To</span>
           </div>
 
-          <div class="row g-4 align-items-center">
+          <div class="row align-items-center">
             <div class="col-lg-4">
               <!-- Replace with your illustration asset -->
               <img class="illus" src="images/quote-international.png" alt="Illustration (placeholder)">
@@ -208,7 +207,7 @@
               <!-- FROM -->
               <div class="mb-3">
                 <div class="fw-bold small mb-2">From</div>
-                <div class="row g-3">
+                <div class="d-flex int-from">
                   <div class="form-floating col-md-6">
                     <select class="form-select field_req" id="from_country_id" name="from_country_id">
                       <option value="">Select</option>
@@ -235,7 +234,7 @@
               <!-- TO -->
               <div class="mt-3">
                 <div class="fw-bold small mb-2">To</div>
-                <div class="row g-3">
+                <div class="d-flex int-to">
                   <div class="form-floating col-md-6">
                     <select class="form-select field_req" id="to_country_id" name="to_country_id">
                       <option value="">Select</option>

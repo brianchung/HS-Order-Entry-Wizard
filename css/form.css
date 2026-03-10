@@ -151,3 +151,14 @@ a:hover {
     font-weight: 700;
     padding-bottom: 8px;
 }
+
+/* quote - international */
+div.panel.international .int-from > div.form-floating.col-md-6,
+div.panel.international .int-to > div.form-floating.col-md-6 {
+    padding-right: 8px;
+}
+
+#package-input-editable,
+#package-input-disabled {
+    display: none;
+}
