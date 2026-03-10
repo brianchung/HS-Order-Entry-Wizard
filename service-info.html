@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HypaShip - Order Entry</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Add this in <head> BEFORE your CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+
+<body>
+  <!-- Top bar -->
+  <div class="topbar d-flex align-items-center px-3">
+    <button class="btn-icon" type="button" aria-label="Menu">
+      <i class="bi bi-list fs-4"></i>
+    </button>
+
+    <div class="d-flex align-items-center gap-2 ms-2">
+      <i class="bi bi-box-seam text-primary"></i>
+      <div class="fw-bold small">Order Entry</div>
+    </div>
+
+    <div class="ms-auto d-flex align-items-center gap-2">
+      <div class="position-relative">
+        <button class="btn-icon" type="button" aria-label="Cart">
+          <i class="bi bi-cart3 fs-5"></i>
+        </button>
+        <span class="badge text-bg-warning rounded-pill badge-float">2</span>
+      </div>
+
+      <button class="user-btn d-flex align-items-center gap-2 border rounded-pill px-2 py-1" type="button"
+        aria-label="Cart">
+        <div class="bg-light border rounded-circle d-grid">
+          <i class="bi bi-person"></i>
+        </div>
+        <div class="fw-bold small">Guest</div>
+      </button>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row app-row g-0">
+
+      <!-- Left stepper -->
+      <aside class="col-xxl-2 col-xl-2 col-lg-2 left-rail">
+        <ul class="stepper">
+          <li class="step active">
+            <div class="dotwrap">
+              <div class="dot"></div>
+              <div class="vline"></div>
+            </div>
+            <div>Quote</div>
+          </li>
+          <li class="step">
+            <div class="dotwrap">
+              <div class="dot"></div>
+              <div class="vline"></div>
+            </div>
+            <div>Parcel</div>
+          </li>
+          <li class="step">
+            <div class="dotwrap">
+              <div class="dot"></div>
+              <div class="vline"></div>
+            </div>
+            <div>Sender</div>
+          </li>
+          <li class="step">
+            <div class="dotwrap">
+              <div class="dot"></div>
+              <div class="vline"></div>
+            </div>
+            <div>Recipient</div>
+          </li>
+          <li class="step">
+            <div class="dotwrap">
+              <div class="dot"></div>
+              <div class="vline"></div>
+            </div>
+            <div>Extra</div>
+          </li>
+          <li class="step">
+            <div class="dotwrap">
+              <div class="dot"></div>
+            </div>
+            <div>Cart</div>
+          </li>
+        </ul>
+
+        <!-- Help box -->
+        <div class="helpbox">
+          <div class="mb-1">Need help with your shipment?</div>
+          <a href="#">Contact Support</a>
+        </div>
+      </aside>
+
+      <!-- Main -->
+      <main class="col-xxl-8 col-xl-8 col-lg-8 main">
+        <div class="page-title">Service</div>
+        <div class="page-sub">These is the available services that fits your parcel. Select a service to view delivery
+          time and total cost.</div>
+
+        <div class="row g-3">
+          <!-- Service cards (left) -->
+          <div class="col-lg-8">
+            <div class="service-wrap">
+              <div class="row g-3">
+
+                <div class="col-6">
+                  <div class="svc-radio">
+                    <input type="radio" name="svc" id="svc1">
+                    <label class="w-100" for="svc1">
+                      <div class="svc-card">
+                        <span class="material-symbols-outlined">info</span>
+                        <p class="svc-name">Priority Int Retail Doc</p>
+                        <div class="svc-price text-muted">From <span class="text-dark fw-bold">$65.00</span></div>
+                        <div class="svc-meta">
+                          <span class="pill"><span class="material-symbols-outlined green">check_circle</span> Best balance</span>
+                          <div class="svc-line"><span class="material-symbols-outlined">schedule</span> ETA 1-2 days</div>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="svc-radio">
+                    <input type="radio" name="svc" id="svc2">
+                    <label class="w-100" for="svc2">
+                      <div class="svc-card">
+                        <span class="material-symbols-outlined">info</span>
+                        <p class="svc-name">Economy Int Retail Doc</p>
+                        <div class="svc-price text-muted">From <span class="text-dark fw-bold">$34.76</span></div>
+                        <div class="svc-meta">
+                          <span class="pill"><span class="material-symbols-outlined green">check_circle</span> Lowest cost</span>
+                          <div class="svc-line"><span class="material-symbols-outlined">schedule</span> ETA 3-4 days</div>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="svc-radio">
+                    <input type="radio" name="svc" id="svc3" checked>
+                    <label class="w-100" for="svc3">
+                      <div class="svc-card">
+                        <span class="material-symbols-outlined">info</span>
+                        <p class="svc-name">Next Day Delivery</p>
+                        <div class="svc-price text-muted">From <span class="text-dark fw-bold">$70.00</span></div>
+                        <div class="svc-meta">
+                          <span class="pill"><span class="material-symbols-outlined green">check_circle</span> Fastest delivery</span>
+                          <div class="svc-line"><span class="material-symbols-outlined">schedule</span> ETA Next Day</div>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="svc-radio">
+                    <input type="radio" name="svc" id="svc4">
+                    <label class="w-100" for="svc4">
+                      <div class="svc-card">
+                        <span class="material-symbols-outlined">info</span>
+                        <p class="svc-name">Tracked Letterbox Mail</p>
+                        <div class="svc-price text-muted">From <span class="text-dark fw-bold">$65.00</span></div>
+                        <div class="svc-meta">
+                          <div class="svc-line"><span class="material-symbols-outlined">schedule</span> ETA 4-5 days</div>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="svc-radio">
+                    <input type="radio" name="svc" id="svc5">
+                    <label class="w-100" for="svc5">
+                      <div class="svc-card">
+                        <span class="material-symbols-outlined">info</span>
+                        <p class="svc-name">Speedpost Standard</p>
+                        <div class="svc-price text-muted">From <span class="text-dark fw-bold">$34.76</span></div>
+                        <div class="svc-meta">
+                          <div class="svc-line"><span class="material-symbols-outlined">schedule</span> ETA 4-5 days</div>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="svc-radio">
+                    <input type="radio" name="svc" id="svc6">
+                    <label class="w-100" for="svc6">
+                      <div class="svc-card">
+                        <span class="material-symbols-outlined">info</span>
+                        <p class="svc-name">Smartpac</p>
+                        <div class="svc-price text-muted">From <span class="text-dark fw-bold">$70.00</span></div>
+                        <div class="svc-meta">
+                          <div class="svc-line"><span class="material-symbols-outlined">schedule</span> ETA 4-5 days</div>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Cost Details (right) -->
+          <div class="col-lg-4">
+            <div class="details-card">
+              <div class="details-title">Next Day Delivery</div>
+
+              <div class="details-lines">
+                <div class="svc-linex"><span class="material-symbols-outlined">schedule</span> Next Day</div>
+                <div class="svc-linex"><span class="material-symbols-outlined">location_on</span> With Tracking</div>
+              </div>
+
+              <div class="kv">
+                <div class="k">Rate</div>
+                <div class="v">$70.00</div>
+              </div>
+              <div class="kv">
+                <div class="k">Exchange Charge</div>
+                <div class="v">-</div>
+              </div>
+              <div class="kv">
+                <div class="k">Compensation charge</div>
+                <div class="v">-</div>
+              </div>
+              <div class="kv">
+                <div class="k">VAT</div>
+                <div class="v">$0.56</div>
+              </div>
+
+              <div class="total">
+                <div class="k">Total cost</div>
+                <div class="v">$70.56</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Continue -->
+        <div class="btn-container">
+          <a class="backlink" href="package-size-info.html">Back</a>
+
+          <button class="btn btn-primary float-end" onclick="location.href='#'">
+            Next - Parcel <i class="bi bi-chevron-right ms-1"></i>
+          </button>
+        </div>
+      </main>
+
+      <!-- Summary -->
+      <aside class="col-xxl-2 col-xl-2 col-lg-2 right-rail">
+        <div class="summary-top">
+          <div>Summary</div>
+          <button class="btn btn-sm btn-light border" type="button" aria-label="Expand">
+            <i class="bi bi-box-arrow-up-right"></i>
+          </button>
+        </div>
+
+        <div class="summary-acc">
+          <!-- route summary -->
+          <div class="accordion" id="summaryAcc">
+            <div class="accordion-item border-0">
+              <h2 class="accordion-header" id="routeHead">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#routeBody"
+                  aria-expanded="true" aria-controls="routeBody">
+                  <span class="material-symbols-outlined">route</span>
+                  Route
+                  <i class="bi bi-chevron-up chev" aria-hidden="true"></i>
+                </button>
+              </h2>
+
+              <div id="routeBody" class="accordion-collapse collapse show" aria-labelledby="routeHead"
+                data-bs-parent="#summaryAcc">
+                <div class="accordion-body">
+                  <div class="route-grid">
+                    <div>
+                      <p class="route-label">Singapore</p>
+                      <p class="route-val">521156</p>
+                    </div>
+
+                    <div class="arrow">→</div>
+
+                    <div>
+                      <p class="route-label">Malaysia</p>
+                      <p class="route-val">63000</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- parcel summary -->
+          <div class="accordion" id="package">
+            <div class="accordion-item border-0">
+              <h2 class="accordion-header" id="parcelHead">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#parcelBody"
+                  aria-expanded="true" aria-controls="parcelBody">
+                  <span class="material-symbols-outlined">box</span>
+                  Parcel
+                  <i class="bi bi-chevron-up chev" aria-hidden="true"></i>
+                </button>
+              </h2>
+
+              <div id="parcelBody" class="accordion-collapse collapse show" aria-labelledby="parcelHead"
+                data-bs-parent="#summaryAcc">
+                <div class="accordion-body">
+                  <div class="sum-item"><span class="material-symbols-outlined">box</span> Package - Custom</div>
+                  <div class="sum-item"><span class="material-symbols-outlined">box</span> Package - Small</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- service summary -->
+          <div class="accordion" id="service-summary">
+            <div class="accordion-item border-0">
+              <h2 class="accordion-header" id="svcHead">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#svcBody"
+                  aria-expanded="true" aria-controls="svcBody">
+                  <i class="bi bi-list-check me-2"></i>
+                  Service
+                  <i class="bi bi-chevron-up chev" aria-hidden="true"></i>
+                </button>
+              </h2>
+              <div id="svcBody" class="accordion-collapse collapse show" aria-labelledby="svcHead"
+                data-bs-parent="#summaryAcc">
+                <div class="accordion-body">
+                  <div class="sum-item">
+                    <div class="sum-left"><i class="bi bi-truck"></i> Next Day Delivery</div>
+                    <div class="fw-bold">$70.56</div>
+                  </div>
+                  <div class="sum-item">
+                    <div class="sum-left"><span class="material-symbols-outlined">
+schedule
+</span> Next Day</div>
+                  </div>
+                  <div class="sum-item">
+                    <div class="sum-left"><i class="bi bi-geo-alt"></i> With Tracking</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </aside>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</body>
+
+</html>

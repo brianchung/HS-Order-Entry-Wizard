@@ -8,12 +8,6 @@
     font-size: 13px;
 }
 
-/* .summary-acc {
-    border: 1px solid #e5e7eb;
-    border-radius: 14px;
-    overflow: hidden;
-    background: #fff;
-} */
 .accordion {
     border: 1px solid #e5e7eb;
     border-radius: 14px;
@@ -48,6 +42,7 @@
 .summary-acc .accordion .accordion-body {
     padding: 12px;
     border-top: 1px solid #e5e7eb;
+    font-size: 14px;
 }
 
 /* route */
