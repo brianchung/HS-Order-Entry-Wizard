@@ -158,6 +158,7 @@ div.panel.international .int-to > div.form-floating.col-md-6 {
     padding-right: 8px;
 }
 
+/* package-size-info */
 #package-input-editable,
 #package-input-disabled {
     display: none;
