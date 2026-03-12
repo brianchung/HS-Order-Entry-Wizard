@@ -54,14 +54,14 @@
       <!-- Left stepper -->
       <aside class="col-xxl-2 col-xl-2 col-lg-2 left-rail">
         <ul class="stepper">
-          <li class="step active">
+          <li class="step completed">
             <div class="dotwrap">
-              <div class="dot"></div>
+              <div class="dot"><i class="bi bi-check-lg"></i></div>
               <div class="vline"></div>
             </div>
             <div>Quote</div>
           </li>
-          <li class="step">
+          <li class="step active">
             <div class="dotwrap">
               <div class="dot"></div>
               <div class="vline"></div>
@@ -96,7 +96,6 @@
             <div>Cart</div>
           </li>
         </ul>
-
         <!-- Help box -->
         <div class="helpbox">
           <div class="mb-1">Need help with your shipment?</div>
@@ -106,160 +105,116 @@
 
       <!-- Main -->
       <main class="col-xxl-8 col-xl-8 col-lg-8 main">
-        <div class="page-title">Service</div>
-        <div class="page-sub">These is the available services that fits your parcel. Select a service to view delivery
-          time and total cost.</div>
+        <div class="page-title">Package Information</div>
+        <div class="page-sub">Details of the item inside the package.</div>
 
-        <div class="row g-3">
-          <!-- Service cards (left) -->
-          <div class="col-lg-8">
-            <div class="service-wrap">
-              <div class="row g-3">
+        <div class="d-flex flex-column gap-3" style="max-width: 980px;">
 
-                <div class="col-6">
-                  <div class="svc-radio">
-                    <input type="radio" name="svc" id="svc1">
-                    <label class="w-100" for="svc1">
-                      <div class="svc-card">
-                        <span class="material-symbols-outlined">info</span>
-                        <p class="svc-name">Priority Int Retail Doc</p>
-                        <div class="svc-price text-muted">From <span class="text-dark fw-bold">$65.00</span></div>
-                        <div class="svc-meta">
-                          <span class="pill"><span class="material-symbols-outlined green">check_circle</span> Best balance</span>
-                          <div class="svc-line"><span class="material-symbols-outlined">schedule</span> ETA 1-2 days</div>
-                        </div>
-                      </div>
-                    </label>
-                  </div>
-                </div>
+          <!-- Package 1 -->
+          <div class="panel">
+            <div class="panel-head">
+              <span class="bar"></span>
+              <span>Package 1 : Custom</span>
+            </div>
+            <p class="">5kg | L 60cm x W 40cm x H 24cm</p>
+            <div class="field-group-label">Item details</div>
+            <div class="row g-3">
+              <div class="form-floating col-lg-4">
+                <select class="form-select field_req" id="item-category" name="item-category">
+                  <option value="">Select</option>
+                  <option value="1">Commercial Samples</option>
+                  <option value="2">Documents</option>
+                  <option value="3" selected="selected">Gift</option>
+                  <option value="4">Merchandise</option>
+                </select>
+                <label for="item-category">Category of items</label>
+              </div>
+              <div class="col-lg-4 form-floating">
+                <input type="text" class="form-control" id="description" value="" placeholder="Goods Description">
+                <label for="description">Goods Description</label>
+              </div>
+              <div class="col-lg-4 form-floating">
+                <input type="text" class="form-control" id="item-ref" value="" placeholder="Item Ref # (optional)">
+                <label for="item-ref">Item Ref # (optional)</label>
+              </div>
+            </div>
+            <br>
+            <div class="field-group-label">Currency &amp; Value</div>
+            <div class="row g-3">
+              <div class="form-floating col-lg-4">
+                <select class="form-select field_req" id="currency" name="currency">
+                  <option value="">Select</option>
+                  <option value="1">Sgd - Singapore Dollar</option>
+                  <option value="2">Usd - US Dollar</option>
+                  <option value="3" selected="selected">Myr - Malaysian Ringgit</option>
+                </select>
+                <label for="currency">Currency</label>
+              </div>
 
-                <div class="col-6">
-                  <div class="svc-radio">
-                    <input type="radio" name="svc" id="svc2">
-                    <label class="w-100" for="svc2">
-                      <div class="svc-card">
-                        <span class="material-symbols-outlined">info</span>
-                        <p class="svc-name">Economy Int Retail Doc</p>
-                        <div class="svc-price text-muted">From <span class="text-dark fw-bold">$34.76</span></div>
-                        <div class="svc-meta">
-                          <span class="pill"><span class="material-symbols-outlined green">check_circle</span> Lowest cost</span>
-                          <div class="svc-line"><span class="material-symbols-outlined">schedule</span> ETA 3-4 days</div>
-                        </div>
-                      </div>
-                    </label>
-                  </div>
-                </div>
-
-                <div class="col-6">
-                  <div class="svc-radio">
-                    <input type="radio" name="svc" id="svc3" checked>
-                    <label class="w-100" for="svc3">
-                      <div class="svc-card">
-                        <span class="material-symbols-outlined">info</span>
-                        <p class="svc-name">Next Day Delivery</p>
-                        <div class="svc-price text-muted">From <span class="text-dark fw-bold">$70.00</span></div>
-                        <div class="svc-meta">
-                          <span class="pill"><span class="material-symbols-outlined green">check_circle</span> Fastest delivery</span>
-                          <div class="svc-line"><span class="material-symbols-outlined">schedule</span> ETA Next Day</div>
-                        </div>
-                      </div>
-                    </label>
-                  </div>
-                </div>
-
-                <div class="col-6">
-                  <div class="svc-radio">
-                    <input type="radio" name="svc" id="svc4">
-                    <label class="w-100" for="svc4">
-                      <div class="svc-card">
-                        <span class="material-symbols-outlined">info</span>
-                        <p class="svc-name">Tracked Letterbox Mail</p>
-                        <div class="svc-price text-muted">From <span class="text-dark fw-bold">$65.00</span></div>
-                        <div class="svc-meta">
-                          <div class="svc-line"><span class="material-symbols-outlined">schedule</span> ETA 4-5 days</div>
-                        </div>
-                      </div>
-                    </label>
-                  </div>
-                </div>
-
-                <div class="col-6">
-                  <div class="svc-radio">
-                    <input type="radio" name="svc" id="svc5">
-                    <label class="w-100" for="svc5">
-                      <div class="svc-card">
-                        <span class="material-symbols-outlined">info</span>
-                        <p class="svc-name">Speedpost Standard</p>
-                        <div class="svc-price text-muted">From <span class="text-dark fw-bold">$34.76</span></div>
-                        <div class="svc-meta">
-                          <div class="svc-line"><span class="material-symbols-outlined">schedule</span> ETA 4-5 days</div>
-                        </div>
-                      </div>
-                    </label>
-                  </div>
-                </div>
-
-                <div class="col-6">
-                  <div class="svc-radio">
-                    <input type="radio" name="svc" id="svc6">
-                    <label class="w-100" for="svc6">
-                      <div class="svc-card">
-                        <span class="material-symbols-outlined">info</span>
-                        <p class="svc-name">Smartpac</p>
-                        <div class="svc-price text-muted">From <span class="text-dark fw-bold">$70.00</span></div>
-                        <div class="svc-meta">
-                          <div class="svc-line"><span class="material-symbols-outlined">schedule</span> ETA 4-5 days</div>
-                        </div>
-                      </div>
-                    </label>
-                  </div>
-                </div>
-
+              <div class="col-lg-4 form-floating">
+                <input type="number" class="form-control" id="declared-value" value="23.69" placeholder="Declared value"
+                  disabled>
+                <label for="declared-value">Declared value</label>
               </div>
             </div>
           </div>
 
-          <!-- Cost Details (right) -->
-          <div class="col-lg-4">
-            <div class="details-card">
-              <div class="details-title">Next Day Delivery</div>
-
-              <div class="details-lines">
-                <div class="svc-linex"><span class="material-symbols-outlined">schedule</span> Next Day</div>
-                <div class="svc-linex"><span class="material-symbols-outlined">location_on</span> With Tracking</div>
+          <!-- Package 2 -->
+           <div class="panel">
+            <div class="panel-head">
+              <span class="bar"></span>
+              <span>Package 2 : Small</span>
+            </div>
+            <p class="">1kg | L 30cm x W 20cm x H 8cm</p>
+            <div class="field-group-label">Item details</div>
+            <div class="row g-3">
+              <div class="form-floating col-lg-4">
+                <select class="form-select field_req" id="item-category" name="item-category">
+                  <option value="">Select</option>
+                  <option value="1">Commercial Samples</option>
+                  <option value="2">Documents</option>
+                  <option value="3" selected="selected">Gift</option>
+                  <option value="4">Merchandise</option>
+                </select>
+                <label for="item-category">Category of items</label>
+              </div>
+              <div class="col-lg-4 form-floating">
+                <input type="text" class="form-control" id="description" value="" placeholder="Goods Description">
+                <label for="description">Goods Description</label>
+              </div>
+              <div class="col-lg-4 form-floating">
+                <input type="text" class="form-control" id="item-ref" value="" placeholder="Item Ref # (optional)">
+                <label for="item-ref">Item Ref # (optional)</label>
+              </div>
+            </div>
+            <br>
+            <div class="field-group-label">Currency &amp; Value</div>
+            <div class="row g-3">
+              <div class="form-floating col-lg-4">
+                <select class="form-select field_req" id="currency" name="currency">
+                  <option value="">Select</option>
+                  <option value="1">Sgd - Singapore Dollar</option>
+                  <option value="2">Usd - US Dollar</option>
+                  <option value="3" selected="selected">Myr - Malaysian Ringgit</option>
+                </select>
+                <label for="currency">Currency</label>
               </div>
 
-              <div class="kv">
-                <div class="k">Rate</div>
-                <div class="v">$70.00</div>
-              </div>
-              <div class="kv">
-                <div class="k">Exchange Charge</div>
-                <div class="v">-</div>
-              </div>
-              <div class="kv">
-                <div class="k">Compensation charge</div>
-                <div class="v">-</div>
-              </div>
-              <div class="kv">
-                <div class="k">VAT</div>
-                <div class="v">$0.56</div>
-              </div>
-
-              <div class="total">
-                <div class="k">Total cost</div>
-                <div class="v">$70.56</div>
+              <div class="col-lg-4 form-floating">
+                <input type="number" class="form-control" id="declared-value" value="23.69" placeholder="Declared value"
+                  disabled>
+                <label for="declared-value">Declared value</label>
               </div>
             </div>
           </div>
+
         </div>
-
         <!-- Continue -->
         <div class="btn-container">
-          <a class="backlink" href="package-size-info.html">Back</a>
+          <a class="backlink" href="service-info.html">Back</a>
 
-          <button class="btn btn-primary float-end" onclick="location.href='parcel-details.html'">
-            Next - Parcel <i class="bi bi-chevron-right ms-1"></i>
+          <button class="btn btn-primary float-end" onclick="location.href='#'">
+            Continue <i class="bi bi-chevron-right ms-1"></i>
           </button>
         </div>
       </main>
@@ -318,7 +273,6 @@
                   <i class="bi bi-chevron-up chev" aria-hidden="true"></i>
                 </button>
               </h2>
-
               <div id="parcelBody" class="accordion-collapse collapse show" aria-labelledby="parcelHead"
                 data-bs-parent="#summaryAcc">
                 <div class="accordion-body">
@@ -361,11 +315,8 @@
         </div>
       </aside>
 
-    </div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </body>
 
 </html>

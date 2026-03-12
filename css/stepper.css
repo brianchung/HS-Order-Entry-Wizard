@@ -67,3 +67,21 @@
     background: var(--brand);
     border-radius: 999px;
 }
+
+.step.completed {
+    color: var(--text);
+}
+
+.step.completed .dot {
+    background: var(--brand);
+    border-color: var(--brand);
+}
+
+.step.completed .dot i {
+    display: block;
+    color: #fff;
+}
+
+.step.completed .vline {
+    background: var(--brand);
+}
