@@ -103,68 +103,53 @@
         </div>
       </aside>
 
-
       <!-- Main -->
       <main class="col-xxl-8 col-xl-8 col-lg-8 main">
-        <div class="page-title">Sender Details</div>
-        <div class="page-sub">Let us know who's sending the parcel.</div>
+        <div class="page-title">Handover Method</div>
+        <div class="page-sub">How will the parcel reach us?</div>
 
-        <div class="panel">
-          <div class="panel-head">
-            <span class="bar"></span>
-            <span>Name &amp; Contact</span>
-          </div>
-
-          <div class="field-group-label">Name</div>
-          <div class="row g-3">
-            <div class="col-lg-6 form-floating">
-              <input type="text" class="form-control" id="sender-contact-name" value="" placeholder="Contact Name">
-              <label for="sender-contact-name">Contact Name</label>
-            </div>
-
-            <div class="col-lg-6 form-floating">
-              <input type="text" class="form-control" id="sender-company-name" value=""
-                placeholder="Company Name (optional)">
-              <label for="sender-company-name">Company Name (optional)</label>
-            </div>
-
-          </div>
-          <br>
-          <div class="field-group-label">Contact</div>
-          <div class="row g-3 align-items-end">
-            <div class="form-floating col-lg-2">
-              <select class="form-select" id="sender-phone-prefix" name="sender-phone-prefix">
-                <option value="">Select</option>
-                <option value="1" selected="selected">+65</option>
-                <option value="2">+60</option>
-                <option value="3">+66</option>
-              </select>
-              <label for="sender-phone-prefix">Prefix</label>
-            </div>
-
-            <div class="col-lg-4 form-floating">
-              <input type="number" class="form-control" id="sender-phone" value="" placeholder="Phone Number">
-              <label for="sender-phone">Phone Number</label>
-            </div>
-
-            <div class="col-lg-6 form-floating">
-              <input type="email" class="form-control" id="sender-email" value="" placeholder="Email">
-              <label for="sender-email">Email</label>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="radio-card">
+              <input type="radio" name="senderHandover" id="handoverPickup">
+              <label class="w-100" for="handoverPickup">
+                <div class="radio-card-container d-flex gap-3 align-items-center">
+                  <div class="ring" aria-hidden="true"></div>
+                  <div class="icon-tile">
+                    <i class="bi bi-truck fs-4"></i>
+                  </div>
+                  <div>
+                    <p class="radio-card-name">Arrange Courier Pickup</p>
+                    <p class="radio-card-desc">We come to you and collect the parcel.</p>
+                  </div>
+                </div>
+              </label>
             </div>
           </div>
-          <br>
-          <div class="field-group-label">Instruction</div>
-          <div class="col-lg-12 form-floating">
-            <textarea type="text" class="form-control" id="sender-instruction" value=""
-              placeholder="Instruction (optional)"></textarea>
-            <label for="sender-instruction">Instruction (optional)</label>
+
+          <div class="col-md-6">
+            <div class="radio-card">
+              <input type="radio" name="senderHandover" id="handoverDropoff">
+              <label class="w-100" for="handoverDropoff">
+                <div class="radio-card-container d-flex gap-3 align-items-center">
+                  <div class="ring" aria-hidden="true"></div>
+                  <div class="icon-tile">
+                    <i class="bi bi-inbox fs-4"></i>
+                  </div>
+                  <div>
+                    <p class="radio-card-name">Drop Off</p>
+                    <p class="radio-card-desc">You bring it to a locker or post office.</p>
+                  </div>
+                </div>
+              </label>
+            </div>
           </div>
         </div>
         <!-- Continue -->
         <div class="btn-container">
-          <a class="backlink" href="parcel-duty-item.html">Back</a>
+          <a class="backlink" href="sender-contact-details.html">Back</a>
 
-          <button class="btn btn-primary float-end" onclick="location.href='sender-pickup-option.html'">
+          <button class="btn btn-primary float-end" onclick="location.href='#'">
             Continue <i class="bi bi-chevron-right ms-1"></i>
           </button>
         </div>
