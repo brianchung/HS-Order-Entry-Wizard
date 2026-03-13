@@ -61,14 +61,14 @@
             </div>
             <div>Quote</div>
           </li>
-          <li class="step active">
+          <li class="step completed">
             <div class="dotwrap">
-              <div class="dot"></div>
+              <div class="dot"><i class="bi bi-check-lg"></i></div>
               <div class="vline"></div>
             </div>
             <div>Parcel</div>
           </li>
-          <li class="step">
+          <li class="step active">
             <div class="dotwrap">
               <div class="dot"></div>
               <div class="vline"></div>
@@ -103,174 +103,69 @@
         </div>
       </aside>
 
+
       <!-- Main -->
       <main class="col-xxl-8 col-xl-8 col-lg-8 main">
-        <div class="page-title">Package Duty</div>
-        <div class="page-sub">Details of the item duty.</div>
+        <div class="page-title">Sender Details</div>
+        <div class="page-sub">Let us know who's sending the parcel.</div>
 
-        <!-- duty item 1 -->
         <div class="panel">
           <div class="panel-head">
             <span class="bar"></span>
-            <span>Package1 : Custom</span>
+            <span>Name &amp; Contact</span>
           </div>
 
-          <p class="">5kg | L 60cm x W 40cm x H 24cm</p>
-
-          <div class="panel-row">
-            <div class="panel-chip"><i class="bi bi-tags"></i> Commercial Samples</div>
-            <div class="panel-chip"><i class="bi bi-file-earmark-text"></i> Yamaha Integrated Amplifier A-S2100</div>
-            <div class="panel-chip"><i class="bi bi-hash"></i> ref00001</div>
-            <div class="panel-chip"><i class="bi bi-currency-dollar"></i> SGD 23.69</div>
-          </div>
-
-          <div class="duty-wrap">
-            <div class="duty-head">
-              <div>Duty Item 1</div>
-              <a href="#"><i class="bi bi-files"></i> Duplicate</a>
+          <div class="field-group-label">Name</div>
+          <div class="row g-3">
+            <div class="col-lg-6 form-floating">
+              <input type="text" class="form-control" id="sender-contact-name" value="" placeholder="Contact Name">
+              <label for="sender-contact-name">Contact Name</label>
             </div>
 
-            <div class="search-row">
-              <div class="search-box">
-                <div class="top">
-                  <i class="bi bi-search text-muted"></i>
-                  <input type="text" value="Integrated Amplifier" aria-label="Search goods">
-                </div>
-                <ul class="suggest">
-                  <li>851850 - Amplifier</li>
-                  <li>901380 - Magnifier</li>
-                  <li>851830 - Headphone amplifier</li>
-                  <li>851840 - Car amplifier</li>
-                </ul>
-              </div>
-
-              <button class="btn btn-primary" type="button">Lookup HTS Code</button>
+            <div class="col-lg-6 form-floating">
+              <input type="text" class="form-control" id="sender-company-name" value=""
+                placeholder="Company Name (optional)">
+              <label for="sender-company-name">Company Name (optional)</label>
             </div>
 
-            <div class="divider"></div>
+          </div>
+          <br>
+          <div class="field-group-label">Contact</div>
+          <div class="row g-3 align-items-end">
+            <div class="form-floating col-lg-2">
+              <select class="form-select" id="sender-phone-prefix" name="sender-phone-prefix">
+                <option value="">Select</option>
+                <option value="1" selected="selected">+65</option>
+                <option value="2">+60</option>
+                <option value="3">+66</option>
+              </select>
+              <label for="sender-phone-prefix">Prefix</label>
+            </div>
 
-            <div class="row g-3">
-              <div class="col-lg-3 form-floating">
-                <input type="text" class="form-control" id="duty-goods-desc" value="" placeholder="Duty Goods Description">
-                <label for="duty-goods-desc">Duty Goods Description</label>
-              </div>
-              <div class="col-lg-2 form-floating">
-                <input type="text" class="form-control" id="hts-code" value="" placeholder="HTS Code">
-                <label for="hts-code">HTS Code</label>
-              </div>
-              <div class="form-floating col-lg-3">
-                <select class="form-select field_req" id="item-origin" name="item-origin">
-                  <option value="">Select</option>
-                  <option value="1">Singapore</option>
-                  <option value="2">Malaysia</option>
-                  <option value="3" selected="selected">Japan</option>
-                </select>
-                <label for="item-origin">Origin</label>
-              </div>
-              <div class="col-lg-2 form-floating">
-                <input type="number" class="form-control" id="item-units" value="" placeholder="Units">
-                <label for="item-units">Units</label>
-              </div>
-              <div class="col-lg-2 form-floating">
-                <input type="number" class="form-control" id="item-unit-value" value="" placeholder="Unit Value ($)">
-                <label for="item-unit-value">Unit Value ($)</label>
-              </div>
+            <div class="col-lg-4 form-floating">
+              <input type="number" class="form-control" id="sender-phone" value="" placeholder="Phone Number">
+              <label for="sender-phone">Phone Number</label>
+            </div>
+
+            <div class="col-lg-6 form-floating">
+              <input type="email" class="form-control" id="sender-email" value="" placeholder="Email">
+              <label for="sender-email">Email</label>
             </div>
           </div>
-
-          <div class="text-center mt-3">
-            <button class="btn btn-outline-brand" type="button">
-              <i class="bi bi-plus-lg me-2"></i> Add Duty Item
-            </button>
+          <br>
+          <div class="field-group-label">Instruction</div>
+          <div class="col-lg-12 form-floating">
+            <textarea type="text" class="form-control" id="sender-instruction" value=""
+              placeholder="Instruction (optional)"></textarea>
+            <label for="sender-instruction">Instruction (optional)</label>
           </div>
-
         </div>
-
-        <!-- duty item 2 -->
-        <div class="panel">
-          <div class="panel-head">
-            <span class="bar"></span>
-            <span>Package 2 : Small</span>
-          </div>
-
-          <p class="">1kg | L 30cm x W 20cm x H 8cm</p>
-
-          <div class="panel-row">
-            <div class="panel-chip"><i class="bi bi-tags"></i> Commercial Samples</div>
-            <div class="panel-chip"><i class="bi bi-file-earmark-text"></i> Yamaha Integrated Amplifier A-S2100</div>
-            <div class="panel-chip"><i class="bi bi-hash"></i> ref00001</div>
-            <div class="panel-chip"><i class="bi bi-currency-dollar"></i> SGD 23.69</div>
-          </div>
-
-          <div class="duty-wrap">
-            <div class="duty-head">
-              <div>Duty Item 1</div>
-              <a href="#"><i class="bi bi-files"></i> Duplicate</a>
-            </div>
-
-            <div class="search-row">
-              <div class="search-box">
-                <div class="top">
-                  <i class="bi bi-search text-muted"></i>
-                  <input type="text" value="Integrated Amplifier" aria-label="Search goods">
-                </div>
-                <!-- <ul class="suggest">
-                  <li>851850 - Amplifier</li>
-                  <li>901380 - Magnifier</li>
-                  <li>851830 - Headphone amplifier</li>
-                  <li>851840 - Car amplifier</li>
-                </ul> -->
-              </div>
-
-              <button class="btn btn-primary" type="button">Lookup HTS Code</button>
-            </div>
-
-            <div class="divider"></div>
-
-            <div class="row g-3">
-              <div class="col-lg-3 form-floating">
-                <input type="text" class="form-control" id="duty-goods-desc" value="" placeholder="Duty Goods Description">
-                <label for="duty-goods-desc">Duty Goods Description</label>
-              </div>
-              <div class="col-lg-2 form-floating">
-                <input type="text" class="form-control" id="hts-code" value="" placeholder="HTS Code">
-                <label for="hts-code">HTS Code</label>
-              </div>
-              <div class="form-floating col-lg-3">
-                <select class="form-select field_req" id="item-origin" name="item-origin">
-                  <option value="">Select</option>
-                  <option value="1">Singapore</option>
-                  <option value="2">Malaysia</option>
-                  <option value="3" selected="selected">Japan</option>
-                </select>
-                <label for="item-origin">Origin</label>
-              </div>
-              <div class="col-lg-2 form-floating">
-                <input type="number" class="form-control" id="item-units" value="" placeholder="Units">
-                <label for="item-units">Units</label>
-              </div>
-              <div class="col-lg-2 form-floating">
-                <input type="number" class="form-control" id="item-unit-value" value="" placeholder="Unit Value ($)">
-                <label for="item-unit-value">Unit Value ($)</label>
-              </div>
-            </div>
-          </div>
-
-          <div class="text-center mt-3">
-            <button class="btn btn-outline-brand" type="button">
-              <i class="bi bi-plus-lg me-2"></i> Add Duty Item
-            </button>
-          </div>
-
-        </div>
-
-
         <!-- Continue -->
         <div class="btn-container">
-          <a class="backlink" href="parcel-details.html">Back</a>
+          <a class="backlink" href="parcel-duty-item.html">Back</a>
 
-          <button class="btn btn-primary float-end" onclick="location.href='sender-contact-details.html'">
-            Next - Sender <i class="bi bi-chevron-right ms-1"></i>
+          <button class="btn btn-primary float-end" onclick="location.href='#'">
+            Continue <i class="bi bi-chevron-right ms-1"></i>
           </button>
         </div>
       </main>
@@ -354,7 +249,8 @@
                 data-bs-parent="#summaryAcc">
                 <div class="accordion-body">
                   <div class="sum-item">
-                    <div class="sum-left"><span class="material-symbols-outlined">local_shipping</span> Next Day Delivery</div>
+                    <div class="sum-left"><span class="material-symbols-outlined">local_shipping</span> Next Day
+                      Delivery</div>
                     <div class="fw-bold">$70.56</div>
                   </div>
                   <div class="sum-item">
@@ -363,6 +259,27 @@
                   <div class="sum-item">
                     <div class="sum-left"><span class="material-symbols-outlined">location_on</span> With Tracking</div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sender -->
+          <div class="accordion" id="sender-summary">
+            <div class="accordion-item border-0">
+              <h2 class="accordion-header" id="senderHead">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#senderBody"
+                  aria-expanded="true" aria-controls="senderBody">
+                  <i class="bi bi-person me-2"></i>
+                  Sender
+                  <i class="bi bi-chevron-up chev" aria-hidden="true"></i>
+                </button>
+              </h2>
+              <div id="senderBody" class="accordion-collapse collapse show" aria-labelledby="senderHead"
+                data-bs-parent="#summaryAcc">
+                <div class="accordion-body">
+                  <div class="sum-item"><i class="bi bi-person"></i> Brian Chung</div>
+                  <div class="sum-item"><i class="bi bi-telephone"></i> +65 4809800</div>
                 </div>
               </div>
             </div>
