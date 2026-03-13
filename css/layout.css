@@ -90,6 +90,26 @@ body {
     background: var(--brand);
 }
 
+.panel-meta {
+    color: #111827;
+    font-size: 12px;
+    margin: 0 0 10px;
+}
+
+.panel-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.panel-chip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 .error {
     color: var(--error);
 }
@@ -107,4 +127,34 @@ body {
     /* Internet Explorer/Edge */
     user-select: none;
     /* Non-prefixed version, currently supported by all modern browsers */
+}
+
+
+/* Duty item block */
+.duty-wrap {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: #f8fafc;
+    padding: 10px;
+}
+
+.duty-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-weight: 800;
+}
+
+.duty-head a {
+    color: var(--brand);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+}
+
+.duty-head a:hover {
+    text-decoration: underline;
 }

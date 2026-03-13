@@ -105,116 +105,172 @@
 
       <!-- Main -->
       <main class="col-xxl-8 col-xl-8 col-lg-8 main">
-        <div class="page-title">Package Information</div>
-        <div class="page-sub">Details of the item inside the package.</div>
+        <div class="page-title">Package Duty</div>
+        <div class="page-sub">Details of the item duty.</div>
 
-        <div class="d-flex flex-column gap-3">
+        <!-- duty item 1 -->
+        <div class="panel">
+          <div class="panel-head">
+            <span class="bar"></span>
+            <span>Package1 : Custom</span>
+          </div>
 
-          <!-- Package 1 -->
-          <div class="panel">
-            <div class="panel-head">
-              <span class="bar"></span>
-              <span>Package 1 : Custom</span>
+          <p class="">5kg | L 60cm x W 40cm x H 24cm</p>
+
+          <div class="panel-row">
+            <div class="panel-chip"><i class="bi bi-tags"></i> Commercial Samples</div>
+            <div class="panel-chip"><i class="bi bi-file-earmark-text"></i> Yamaha Integrated Amplifier A-S2100</div>
+            <div class="panel-chip"><i class="bi bi-hash"></i> ref00001</div>
+            <div class="panel-chip"><i class="bi bi-currency-dollar"></i> SGD 23.69</div>
+          </div>
+
+          <div class="duty-wrap">
+            <div class="duty-head">
+              <div>Duty Item 1</div>
+              <a href="#"><i class="bi bi-files"></i> Duplicate</a>
             </div>
-            <p class="">5kg | L 60cm x W 40cm x H 24cm</p>
-            <div class="field-group-label">Item details</div>
-            <div class="row g-3">
-              <div class="form-floating col-lg-4">
-                <select class="form-select field_req" id="item-category" name="item-category">
-                  <option value="">Select</option>
-                  <option value="1">Commercial Samples</option>
-                  <option value="2">Documents</option>
-                  <option value="3" selected="selected">Gift</option>
-                  <option value="4">Merchandise</option>
-                </select>
-                <label for="item-category">Category of items</label>
-              </div>
-              <div class="col-lg-4 form-floating">
-                <input type="text" class="form-control" id="description" value="" placeholder="Goods Description">
-                <label for="description">Goods Description</label>
-              </div>
-              <div class="col-lg-4 form-floating">
-                <input type="text" class="form-control" id="item-ref" value="" placeholder="Item Ref # (optional)">
-                <label for="item-ref">Item Ref # (optional)</label>
-              </div>
-            </div>
-            <br>
-            <div class="field-group-label">Currency &amp; Value</div>
-            <div class="row g-3">
-              <div class="form-floating col-lg-4">
-                <select class="form-select field_req" id="currency" name="currency">
-                  <option value="">Select</option>
-                  <option value="1">Sgd - Singapore Dollar</option>
-                  <option value="2">Usd - US Dollar</option>
-                  <option value="3" selected="selected">Myr - Malaysian Ringgit</option>
-                </select>
-                <label for="currency">Currency</label>
+
+            <div class="search-row">
+              <div class="search-box">
+                <div class="top">
+                  <i class="bi bi-search text-muted"></i>
+                  <input type="text" value="Integrated Amplifier" aria-label="Search goods">
+                </div>
+                <ul class="suggest">
+                  <li>851850 - Amplifier</li>
+                  <li>901380 - Magnifier</li>
+                  <li>851830 - Headphone amplifier</li>
+                  <li>851840 - Car amplifier</li>
+                </ul>
               </div>
 
-              <div class="col-lg-4 form-floating">
-                <input type="number" class="form-control" id="declared-value" value="23.69" placeholder="Declared value"
-                  disabled>
-                <label for="declared-value">Declared value</label>
+              <button class="btn btn-primary" type="button">Lookup HTS Code</button>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="row g-3">
+              <div class="col-lg-3 form-floating">
+                <input type="text" class="form-control" id="duty-goods-desc" value="" placeholder="Duty Goods Description">
+                <label for="duty-goods-desc">Duty Goods Description</label>
+              </div>
+              <div class="col-lg-2 form-floating">
+                <input type="text" class="form-control" id="hts-code" value="" placeholder="HTS Code">
+                <label for="hts-code">HTS Code</label>
+              </div>
+              <div class="form-floating col-lg-3">
+                <select class="form-select field_req" id="item-origin" name="item-origin">
+                  <option value="">Select</option>
+                  <option value="1">Singapore</option>
+                  <option value="2">Malaysia</option>
+                  <option value="3" selected="selected">Japan</option>
+                </select>
+                <label for="item-origin">Origin</label>
+              </div>
+              <div class="col-lg-2 form-floating">
+                <input type="number" class="form-control" id="item-units" value="" placeholder="Units">
+                <label for="item-units">Units</label>
+              </div>
+              <div class="col-lg-2 form-floating">
+                <input type="number" class="form-control" id="item-unit-value" value="" placeholder="Unit Value ($)">
+                <label for="item-unit-value">Unit Value ($)</label>
               </div>
             </div>
           </div>
 
-          <!-- Package 2 -->
-           <div class="panel">
-            <div class="panel-head">
-              <span class="bar"></span>
-              <span>Package 2 : Small</span>
-            </div>
-            <p class="">1kg | L 30cm x W 20cm x H 8cm</p>
-            <div class="field-group-label">Item details</div>
-            <div class="row g-3">
-              <div class="form-floating col-lg-4">
-                <select class="form-select field_req" id="item-category" name="item-category">
-                  <option value="">Select</option>
-                  <option value="1">Commercial Samples</option>
-                  <option value="2">Documents</option>
-                  <option value="3" selected="selected">Gift</option>
-                  <option value="4">Merchandise</option>
-                </select>
-                <label for="item-category">Category of items</label>
-              </div>
-              <div class="col-lg-4 form-floating">
-                <input type="text" class="form-control" id="description" value="" placeholder="Goods Description">
-                <label for="description">Goods Description</label>
-              </div>
-              <div class="col-lg-4 form-floating">
-                <input type="text" class="form-control" id="item-ref" value="" placeholder="Item Ref # (optional)">
-                <label for="item-ref">Item Ref # (optional)</label>
-              </div>
-            </div>
-            <br>
-            <div class="field-group-label">Currency &amp; Value</div>
-            <div class="row g-3">
-              <div class="form-floating col-lg-4">
-                <select class="form-select field_req" id="currency" name="currency">
-                  <option value="">Select</option>
-                  <option value="1">Sgd - Singapore Dollar</option>
-                  <option value="2">Usd - US Dollar</option>
-                  <option value="3" selected="selected">Myr - Malaysian Ringgit</option>
-                </select>
-                <label for="currency">Currency</label>
-              </div>
-
-              <div class="col-lg-4 form-floating">
-                <input type="number" class="form-control" id="declared-value" value="23.69" placeholder="Declared value"
-                  disabled>
-                <label for="declared-value">Declared value</label>
-              </div>
-            </div>
+          <div class="text-center mt-3">
+            <button class="btn btn-outline-brand" type="button">
+              <i class="bi bi-plus-lg me-2"></i> Add Duty Item
+            </button>
           </div>
 
         </div>
+
+        <!-- duty item 2 -->
+        <div class="panel">
+          <div class="panel-head">
+            <span class="bar"></span>
+            <span>Package 2 : Small</span>
+          </div>
+
+          <p class="">1kg | L 30cm x W 20cm x H 8cm</p>
+
+          <div class="panel-row">
+            <div class="panel-chip"><i class="bi bi-tags"></i> Commercial Samples</div>
+            <div class="panel-chip"><i class="bi bi-file-earmark-text"></i> Yamaha Integrated Amplifier A-S2100</div>
+            <div class="panel-chip"><i class="bi bi-hash"></i> ref00001</div>
+            <div class="panel-chip"><i class="bi bi-currency-dollar"></i> SGD 23.69</div>
+          </div>
+
+          <div class="duty-wrap">
+            <div class="duty-head">
+              <div>Duty Item 1</div>
+              <a href="#"><i class="bi bi-files"></i> Duplicate</a>
+            </div>
+
+            <div class="search-row">
+              <div class="search-box">
+                <div class="top">
+                  <i class="bi bi-search text-muted"></i>
+                  <input type="text" value="Integrated Amplifier" aria-label="Search goods">
+                </div>
+                <!-- <ul class="suggest">
+                  <li>851850 - Amplifier</li>
+                  <li>901380 - Magnifier</li>
+                  <li>851830 - Headphone amplifier</li>
+                  <li>851840 - Car amplifier</li>
+                </ul> -->
+              </div>
+
+              <button class="btn btn-primary" type="button">Lookup HTS Code</button>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="row g-3">
+              <div class="col-lg-3 form-floating">
+                <input type="text" class="form-control" id="duty-goods-desc" value="" placeholder="Duty Goods Description">
+                <label for="duty-goods-desc">Duty Goods Description</label>
+              </div>
+              <div class="col-lg-2 form-floating">
+                <input type="text" class="form-control" id="hts-code" value="" placeholder="HTS Code">
+                <label for="hts-code">HTS Code</label>
+              </div>
+              <div class="form-floating col-lg-3">
+                <select class="form-select field_req" id="item-origin" name="item-origin">
+                  <option value="">Select</option>
+                  <option value="1">Singapore</option>
+                  <option value="2">Malaysia</option>
+                  <option value="3" selected="selected">Japan</option>
+                </select>
+                <label for="item-origin">Origin</label>
+              </div>
+              <div class="col-lg-2 form-floating">
+                <input type="number" class="form-control" id="item-units" value="" placeholder="Units">
+                <label for="item-units">Units</label>
+              </div>
+              <div class="col-lg-2 form-floating">
+                <input type="number" class="form-control" id="item-unit-value" value="" placeholder="Unit Value ($)">
+                <label for="item-unit-value">Unit Value ($)</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-3">
+            <button class="btn btn-outline-brand" type="button">
+              <i class="bi bi-plus-lg me-2"></i> Add Duty Item
+            </button>
+          </div>
+
+        </div>
+
+
         <!-- Continue -->
         <div class="btn-container">
-          <a class="backlink" href="service-info.html">Back</a>
+          <a class="backlink" href="parcel-details.html">Back</a>
 
-          <button class="btn btn-primary float-end" onclick="location.href='parcel-duty-item.html'">
-            Continue <i class="bi bi-chevron-right ms-1"></i>
+          <button class="btn btn-primary float-end" onclick="location.href='#'">
+            Next - Sender <i class="bi bi-chevron-right ms-1"></i>
           </button>
         </div>
       </main>
