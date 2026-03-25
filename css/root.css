@@ -1,10 +1,13 @@
-:root{
-  --brand:#00A6E6;
-  --brand-2:#0FB4F1;
-  --text:#1f2937;
-  --muted:#6b7280;
-  --radius-16:16px;
-  --radius-24:24px;
-  --line:#e5e7eb;
+:root {
+  --brand: #00A6E6;
+  --brand-2: #0FB4F1;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --radius-16: 16px;
+  --radius-24: 24px;
+  --line: #e5e7eb;
   --error: #EE0000;
+  --white: #ffffff;
+  --light-blue: #eaf7fd;
+  --dark-blue: #1098dc;
 }

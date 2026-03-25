@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HypaShip - Landing Page</title>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons (for eye icon) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Add this in <head> BEFORE your CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <!-- Top Row -->
+    <div class="header-top">
+      <div class="container-fluid header-wrap">
+        <div class="top-inner">
+          <div class="top-right">
+            <a href="#" class="top-link">
+              <span class="material-symbols-outlined">location_on</span>
+              <span class="label">Find Closest Location</span>
+              <span class="material-symbols-outlined">keyboard_arrow_down</span>
+            </a>
+
+            <a href="#" class="top-link">
+              <span class="notif-dot">
+                <span class="material-symbols-outlined">notifications</span>
+              </span>
+              <span class="label">Notifications</span>
+              <span class="material-symbols-outlined">keyboard_arrow_down</span>
+            </a>
+
+            <a href="#" class="top-link">
+              <span class="material-symbols-outlined">translate</span>
+              <span class="label">English</span>
+              <span class="material-symbols-outlined">keyboard_arrow_down</span>
+            </a>
+
+            <a href="#" class="top-link">
+              <i class="bi bi-box-seam"></i>
+              <span class="label">About Us</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Row -->
+    <div class="header-bottom">
+      <div class="container-fluid header-wrap">
+        <div class="bottom-inner">
+          <div class="bottom-left">
+            <a href="#" class="brand-logo">
+              <img src="images/logo-hypaship.svg" alt="HypaShip" />
+            </a>
+
+            <nav class="main-nav">
+              <a href="#">Sending</a>
+              <a href="#">Receiving</a>
+              <a href="#">Support</a>
+            </nav>
+          </div>
+
+          <div class="bottom-right">
+            <a href="#" class="header-action" aria-label="Search">
+              <i class="bi bi-search"></i>
+            </a>
+
+            <!-- <a href="#" class="header-action" aria-label="Cart">
+              <i class="bi bi-cart3"></i>
+              <span class="cart-badge">1</span>
+            </a>
+
+            <a href="#" class="header-action" aria-label="Account">
+              <i class="bi bi-person"></i>
+            </a> -->
+
+            <div class="ms-auto d-flex align-items-center gap-2">
+              <div class="position-relative">
+                <button class="btn-icon border rounded-pill" type="button" aria-label="Cart">
+                  <i class="bi bi-cart3 fs-5"></i>
+                </button>
+                <!-- <span class="badge text-bg-warning rounded-pill badge-float">2</span> -->
+              </div>
+
+              <button class="d-flex align-items-center gap-2 border rounded-pill px-2 py-1" type="button"
+                aria-label="Cart">
+                <div class="">
+                  <i class="bi bi-person"></i>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- hero banner -->
+  <section class="hero-section">
+    <div class="container-fluid px-0">
+      <div class="row g-0 hero-layout">
+        <div class="col-lg-4 hero-left">
+          <h1 class="hero-title">
+            Post, Parcel &amp;<br>
+            Logistics Technology<br>
+            from the Experts
+          </h1>
+        </div>
+
+        <div class="col-lg-8 hero-right">
+          <div class="hero-widget">
+            <div class="hero-tabs">
+              <div class="hero-tab active">Send</div>
+              <div class="hero-tab">Track</div>
+            </div>
+
+            <div class="hero-panel">
+              <!-- Route cards -->
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <div class="radio-card disable-selection">
+                    <input type="radio" name="routeType" id="routeDomestic" checked>
+                    <label class="w-100" for="routeDomestic">
+                      <div class="radio-card-container d-flex gap-3 align-items-center">
+                        <div class="ring" aria-hidden="true"></div>
+                        <div class="icon-tile">
+                          <span class="material-symbols-outlined">local_shipping</span>
+                        </div>
+                        <div>
+                          <p class="radio-card-name">Domestic</p>
+                          <p class="radio-card-desc">Within Singapore</p>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="radio-card disable-selection">
+                    <input type="radio" name="routeType" id="routeInternational">
+                    <label class="w-100" for="routeInternational">
+                      <div class="radio-card-container d-flex gap-3 align-items-center">
+                        <div class="ring" aria-hidden="true"></div>
+                        <div class="icon-tile">
+                          <span class="material-symbols-outlined">public</span>
+                        </div>
+                        <div>
+                          <p class="radio-card-name">International</p>
+                          <p class="radio-card-desc">Deliver to another country</p>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Domestic -->
+              <div class="panel domestic">
+                <div class="panel-head">
+                  <span class="bar"></span>
+                  <span>Postcode Details</span>
+                </div>
+
+                <div class="row align-items-center">
+                  <div class="col-lg-4">
+                    <!-- Replace with your illustration asset -->
+                    <img class="illus" src="images/quote-domestic.png" alt="Illustration (placeholder)">
+                  </div>
+                  <div class="col-lg-8">
+                    <div class="d-flex">
+                      <div class="form-floating col-sm-5">
+                        <input type="text" class="form-control" id="from-postcode" value="" placeholder="From Postcode">
+                        <label for="from-postcode">From Postcode</label>
+                      </div>
+
+                      <div class="col-sm-2 d-flex justify-content-center">
+                        <div class="text-muted fs-4" style="line-height:1;">
+                          <i class="bi bi-arrow-right"></i>
+                        </div>
+                      </div>
+
+
+                      <div class="form-floating col-sm-5">
+                        <input type="text" class="form-control" id="to-postcode" value="" placeholder="To Postcode">
+                        <label for="to-postcode">To Postcode</label>
+                      </div>
+                    </div>
+
+                    <div class="hint mt-3">
+                      <i class="bi bi-info-circle mt-1"></i>
+                      <div>Your postal code helps us confirm pricing and match you
+                        with the best available services.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- International -->
+              <div class="panel international">
+                <div class="panel-head">
+                  <span class="bar"></span>
+                  <span>Sending From &amp; To</span>
+                </div>
+
+                <div class="row align-items-center">
+                  <div class="col-lg-4">
+                    <!-- Replace with your illustration asset -->
+                    <img class="illus" src="images/quote-international.png" alt="Illustration (placeholder)">
+                  </div>
+
+                  <div class="col-lg-8">
+                    <!-- FROM -->
+                    <div class="mb-3">
+                      <div class="fw-bold small mb-2">From</div>
+                      <div class="d-flex int-from">
+                        <div class="form-floating col-md-6">
+                          <select class="form-select field_req" id="from_country_id" name="from_country_id">
+                            <option value="">Select</option>
+                            <option value="76">Indonesia</option>
+                            <option value="218">Malaysia</option>
+                            <option value="133" selected="selected">Singapore</option>
+                          </select>
+                          <label for="from_country_id">Country</label>
+                        </div>
+                        <div class="form-floating col-sm-6">
+                          <input type="text" class="form-control" id="int-from-postcode" value=""
+                            placeholder="Postcode">
+                          <label for="int-from-postcode">Postcode</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- swap / down indicator -->
+                    <div class="d-flex justify-content-center my-1">
+                      <div class="swap-arrow" aria-hidden="true">
+                        <i class="bi bi-arrow-down"></i>
+                      </div>
+                    </div>
+
+                    <!-- TO -->
+                    <div class="mt-3">
+                      <div class="fw-bold small mb-2">To</div>
+                      <div class="d-flex int-to">
+                        <div class="form-floating col-md-6">
+                          <select class="form-select field_req" id="to_country_id" name="to_country_id">
+                            <option value="">Select</option>
+                            <option value="76">Indonesia</option>
+                            <option value="218" selected="selected">Malaysia</option>
+                            <option value="133">Singapore</option>
+                          </select>
+                          <label for="to_country_id">Country</label>
+                        </div>
+
+                        <div class="form-floating col-sm-6">
+                          <input type="text" class="form-control" id="int-to-postcode" value="" placeholder="Postcode">
+                          <label for="int-to-postcode">Postcode</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="hint mt-3">
+                      <i class="bi bi-info-circle mt-1"></i>
+                      <div>Postal codes is use for accurate pricing and filters
+                        available logistics services for your route.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Continue -->
+              <div class="btn-container">
+                <button class="btn btn-primary float-end" onclick="location.href='parcel-type.html'">
+                  Continue <i class="bi bi-chevron-right ms-1"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- helpful guides -->
+  <section class="helpful-guides-section">
+    <div class="container-fluid px-0">
+
+      <div class="guides-header">
+        <h2 class="landing-title">Helpful Guides</h2>
+        <a href="#" class="guides-link">
+          Go to Help Center
+          <span class="arrow">›</span>
+        </a>
+      </div>
+
+      <div class="row guides-grid">
+        <div class="col-md-4">
+          <a href="#" class="guide-card">
+            <h3 class="guide-card-title">How to wrap parcel</h3>
+            <p class="guide-card-text">
+              step-by-step guide on how to package a parcel properly.
+            </p>
+            <span class="guide-card-arrow">→</span>
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="#" class="guide-card">
+            <h3 class="guide-card-title">Size &amp; Weight Guide</h3>
+            <p class="guide-card-text">
+              Measure parcel with our size and weight limit guide.
+            </p>
+            <span class="guide-card-arrow">→</span>
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="#" class="guide-card">
+            <h3 class="guide-card-title">Help &amp; Support</h3>
+            <p class="guide-card-text">
+              Visit our help center if you have any issues or inquiry.
+            </p>
+            <span class="guide-card-arrow">→</span>
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="#" class="guide-card">
+            <h3 class="guide-card-title">Shipping Options</h3>
+            <p class="guide-card-text">
+              Explore different shipping methods for your parcels.
+            </p>
+            <span class="guide-card-arrow">→</span>
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="#" class="guide-card">
+            <h3 class="guide-card-title">Tracking Your Parcel</h3>
+            <p class="guide-card-text">
+              Learn how to track your parcel from dispatch to delivery.
+            </p>
+            <span class="guide-card-arrow">→</span>
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="#" class="guide-card">
+            <h3 class="guide-card-title">Title</h3>
+            <p class="guide-card-text">
+              description text.
+            </p>
+            <span class="guide-card-arrow">→</span>
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="#" class="guide-card">
+            <h3 class="guide-card-title">Title</h3>
+            <p class="guide-card-text">
+              description text.
+            </p>
+            <span class="guide-card-arrow">→</span>
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="#" class="guide-card">
+            <h3 class="guide-card-title">Title</h3>
+            <p class="guide-card-text">
+              description text.
+            </p>
+            <span class="guide-card-arrow">→</span>
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="#" class="guide-card">
+            <h3 class="guide-card-title">Title</h3>
+            <p class="guide-card-text">
+              description text.
+            </p>
+            <span class="guide-card-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- services -->
+  <section class="services-section">
+    <div class="container-fluid px-0">
+      <h2 class="landing-title">Our Services</h2>
+      <p class="landing-subtitle">
+        Enjoy dependable shipping solutions designed for speed, value, and convenience.
+      </p>
+
+      <div class="row services-row">
+        <div class="col-lg-4">
+          <div class="service-card">
+            <img src="images/service-domestic.jpg" alt="Domestic" class="service-image" />
+            <h3 class="service-name">Domestic</h3>
+            <p class="service-desc">
+              Send parcels locally with reliable delivery options,
+              convenient service choices, and tracking for your
+              peace of mind.
+            </p>
+            <ul class="service-links">
+              <li><a href="#">Mail Services <span class="arrow">›</span></a></li>
+              <li><a href="#">Tracked Services <span class="arrow">›</span></a></li>
+              <li><a href="#">Registered Service <span class="arrow">›</span></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="service-card">
+            <img src="images/service-international.jpg" alt="International" class="service-image" />
+            <h3 class="service-name">International</h3>
+            <p class="service-desc">
+              Send parcels and documents overseas with flexible
+              delivery options, competitive rates, and reliable
+              tracking throughout the journey.
+            </p>
+            <ul class="service-links">
+              <li><a href="#">Mail <span class="arrow">›</span></a></li>
+              <li><a href="#">Speed International Delivery <span class="arrow">›</span></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="service-card">
+            <img src="images/service-receive.jpg" alt="Receive Parcel" class="service-image" />
+            <h3 class="service-name">Receive Parcel</h3>
+            <p class="service-desc">
+              Manage incoming parcels with convenient services
+              such as redirection, collection, and delivery support to
+              suit your needs.
+            </p>
+            <ul class="service-links">
+              <li><a href="#">Rent a P.O Box <span class="arrow">›</span></a></li>
+              <li><a href="#">Retention Service <span class="arrow">›</span></a></li>
+              <li><a href="#">Redirect <span class="arrow">›</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- why choose us -->
+  <section class="why-choose-section">
+    <div class="container-fluid px-0">
+      <div class="row g-0 align-items-start">
+        <div class="col-lg-3">
+          <div class="why-left">
+            <h2 class="landing-title">Why Choose Us</h2>
+            <p class="landing-desc">
+              Enjoy dependable shipping solutions designed for speed, value, and convenience.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-9">
+          <div class="why-grid">
+            <div class="why-card">
+              <div class="why-icon-box">
+                <i class="bi bi-globe2"></i>
+              </div>
+              <h3 class="why-card-title">Wide Coverage</h3>
+              <p class="why-card-text">
+                Send parcels across domestic and international destinations with reliable delivery coverage.
+              </p>
+            </div>
+
+            <div class="why-card">
+              <div class="why-icon-box">
+                <i class="bi bi-currency-dollar"></i>
+              </div>
+              <h3 class="why-card-title">Value for Money</h3>
+              <p class="why-card-text">
+                Enjoy competitive shipping rates with dependable service and delivery performance.
+              </p>
+            </div>
+
+            <div class="why-card">
+              <div class="why-icon-box">
+                <i class="bi bi-gem"></i>
+              </div>
+              <h3 class="why-card-title">Value-added Services</h3>
+              <p class="why-card-text">
+                Access useful options like cash on delivery, insurance, scheduled delivery, and more.
+              </p>
+            </div>
+
+            <div class="why-card">
+              <div class="why-icon-box">
+                <i class="bi bi-pin-map"></i>
+              </div>
+              <h3 class="why-card-title">Real-Time Tracking</h3>
+              <p class="why-card-text">
+                Track your shipment status anytime with clear and convenient parcel updates.
+              </p>
+            </div>
+
+            <div class="why-card">
+              <div class="why-icon-box">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <h3 class="why-card-title">Secure Handling</h3>
+              <p class="why-card-text">
+                Your parcels are handled with care to help ensure safe and smooth delivery.
+              </p>
+            </div>
+
+            <div class="why-card">
+              <div class="why-icon-box">
+                <i class="bi bi-truck"></i>
+              </div>
+              <h3 class="why-card-title">Flexible Delivery Options</h3>
+              <p class="why-card-text">
+                Choose from a range of delivery services to match your timeline, budget, and parcel needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer sitemap -->
+  <section class="footer-sitemap">
+    <div class="container-fluid px-0">
+      <div class="row g-0">
+        <div class="col-xs-12 col-md-3 col-lg-3 col-xl-2">
+          <h3 class="footer-col-title">Sending</h3>
+          <ul class="sitemap-links">
+            <li><a href="#">Domestic Parcel</a></li>
+            <li><a href="#">International Parcel</a></li>
+            <li><a href="#">Mail Delivery</a></li>
+            <li><a href="#">Same Day Delivery</a></li>
+            <li><a href="#">Shipping for Your Business</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-12 col-md-3 col-lg-3 col-xl-2">
+          <h3 class="footer-col-title">Receiving</h3>
+          <ul class="sitemap-links">
+            <li><a href="#">Tracking</a></li>
+            <li><a href="#">Redelivery</a></li>
+            <li><a href="#">Redirection</a></li>
+            <li><a href="#">Return Parcel</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-12 col-md-3 col-lg-3 col-xl-2">
+          <h3 class="footer-col-title">Our Services</h3>
+          <ul class="sitemap-links">
+            <li><a href="#">Service 1</a></li>
+            <li><a href="#">Service 1</a></li>
+            <li><a href="#">Service 3</a></li>
+            <li><a href="#">Service 4</a></li>
+            <li><a href="#">Service 5</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-12 col-md-3 col-lg-3 col-xl-2 col-custom">
+          <h3 class="footer-col-title">Help</h3>
+          <ul class="sitemap-links">
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Complaints Procedure</a></li>
+            <li><a href="#">Guides</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-12 col-md-3 col-lg-3 col-xl-2 col-custom">
+          <h3 class="footer-col-title">About Us</h3>
+          <ul class="sitemap-links">
+            <li><a href="#">Who We Are</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="footer-bar">
+    <div class="container-fluid footer-container">
+      <div class="footer-top">
+        <div class="footer-top-left">
+          <div class="powered-by">
+            <span>Powered by</span>
+            <img src="images/hypaship-powered-logo.png" alt="HypaShip">
+          </div>
+
+          <div class="footer-links">
+            <a href="#">Terms of Use</a>
+            <a href="#">Terms &amp; Conditions</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Prohibit Items</a>
+          </div>
+        </div>
+
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">©2026 HYPASHIP. All rights reserved.</p>
+        <p class="footer-address">
+          The Lambourn, Abingdon Business Park, Wyndyke, Furlong, Abingdon, OX14 1UJ, UK
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/toggle-domestic-international.js"></script>
+
+</body>
+
+</html>
