@@ -21,435 +21,479 @@
 <body>
   <!-- Header -->
   <header class="site-header">
-    <!-- Top Row -->
-    <div class="header-top">
-      <div class="container-fluid header-wrap">
-        <div class="top-inner">
-          <div class="top-right">
-            <a href="#" class="top-link">
-              <span class="material-symbols-outlined">location_on</span>
-              <span class="label">Find Closest Location</span>
-              <span class="material-symbols-outlined">keyboard_arrow_down</span>
-            </a>
+    <div class="header-top d-none d-lg-block">
+      <div class="header-top-inner">
+        <a href="#" class="top-link">
+          <i class="bi bi-geo-alt"></i>
+          <span>Find Closest Location</span>
+          <span class="caret-down">▼</span>
+        </a>
 
-            <a href="#" class="top-link">
-              <span class="notif-dot">
-                <span class="material-symbols-outlined">notifications</span>
-              </span>
-              <span class="label">Notifications</span>
-              <span class="material-symbols-outlined">keyboard_arrow_down</span>
-            </a>
+        <a href="#" class="top-link">
+          <span class="notif-icon">
+            <i class="bi bi-bell"></i>
+          </span>
+          <span>Notifications</span>
+        </a>
 
-            <a href="#" class="top-link">
-              <span class="material-symbols-outlined">translate</span>
-              <span class="label">English</span>
-              <span class="material-symbols-outlined">keyboard_arrow_down</span>
-            </a>
+        <a href="#" class="top-link">
+          <i class="bi bi-translate"></i>
+          <span>English</span>
+          <span class="caret-down">▼</span>
+        </a>
 
-            <a href="#" class="top-link">
-              <i class="bi bi-box-seam"></i>
-              <span class="label">About Us</span>
-            </a>
-          </div>
-        </div>
+        <a href="#" class="top-link">
+          <i class="bi bi-box-seam"></i>
+          <span>About Us</span>
+        </a>
       </div>
     </div>
 
-    <!-- Bottom Row -->
-    <div class="header-bottom">
-      <div class="container-fluid header-wrap">
-        <div class="bottom-inner">
-          <div class="bottom-left">
-            <a href="#" class="brand-logo">
-              <img src="images/logo-hypaship.svg" alt="HypaShip" />
-            </a>
+    <div class="header-main">
+      <div class="header-main-inner">
+        <a href="#" class="brand-logo">
+          <img src="images/logo-blue.png" alt="HypaShip">
+        </a>
 
-            <nav class="main-nav">
-              <div class="nav-item-wrap active has-mega" id="sendingMega">
-                <a href="#" class="main-nav-link">Sending</a>
+        <nav class="desktop-nav">
+          <div class="nav-item-wrap has-mega" id="sendingMega">
+            <a href="#" class="main-nav-link">Sending</a>
 
-                <div class="mega-menu">
-                  <div class="mega-grid">
-                    <div class="mega-promo">
-                      <img src="images/menu-sending.jpg" alt="Sending Menu Image" />
-                    </div>
+            <div class="mega-menu">
+              <div class="mega-grid">
+                <div class="mega-image">
+                  <img src="images/menu-sending.png" alt="Sending Menu Image" />
+                </div>
 
-                    <div class="mega-links">
-                      <ul>
-                        <li><a href="#">Domestic Parcel</a></li>
-                        <li><a href="#">International Parcel</a></li>
-                        <li><a href="#">Mail Delivery</a></li>
-                        <li><a href="#">Same Day Delivery</a></li>
-                        <li><a href="#">Shipping for Your Business</a></li>
-                      </ul>
-                    </div>
+                <div class="mega-links">
+                  <ul>
+                    <li><a href="#">Domestic Parcel</a></li>
+                    <li><a href="#">International Parcel</a></li>
+                    <li><a href="#">Mail Delivery</a></li>
+                    <li><a href="#">Same Day Delivery</a></li>
+                    <li><a href="#">Shipping for Your Business</a></li>
+                  </ul>
+                </div>
 
-                    <div class="mega-guides">
-                      <h3 class="mega-guides-title">Guides</h3>
-                      <ul>
-                        <li><a href="#">How to Wrap Parcel</a></li>
-                        <li><a href="#">How to Send Parcel</a></li>
-                        <li><a href="#">Prohibited Items</a></li>
-                        <li><a href="#">Size &amp; Weight Guide</a></li>
-                      </ul>
-                    </div>
-                  </div>
+                <div class="mega-guides">
+                  <h3 class="mega-guides-title">Guides</h3>
+                  <ul>
+                    <li><a href="#">How to Wrap Parcel</a></li>
+                    <li><a href="#">How to Send Parcel</a></li>
+                    <li><a href="#">Prohibited Items</a></li>
+                    <li><a href="#">Size &amp; Weight Guide</a></li>
+                  </ul>
                 </div>
               </div>
-
-              <div class="nav-item-wrap active has-mega" id="receivingMega">
-                <a href="#" class="main-nav-link">Receiving</a>
-                <div class="mega-menu">
-                  <div class="mega-grid">
-                    <div class="mega-promo">
-                      <img src="images/menu-sending.jpg" alt="Sending Menu Image" />
-                    </div>
-
-                    <div class="mega-links">
-                      <ul>
-                        <li><a href="#">Tracking</a></li>
-                        <li><a href="#">Redelivery</a></li>
-                        <li><a href="#">Redirection</a></li>
-                        <li><a href="#">Return Parcel</a></li>
-                      </ul>
-                    </div>
-
-                    <div class="mega-guides">
-                      <h3 class="mega-guides-title">Guides</h3>
-                      <ul>
-                        <li><a href="#">How to Return a Parcel</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="nav-item-wrap active has-mega" id="moreMega">
-                <a href="#" class="main-nav-link">More</a>
-                <div class="mega-menu">
-                  <div class="mega-grid">
-                    <div class="mega-promo">
-                      <img src="images/menu-support.jpg" alt="Support Menu Image" />
-                    </div>
-
-                    <div>
-                      <h3 class="mega-col-title">Our Services</h3>
-                      <div class="mega-links">
-                        <ul>
-                          <li><a href="#">Service 1</a></li>
-                          <li><a href="#">Service 1</a></li>
-                          <li><a href="#">Service 3</a></li>
-                          <li><a href="#">Service 4</a></li>
-                          <li><a href="#">Service 5</a></li>
-                          <li><a href="#">Service 6</a></li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div>
-                      <h3 class="mega-col-title">Help</h3>
-                      <div class="mega-simple">
-                        <ul>
-                          <li><a href="#">Help Center</a></li>
-                          <li><a href="#">FAQs</a></li>
-                          <li><a href="#">Complaints Procedure</a></li>
-                          <li><a href="#">Guides</a></li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div>
-                      <h3 class="mega-col-title">About Us</h3>
-                      <div class="mega-simple">
-                        <ul>
-                          <li><a href="#">Who We Are</a></li>
-                          <li><a href="#">Contact Us</a></li>
-                          <li><a href="#">Careers</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </nav>
-          </div>
-
-          <div class="bottom-right">
-            <a href="#" class="header-action" aria-label="Search">
-              <i class="bi bi-search"></i>
-            </a>
-
-            <!-- <a href="#" class="header-action" aria-label="Cart">
-              <i class="bi bi-cart3"></i>
-              <span class="cart-badge">1</span>
-            </a>
-
-            <a href="#" class="header-action" aria-label="Account">
-              <i class="bi bi-person"></i>
-            </a> -->
-
-            <div class="ms-auto d-flex align-items-center gap-2">
-              <div class="position-relative">
-                <button class="btn-icon border rounded-pill" type="button" aria-label="Cart">
-                  <i class="bi bi-cart3 fs-5"></i>
-                </button>
-                <!-- <span class="badge text-bg-warning rounded-pill badge-float">2</span> -->
-              </div>
-
-              <button class="d-flex align-items-center gap-2 border rounded-pill px-2 py-1" type="button"
-                aria-label="Cart">
-                <div class="">
-                  <i class="bi bi-person"></i>
-                </div>
-              </button>
             </div>
           </div>
+
+          <div class="nav-item-wrap has-mega" id="receivingMega">
+            <a href="#" class="main-nav-link">Receiving</a>
+            <div class="mega-menu">
+              <div class="mega-grid">
+                <div class="mega-image">
+                  <img src="images/menu-receiving.png" alt="Receiving Menu Image" />
+                </div>
+
+                <div class="mega-links">
+                  <ul>
+                    <li><a href="#">Tracking</a></li>
+                    <li><a href="#">Redelivery</a></li>
+                    <li><a href="#">Redirection</a></li>
+                    <li><a href="#">Return Parcel</a></li>
+                  </ul>
+                </div>
+
+                <div class="mega-guides">
+                  <h3 class="mega-guides-title">Guides</h3>
+                  <ul>
+                    <li><a href="#">How to Return a Parcel</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="nav-item-wrap has-mega" id="moreMega">
+            <a href="#" class="main-nav-link">More</a>
+            <div class="mega-menu">
+              <div class="mega-grid">
+                <div class="mega-image">
+                  <img src="images/menu-support.png" alt="Support Menu Image" />
+                </div>
+
+                <div class="mega-links">
+                  <h3 class="mega-col-title">Our Services</h3>
+                  <div class="mega-links">
+                    <ul>
+                      <li><a href="#">Service 1</a></li>
+                      <li><a href="#">Service 1</a></li>
+                      <li><a href="#">Service 3</a></li>
+                      <li><a href="#">Service 4</a></li>
+                      <li><a href="#">Service 5</a></li>
+                      <li><a href="#">Service 6</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="mega-links">
+                  <h3 class="mega-col-title">Help</h3>
+                  <div class="mega-links">
+                    <ul>
+                      <li><a href="#">Help Center</a></li>
+                      <li><a href="#">FAQs</a></li>
+                      <li><a href="#">Complaints Procedure</a></li>
+                      <li><a href="#">Guides</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="mega-links">
+                  <h3 class="mega-col-title">About Us</h3>
+                  <div class="mega-links">
+                    <ul>
+                      <li><a href="#">Who We Are</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                      <li><a href="#">Careers</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <div class="header-actions">
+          <a href="#" class="header-action d-none d-sm-inline-flex" aria-label="Search">
+            <i class="bi bi-search"></i>
+          </a>
+          <a href="#" class="header-action" aria-label="Cart">
+            <i class="bi bi-cart3"></i>
+            <span class="cart-badge">1</span>
+          </a>
+          <a href="#" class="header-action d-none d-sm-inline-flex" aria-label="Account">
+            <i class="bi bi-person"></i>
+          </a>
+          <button class="mobile-menu-btn d-lg-none" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Open menu">
+            <i class="bi bi-list"></i>
+          </button>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- hero banner -->
-  <section class="hero-booking-section py-5">
-  <div class="container-fluid px-0">
-    <div class="row g-0x align-items-centerx hero-booking-row">
-      <div class="col-lg-6">
-        <div class="hero-copy">
-          <h1 class="hero-title mb-0">
-            Post, Parcel &amp;<br>
-            Logistics Technology<br>
-            from the Experts
-          </h1>
+  <!-- mobile menu -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header border-bottom">
+      <h5 class="offcanvas-title fw-bold" id="mobileMenuLabel">Menu</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body">
+      <div class="mobile-nav-group">
+        <button class="mobile-nav-main" type="button" data-bs-toggle="collapse" data-bs-target="#mobileSending"
+          aria-expanded="false" aria-controls="mobileSending">
+          <span>Sending</span>
+          <i class="bi bi-chevron-down"></i>
+        </button>
+
+        <div class="collapse mobile-submenu" id="mobileSending">
+          <a href="#">Domestic Parcel</a>
+          <a href="#">International Parcel</a>
+          <a href="#">Mail Delivery</a>
+          <a href="#">Same Day Delivery</a>
+          <a href="#">Shipping for Your Business</a>
         </div>
       </div>
 
-      <div class="col-lg-6">
-        <div class="hero-booking-panel">
-          <ul class="nav booking-tabs" id="bookingTab" role="tablist">
-            <li class="nav-item flex-fill" role="presentation">
-              <button
-                class="nav-link active w-100"
-                id="send-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#send-pane"
-                type="button"
-                role="tab"
-                aria-controls="send-pane"
-                aria-selected="true">
-                Send
-              </button>
-            </li>
-            <li class="nav-item flex-fill" role="presentation">
-              <button
-                class="nav-link w-100"
-                id="track-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#track-pane"
-                type="button"
-                role="tab"
-                aria-controls="track-pane"
-                aria-selected="false">
-                Track
-              </button>
-            </li>
-          </ul>
+      <div class="mobile-nav-group">
+        <button class="mobile-nav-main" type="button" data-bs-toggle="collapse" data-bs-target="#mobileReceiving"
+          aria-expanded="false" aria-controls="mobileReceiving">
+          <span>Receiving</span>
+          <i class="bi bi-chevron-down"></i>
+        </button>
 
-          <div class="tab-content booking-tab-content" id="bookingTabContent">
-            <div
-              class="tab-pane fade show active"
-              id="send-pane"
-              role="tabpanel"
-              aria-labelledby="send-tab"
-              tabindex="0">
+        <div class="collapse mobile-submenu" id="mobileReceiving">
+          <a href="#">Tracking</a>
+          <a href="#">Redelivery</a>
+          <a href="#">Redirection</a>
+          <a href="#">Return Parcel</a>
+        </div>
+      </div>
 
-               <!-- Route cards -->
-              <div class="row g-3 mb-3">
-                <div class="col-md-6">
-                  <div class="radio-card disable-selection">
-                    <input type="radio" name="routeType" id="routeDomestic" checked>
-                    <label class="w-100" for="routeDomestic">
-                      <div class="radio-card-container d-flex gap-3 align-items-center">
-                        <div class="ring" aria-hidden="true"></div>
-                        <div class="icon-tile">
-                          <span class="material-symbols-outlined">local_shipping</span>
-                        </div>
-                        <div>
-                          <p class="radio-card-name">Domestic</p>
-                          <p class="radio-card-desc">Within Singapore</p>
-                        </div>
-                      </div>
-                    </label>
-                  </div>
-                </div>
+      <div class="mobile-nav-group">
+        <button class="mobile-nav-main" type="button" data-bs-toggle="collapse" data-bs-target="#mobileSupport"
+          aria-expanded="false" aria-controls="mobileSupport">
+          <span>Support</span>
+          <i class="bi bi-chevron-down"></i>
+        </button>
 
-                <div class="col-md-6">
-                  <div class="radio-card disable-selection">
-                    <input type="radio" name="routeType" id="routeInternational">
-                    <label class="w-100" for="routeInternational">
-                      <div class="radio-card-container d-flex gap-3 align-items-center">
-                        <div class="ring" aria-hidden="true"></div>
-                        <div class="icon-tile">
-                          <span class="material-symbols-outlined">public</span>
-                        </div>
-                        <div>
-                          <p class="radio-card-name">International</p>
-                          <p class="radio-card-desc">Deliver to another country</p>
-                        </div>
-                      </div>
-                    </label>
-                  </div>
-                </div>
-              </div>
+        <div class="collapse mobile-submenu" id="mobileSupport">
+          <div class="submenu-title">Our Services</div>
+          <a href="#">Service 1</a>
+          <a href="#">Service 1</a>
+          <a href="#">Service 3</a>
+          <a href="#">Service 4</a>
+          <a href="#">Service 5</a>
+          <a href="#">Service 6</a>
 
-              <!-- Domestic -->
-              <div class="panel domestic">
-                <div class="panel-head">
-                  <span class="bar"></span>
-                  <span>Postcode Details</span>
-                </div>
+          <div class="submenu-title">Help</div>
+          <a href="#">Help Center</a>
+          <a href="#">FAQs</a>
+          <a href="#">Complaints Procedure</a>
+          <a href="#">Guides</a>
 
-                <div class="row align-items-center">
-                  <div class="col-lg-4">
-                    <!-- Replace with your illustration asset -->
-                    <img class="illus" src="images/quote-domestic.png" alt="Illustration (placeholder)">
-                  </div>
-                  <div class="col-lg-8">
-                    <div class="d-flex">
-                      <div class="form-floating col-sm-5">
-                        <input type="text" class="form-control" id="from-postcode" value="" placeholder="From Postcode">
-                        <label for="from-postcode">From Postcode</label>
-                      </div>
+          <div class="submenu-title">About Us</div>
+          <a href="#">Who We Are</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Careers</a>
+        </div>
+      </div>
 
-                      <div class="col-sm-2 d-flex justify-content-center align-items-center">
-                        <div class="text-muted fs-4" style="line-height:1;">
-                          <i class="bi bi-arrow-right"></i>
-                        </div>
-                      </div>
+      <div class="mobile-top-links">
+        <a href="#"><i class="bi bi-geo-alt"></i><span>Find Closest Location</span></a>
+        <a href="#"><i class="bi bi-bell"></i><span>Notifications</span></a>
+        <a href="#"><i class="bi bi-translate"></i><span>English</span></a>
+        <a href="#"><i class="bi bi-box-seam"></i><span>About Us</span></a>
+        <a href="#" class="d-sm-none"><i class="bi bi-search"></i><span>Search</span></a>
+        <a href="#" class="d-sm-none"><i class="bi bi-person"></i><span>Account</span></a>
+      </div>
+    </div>
+  </div>
 
+  <!-- hero banner -->
+  <section class="hero-booking-section py-5">
+    <div class="container-fluid px-0">
+      <div class="row g-0x align-items-centerx hero-booking-row">
+        <div class="col-lg-4">
+          <div class="hero-copy">
+            <h1 class="hero-title mb-0">
+              Post, Parcel &amp;<br>
+              Logistics Technology<br>
+              from the Experts
+            </h1>
+          </div>
+        </div>
 
-                      <div class="form-floating col-sm-5">
-                        <input type="text" class="form-control" id="to-postcode" value="" placeholder="To Postcode">
-                        <label for="to-postcode">To Postcode</label>
-                      </div>
-                    </div>
-
-                    <div class="hint mt-3">
-                      <i class="bi bi-info-circle mt-1"></i>
-                      <div>Your postal code helps us confirm pricing and match you
-                        with the best available services.</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- International -->
-              <div class="panel international">
-                <div class="panel-head">
-                  <span class="bar"></span>
-                  <span>Sending From &amp; To</span>
-                </div>
-
-                <div class="row align-items-center">
-                  <div class="col-lg-4">
-                    <!-- Replace with your illustration asset -->
-                    <img class="illus" src="images/quote-international.png" alt="Illustration (placeholder)">
-                  </div>
-
-                  <div class="col-lg-8">
-                    <!-- FROM -->
-                    <div class="mb-3">
-                      <div class="fw-bold small mb-2">From</div>
-                      <div class="d-flex int-from">
-                        <div class="form-floating col-md-6">
-                          <select class="form-select field_req" id="from_country_id" name="from_country_id">
-                            <option value="">Select</option>
-                            <option value="76">Indonesia</option>
-                            <option value="218">Malaysia</option>
-                            <option value="133" selected="selected">Singapore</option>
-                          </select>
-                          <label for="from_country_id">Country</label>
-                        </div>
-                        <div class="form-floating col-sm-6">
-                          <input type="text" class="form-control" id="int-from-postcode" value=""
-                            placeholder="Postcode">
-                          <label for="int-from-postcode">Postcode</label>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- swap / down indicator -->
-                    <div class="d-flex justify-content-center my-1">
-                      <div class="swap-arrow" aria-hidden="true">
-                        <i class="bi bi-arrow-down"></i>
-                      </div>
-                    </div>
-
-                    <!-- TO -->
-                    <div class="mt-3">
-                      <div class="fw-bold small mb-2">To</div>
-                      <div class="d-flex int-to">
-                        <div class="form-floating col-md-6">
-                          <select class="form-select field_req" id="to_country_id" name="to_country_id">
-                            <option value="">Select</option>
-                            <option value="76">Indonesia</option>
-                            <option value="218" selected="selected">Malaysia</option>
-                            <option value="133">Singapore</option>
-                          </select>
-                          <label for="to_country_id">Country</label>
-                        </div>
-
-                        <div class="form-floating col-sm-6">
-                          <input type="text" class="form-control" id="int-to-postcode" value="" placeholder="Postcode">
-                          <label for="int-to-postcode">Postcode</label>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="hint mt-3">
-                      <i class="bi bi-info-circle mt-1"></i>
-                      <div>Postal codes is use for accurate pricing and filters
-                        available logistics services for your route.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Continue -->
-              <div class="btn-container">
-                <button class="btn btn-primary float-end" onclick="location.href='parcel-type.html'">
-                  Continue <i class="bi bi-chevron-right ms-1"></i>
+        <!-- tabs -->
+        <div class="col-lg-8">
+          <div class="hero-booking-panel">
+            <ul class="nav booking-tabs" id="bookingTab" role="tablist">
+              <li class="nav-item flex-fill" role="presentation">
+                <button class="nav-link active w-100" id="send-tab" data-bs-toggle="tab" data-bs-target="#send-pane"
+                  type="button" role="tab" aria-controls="send-pane" aria-selected="true">
+                  Send
                 </button>
-              </div>
-            </div>
+              </li>
+              <li class="nav-item flex-fill" role="presentation">
+                <button class="nav-link w-100" id="track-tab" data-bs-toggle="tab" data-bs-target="#track-pane"
+                  type="button" role="tab" aria-controls="track-pane" aria-selected="false">
+                  Track
+                </button>
+              </li>
+            </ul>
 
-            <div
-              class="tab-pane fade"
-              id="track-pane"
-              role="tabpanel"
-              aria-labelledby="track-tab"
-              tabindex="0">
+            <!-- send location content -->
+            <div class="tab-content booking-tab-content" id="bookingTabContent">
+              <div class="tab-pane fade show active" id="send-pane" role="tabpanel" aria-labelledby="send-tab"
+                tabindex="0">
 
-              <div class="track-pane-wrap">
-                <h3 class="track-title">Track Your Parcel</h3>
-                <p class="track-desc">Enter your tracking number to check the latest delivery status.</p>
-
-                <div class="row g-3">
-                  <div class="col-md-8">
-                    <input type="text" class="form-control tracking-input" placeholder="Enter tracking number">
+                <!-- Route cards -->
+                <div class="row g-3 mb-3">
+                  <div class="col-md-6">
+                    <div class="radio-card disable-selection">
+                      <input type="radio" name="routeType" id="routeDomestic" checked>
+                      <label class="w-100" for="routeDomestic">
+                        <div class="radio-card-container d-flex gap-3 align-items-center">
+                          <div class="ring" aria-hidden="true"></div>
+                          <div class="icon-tile">
+                            <span class="material-symbols-outlined">local_shipping</span>
+                          </div>
+                          <div>
+                            <p class="radio-card-name">Domestic</p>
+                            <p class="radio-card-desc">Within Singapore</p>
+                          </div>
+                        </div>
+                      </label>
+                    </div>
                   </div>
-                  <div class="col-md-4">
-                    <button class="btn track-btn w-100">Track Now</button>
+
+                  <div class="col-md-6">
+                    <div class="radio-card disable-selection">
+                      <input type="radio" name="routeType" id="routeInternational">
+                      <label class="w-100" for="routeInternational">
+                        <div class="radio-card-container d-flex gap-3 align-items-center">
+                          <div class="ring" aria-hidden="true"></div>
+                          <div class="icon-tile">
+                            <span class="material-symbols-outlined">public</span>
+                          </div>
+                          <div>
+                            <p class="radio-card-name">International</p>
+                            <p class="radio-card-desc">Deliver to another country</p>
+                          </div>
+                        </div>
+                      </label>
+                    </div>
                   </div>
                 </div>
+
+                <!-- Domestic -->
+                <div class="panel domestic">
+                  <div class="panel-head">
+                    <span class="bar"></span>
+                    <span>Postcode Details</span>
+                  </div>
+
+                  <div class="row align-items-center">
+                    <div class="col-lg-4 d-none d-lg-block">
+                      <!-- Replace with your illustration asset -->
+                      <img class="illus" src="images/quote-domestic.png" alt="Illustration (placeholder)">
+                    </div>
+                    <div class="col-lg-8">
+                      <div class="d-lg-flex d-block">
+                        <div class="form-floating col-sm-12 col-lg-5">
+                          <input type="text" class="form-control" id="from-postcode" value=""
+                            placeholder="From Postcode">
+                          <label for="from-postcode">From Postcode</label>
+                        </div>
+
+                        <div class="col-sm-12 col-lg-2 d-flex justify-content-center align-items-center">
+                          <div class="text-muted fs-4" style="line-height:1;">
+                            <i class="bi bi-arrow-right"></i>
+                          </div>
+                        </div>
+
+
+                        <div class="form-floating col-sm-12 col-lg-5">
+                          <input type="text" class="form-control" id="to-postcode" value="" placeholder="To Postcode">
+                          <label for="to-postcode">To Postcode</label>
+                        </div>
+                      </div>
+
+                      <div class="hint mt-3">
+                        <i class="bi bi-info-circle mt-1"></i>
+                        <div>Your postal code helps us confirm pricing and match you
+                          with the best available services.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- International -->
+                <div class="panel international">
+                  <div class="panel-head">
+                    <span class="bar"></span>
+                    <span>Sending From &amp; To</span>
+                  </div>
+
+                  <div class="row align-items-center">
+                    <div class="col-lg-4 d-none d-lg-block">
+                      <!-- Replace with your illustration asset -->
+                      <img class="illus" src="images/quote-international.png" alt="Illustration (placeholder)">
+                    </div>
+
+                    <div class="col-lg-8">
+                      <!-- FROM -->
+                      <div class="mb-3">
+                        <div class="fw-bold small mb-2">From</div>
+                        <div class="int-from d-lg-flex d-block row g-2">
+                          <div class="form-floating col-md-12 col-lg-6">
+                            <select class="form-select field_req" id="from_country_id" name="from_country_id">
+                              <option value="">Select</option>
+                              <option value="76">Indonesia</option>
+                              <option value="218">Malaysia</option>
+                              <option value="133" selected="selected">Singapore</option>
+                            </select>
+                            <label for="from_country_id">Country</label>
+                          </div>
+                          <div class="form-floating col-md-12 col-lg-6">
+                            <input type="text" class="form-control" id="int-from-postcode" value=""
+                              placeholder="Postcode">
+                            <label for="int-from-postcode">Postcode</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- swap / down indicator -->
+                      <div class="d-flex justify-content-center my-1">
+                        <div class="swap-arrow" aria-hidden="true">
+                          <i class="bi bi-arrow-down"></i>
+                        </div>
+                      </div>
+
+                      <!-- TO -->
+                      <div class="mt-3 ">
+                        <div class="fw-bold small mb-2">To</div>
+                        <div class="int-to d-lg-flex d-block row g-2">
+                          <div class="form-floating col-md-12 col-lg-6">
+                            <select class="form-select field_req" id="to_country_id" name="to_country_id">
+                              <option value="">Select</option>
+                              <option value="76">Indonesia</option>
+                              <option value="218" selected="selected">Malaysia</option>
+                              <option value="133">Singapore</option>
+                            </select>
+                            <label for="to_country_id">Country</label>
+                          </div>
+
+                          <div class="form-floating col-md-12 col-lg-6">
+                            <input type="text" class="form-control" id="int-to-postcode" value=""
+                              placeholder="Postcode">
+                            <label for="int-to-postcode">Postcode</label>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="hint mt-3">
+                        <i class="bi bi-info-circle mt-1"></i>
+                        <div>Postal codes is use for accurate pricing and filters
+                          available logistics services for your route.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Continue -->
+                <div class="btn-container">
+                  <button class="btn btn-primary float-end" onclick="location.href='parcel-type.html'">
+                    Continue <i class="bi bi-chevron-right ms-1"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- tracking tab content -->
+              <div class="tab-pane fade" id="track-pane" role="tabpanel" aria-labelledby="track-tab" tabindex="0">
+                <div class="panel track-pane-wrapx">
+                  <div class="panel-head">
+                    <span class="bar"></span>
+                    <span>Track Your Parcel</span>
+                  </div>
+                  <div class="form-floating col-12">
+                    <input type="text" class="form-control" id="tracking-input" value=""
+                      placeholder="Enter tracking number">
+                    <label for="tracking-input">Enter tracking number</label>
+                  </div>
+                  <div class="hint mt-3">
+                    <i class="bi bi-info-circle mt-1"></i>
+                    <div>You can enter multiple tracking numbers, separated by commas (e.g., TRAC00001, TRAC00002).
+                    </div>
+                  </div>
+                </div>
+                <!-- track -->
+                <div class="btn-container">
+                  <button class="btn btn-primary float-end" onclick="location.href='parcel-type.html'">
+                    Track <i class="bi bi-chevron-right ms-1"></i>
+                  </button>
+                </div>
+
               </div>
             </div>
           </div>
-        </div>
-      </div><!-- col -->
+        </div><!-- col -->
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- helpful guides -->
   <section class="helpful-guides-section">
@@ -830,64 +874,9 @@
     </div>
   </footer>
 
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="js/toggle-domestic-international.js"></script>
-
-  <script>
-    // const megaItem = document.getElementById("moreMega");
-
-    // let closeTimer;
-
-    // megaItem.addEventListener("mouseenter", function () {
-    //   clearTimeout(closeTimer);
-    //   megaItem.classList.add("is-open");
-    // });
-
-    // megaItem.addEventListener("mouseleave", function () {
-    //   closeTimer = setTimeout(function () {
-    //     megaItem.classList.remove("is-open");
-    //   }, 220);
-    // });
-
-    // const $megaItem = $("#sendingMega, #receivingMega, #moreMega");
-    // let closeTimer;
-
-    // $megaItem.on("mouseenter", function () {
-    //   clearTimeout(closeTimer);
-    //   $megaItem.addClass("is-open");
-    // });
-
-    // $megaItem.on("mouseleave", function () {
-    //   closeTimer = setTimeout(function () {
-    //     $megaItem.removeClass("is-open");
-    //   }, 320);
-    // });
-
-    let closeTimer;
-
-    $(".nav-item-wrap").on("mouseenter", function () {
-      clearTimeout(closeTimer);
-
-      const hoveredId = this.id;
-      console.log("hover in:", hoveredId);
-
-      $(this).addClass("is-open");
-    });
-
-    $(".nav-item-wrap").on("mouseleave", function () {
-      const $this = $(this);
-      const hoveredId = this.id;
-      console.log("hover out:", hoveredId);
-
-      closeTimer = setTimeout(function () {
-        $this.removeClass("is-open");
-      }, 320);
-    });
-
-  </script>
-
 </body>
 
 </html>
