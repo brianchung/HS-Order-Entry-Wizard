@@ -281,7 +281,7 @@
     border: 0;
     padding: 0;
     text-align: left;
-    color: #222;
+    color: var(--brand);
     font-size: 17px;
     font-weight: 700;
 }
@@ -407,7 +407,6 @@
 }
 
 .mega-col-title {
-    /* margin: 12px 0 14px; */
     font-size: 16px;
     font-weight: 700;
     line-height: 1.2;

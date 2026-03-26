@@ -28,7 +28,7 @@
 
 .hero-booking-row {
     min-height: 720px;
-    padding: 0 32px;
+    padding: 32px;
 }
 
 .hero-copy {
@@ -89,7 +89,7 @@
 /* helpful guides */
 .helpful-guides-section {
     background: var(--white);
-    padding: 32px 32px 32px;
+    padding: 32px;
 }
 
 .guides-header {
@@ -104,23 +104,6 @@
     align-items: center;
     gap: 10px;
 }
-
-/* .guides-title-bar {
-    width: 4px;
-    height: 24px;
-    background: #25aef0;
-    border-radius: 999px;
-    flex: 0 0 4px;
-}
-
-.guides-title {
-    margin: 0;
-    font-size: 24px;
-    line-height: 1.1;
-    font-weight: 800;
-    color: #222222;
-    letter-spacing: -0.2px;
-} */
 
 .guides-link {
     display: inline-flex;
@@ -202,7 +185,7 @@
 
 /* services */
 .services-section {
-    padding: 28px 32px 40px;
+    padding: 32px;
     background: var(--white);
 }
 
@@ -280,7 +263,7 @@
 
 .why-choose-section {
     background: var(--light-blue);
-    padding: 32px 32px 30px;
+    padding: 32px;
 }
 
 .why-grid {
@@ -326,4 +309,13 @@
     margin: 0;
     font-size: 16px;
     color: var(--text);
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-booking-row,
+    .helpful-guides-section,
+    .services-section,
+    .why-choose-section {
+        padding: 32px 16px;
+    }
 }
