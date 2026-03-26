@@ -120,7 +120,7 @@ main nav header .header-main {
 }
 
 .header-main-inner {
-    height: 100%;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
