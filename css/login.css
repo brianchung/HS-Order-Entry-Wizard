@@ -7,9 +7,9 @@
 }
 
 .frame{
-  width: 100%; /*min(1180px, 100%);*/
-  border-radius: var(--radius-16);
-  background:#fff;
+  width: 100%;
+  border-radius: var(--s-16);
+  background:var(--white);
   overflow:hidden;
   box-shadow: 0 18px 50px rgba(16,24,40,.12);
   border: 1px solid rgba(15,23,42,.06);
@@ -40,7 +40,9 @@
 
 .brandbar{
   position:absolute;
-  top:24px; left:26px; right:26px;
+  top:24px; 
+  left:26px; 
+  right:26px;
   display:flex;
   align-items:center;
   gap:14px;
@@ -53,8 +55,8 @@
   top:120px;
   width: min(520px, calc(100% - 52px));
   z-index:2;
-  color:#fff;
-  text-shadow: 0 2px 24px rgba(0,0,0,.25);
+  color:var(--white);
+  text-shadow: 0 2px 24px var(--grey-line);
 }
 
 .headline h2{
@@ -74,7 +76,7 @@
 .login-right-panel{
   min-height: 560px;
   padding: 48px 58px;
-  background:#fff;
+  background:var(--white);
 	height: stretch;
 }
 
@@ -87,7 +89,7 @@
 
 .login-sub{
   text-align:center;
-  color: var(--muted);
+  color: var(--grey-dark);
   margin-bottom: 26px;
 }
 

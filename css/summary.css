@@ -5,14 +5,14 @@
     justify-content: space-between;
     font-weight: 800;
     margin-bottom: 10px;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .accordion {
-    border: 1px solid #e5e7eb;
+    border: 1px solid var(--grey-line);
     border-radius: 14px;
     overflow: hidden;
-    background: #fff;
+    background: var(--white);
     margin-bottom: 8px;
 }
 
@@ -21,7 +21,7 @@
     font-weight: 800;
     font-size: 14px;
     box-shadow: none !important;
-    background: #fff;
+    background: var(--white);
 }
 
 .summary-acc .accordion .accordion-button::after {
@@ -31,7 +31,7 @@
 .summary-acc .accordion .chev {
     margin-left: auto;
     font-size: 16px;
-    color: #111827;
+    color: var(--black);
     transition: transform .2s ease;
 }
 
@@ -41,7 +41,7 @@
 
 .summary-acc .accordion .accordion-body {
     padding: 12px;
-    border-top: 1px solid #e5e7eb;
+    border-top: 1px solid var(--grey-line);
     font-size: 14px;
 }
 

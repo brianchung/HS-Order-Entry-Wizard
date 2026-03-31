@@ -51,7 +51,7 @@ a:hover {
     font-weight: 800;
     border: 1px solid rgba(0, 166, 230, .75);
     color: rgba(15, 23, 42, .86);
-    background: #fff;
+    background: var(--white);
 }
 
 .btn-outline-brand:hover {
@@ -73,7 +73,7 @@ a:hover {
 .radio-card-container {
     border: 2px solid #d1d5db;
     border-radius: 18px;
-    background: #fff;
+    background: var(--white);
     padding: 14px 14px;
     min-height: 92px;
     cursor: pointer;
@@ -92,8 +92,8 @@ a:hover {
     width: 18px;
     height: 18px;
     border-radius: 999px;
-    border: 2px solid #111827;
-    background: #fff;
+    border: 2px solid var(--black);
+    background: var(--white);
 }
 
 .icon-tile {
@@ -116,7 +116,7 @@ a:hover {
 
 .radio-card-desc {
     margin: 2px 0 0;
-    color: var(--muted);
+    color: var(--grey-dark);
     font-size: 14px;
 }
 
@@ -185,7 +185,7 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
 .svc-card {
     border: 2px solid #d1d5db;
     border-radius: 14px;
-    background: #fff;
+    background: var(--white);
     padding: 12px 12px;
     cursor: pointer;
     transition: .15s ease;
@@ -208,7 +208,7 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
     color: #64748b;
     display: grid;
     place-items: center;
-    background: #fff;
+    background: var(--white);
 }
 
 .svc-name {
@@ -230,7 +230,7 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
     flex-direction: column;
     gap: 6px;
     align-items: center;
-    color: #111827;
+    color: var(--black);
 }
 
 .pill {
@@ -273,9 +273,9 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
 
 /* details card (right of grid) */
 .details-card {
-    border: 1px solid #e5e7eb;
+    border: 1px solid var(--grey-line);
     border-radius: 14px;
-    background: #fff;
+    background: var(--white);
     padding: 14px 14px;
     min-height: 260px;
 }
@@ -294,7 +294,7 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
     padding-top: 16px;
     color: #334155;
     border: 1px 0;
-    border-bottom: 2px solid #e5e7eb;
+    border-bottom: 2px solid var(--grey-line);
 }
 
 .kv {
@@ -315,7 +315,7 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
     align-items: baseline;
     margin-top: 10px;
     padding-top: 10px;
-    border-top: 1px solid #e5e7eb;
+    border-top: 1px solid var(--grey-line);
 }
 
 .total .k {
@@ -338,7 +338,7 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
 
 .search-box {
     flex: 1 1 auto;
-    background: #fff;
+    background: var(--white);
     border: 1px solid #d1d5db;
     border-radius: 16px;
     overflow: hidden;
@@ -349,7 +349,7 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
     align-items: center;
     gap: 8px;
     padding: 10px 10px;
-    border-bottom: 1px solid #e5e7eb;
+    border-bottom: 1px solid var(--grey-line);
 }
 
 .search-box input {
@@ -369,7 +369,7 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
     padding: 7px 10px;
     border-top: 1px solid #f1f5f9;
     color: #334155;
-    background: #fff;
+    background: var(--white);
 }
 
 .suggest li:hover {

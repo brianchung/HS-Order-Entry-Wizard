@@ -12,13 +12,13 @@
     gap: 10px;
     padding: 9px 8px;
     border-radius: 12px;
-    color: var(--muted);
+    color: var(--grey-dark);
     font-weight: 600;
     font-size: 14px;
 }
 
 .step:hover {
-    background: #f8fafc;
+    background: var(--white);
 }
 
 .dotwrap {
@@ -34,7 +34,7 @@
     height: 20px;
     border-radius: 999px;
     border: 2px solid #cbd5e1;
-    background: #fff;
+    background: var(--white);
 }
 
 .vline {
@@ -51,7 +51,7 @@
 }
 
 .step.active {
-    color: var(--text);
+    color: var(--black);
 }
 
 .step.active .dot {
@@ -68,7 +68,7 @@
 }
 
 .step.completed {
-    color: var(--text);
+    color: var(--black);
 }
 
 .step.completed .dot {
@@ -78,7 +78,7 @@
 
 .step.completed .dot i {
     display: block;
-    color: #fff;
+    color: var(--white);
 }
 
 .step.completed .vline {

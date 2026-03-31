@@ -4,7 +4,7 @@
 
 body {
     background: #f3f6fb;
-    color: var(--text);
+    color: var(--black);
     font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
     font-size: 16px;
 }
@@ -15,20 +15,20 @@ body {
 }
 
 .left-rail {
-    background: #fff;
-    border-right: 1px solid var(--line);
+    background: var(--white);
+    border-right: 1px solid var(--grey-line);
     padding: 18px 12px;
 }
 
 .main {
     padding: 22px 22px 96px;
     /* space for floating Continue */
-    background-color: #fff;
+    background-color: var(--white);
 }
 
 .right-rail {
-    background: #fff;
-    border-left: 1px solid var(--line);
+    background: var(--white);
+    border-left: 1px solid var(--grey-line);
     padding: 14px 14px;
 }
 
@@ -60,16 +60,16 @@ body {
 }
 
 .page-sub {
-    color: var(--muted);
+    color: var(--grey-dark);
     margin: 2px 0 14px;
     font-size: 14px;
 }
 
 /* Panel */
 .panel {
-    background: #fff;
-    border: 1px solid #e5e7eb;
-    border-radius: var(--radius-24);
+    background: var(--white);
+    border: 1px solid var(--grey-line);
+    border-radius: var(--s-24);
     padding: 16px 16px;
 }
 
@@ -91,7 +91,7 @@ body {
 }
 
 .panel-meta {
-    color: #111827;
+    color: var(--black);
     font-size: 12px;
     margin: 0 0 10px;
 }
@@ -132,9 +132,9 @@ body {
 
 /* Duty item block */
 .duty-wrap {
-    border: 1px solid #e5e7eb;
+    border: 1px solid var(--grey-line);
     border-radius: 12px;
-    background: #f8fafc;
+    background: var(--white);
     padding: 10px;
 }
 
