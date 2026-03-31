@@ -65,7 +65,7 @@
 }
 
 .arrow {
-    color: #9ca3af;
+    color: var(--grey);
     font-size: 18px;
 }
 

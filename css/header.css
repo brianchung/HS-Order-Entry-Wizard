@@ -58,7 +58,7 @@
 /* header top */
 .header-top {
     height: 40px;
-    background: var(--grey-line);
+    background: var(--grey-light);
 }
 
 .header-top-inner {
@@ -291,7 +291,7 @@ main nav header .header-main {
 }
 
 .mega-guides {
-    background: var(--grey-line);
+    background: var(--grey-light);
     border-radius: 16px;
     padding: 16px 18px 14px;
     min-height: 200px;

@@ -4,20 +4,20 @@
   --brand-dark-1: #0074A6;
   --brand-dark-2: #0094D4;
   --brand-light: #E9F7FF;
-  
+
 
   --black: #1f2937;
   --grey-dark: #5B5B5B;
   --grey: #ABABAB;
   --grey-line: #D3D3D3;
   --grey-light: #e5e7eb;
- --grey-light-2: #FAFAFA;
-    
+  --grey-light-2: #FAFAFA;
+
   --error: #EE0000;
   --warning: #EE8A00;
   --success: #00B000;
   --white: #FCFCFC;
-  
+
   --s-16: 16px;
   --s-24: 24px;
 }

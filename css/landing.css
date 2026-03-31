@@ -46,7 +46,6 @@
 }
 
 .hero-booking-panel {
-    /* max-width: 700px; */
     margin-left: auto;
 }
 
@@ -59,8 +58,8 @@
 .booking-tabs .nav-link {
     height: 50px;
     border: 0;
-    border-radius: 18px 18px 0 0;
-    background: var(--grey-line);
+    border-radius: 16px 16px 0 0;
+    background: var(--grey-light);
     color: var(--black);
     font-size: 16px;
     font-weight: 700;
@@ -69,12 +68,12 @@
 
 .booking-tabs .nav-link.active {
     background: var(--white);
-    color: #0a98dc;
+    color: var(--brand);
 }
 
 .booking-tab-content {
     background: var(--white);
-    border-radius: 0 0 18px 18px;
+    border-radius: 0 0 16px 16px;
     padding: 32px 24px;
 }
 
@@ -137,7 +136,7 @@
     display: block;
     min-height: 74px;
     padding: 14px 52px 14px 16px;
-    border: 1px solid #d2d2d2;
+    border: 1px solid var(--grey-line);
     border-radius: 10px;
     background: var(--white);
     text-decoration: none;
@@ -177,7 +176,7 @@
     top: 50%;
     right: 18px;
     transform: translateY(-50%);
-    color: #00a6ef;
+    color: var(--brand);
     font-size: 22px;
     line-height: 1;
     font-weight: 500;
