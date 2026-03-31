@@ -539,7 +539,7 @@ main nav header .header-main {
     font-size: 14px;
     line-height: 1.2;
     font-weight: 400;
-    color:  var(--black);
+    color: var(--black);
     text-decoration: none;
     border-bottom: 2px solid var(--grey-line);
     margin: 0;
@@ -556,9 +556,53 @@ main nav header .header-main {
 }
 
 .language-item:hover {
-    background: var( --grey-line);
+    background: var(--grey-line);
     color: var(--black);
     text-decoration: none;
+}
+
+/* header search */
+.header-search {
+    display: none;
+}
+
+.header-search.active {
+    display: flex;
+}
+
+.header-search-box {
+    display: flex;
+    gap: 8px;
+}
+
+.header-search-submit {
+    width: 48px;
+    height: 48px;
+    border: 0;
+    border-radius: 16px;
+    background: var(--brand);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.header-search-submit:hover {
+    background: var(--brand-dark-2);
+    color: var(--white);
+}
+
+.header-search-close {
+    width: 48px;
+    height: 48px;
+    border: 0;
+    background: transparent;
+    color: var(--black);
+    font-size: 28px;
+    line-height: 1;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media only screen and (max-width: 768px) {
