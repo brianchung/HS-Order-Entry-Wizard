@@ -146,7 +146,7 @@
           </div>
         </div>
 
-<!-- Courier Pickup Date & Time -->
+        <!-- Courier Pickup Date & Time -->
         <div class="panel mt-3">
           <div class="panel-head">
             <span class="bar"></span>
@@ -157,29 +157,142 @@
 
           <div class="row g-3">
             <div class="col-md-6">
-              <div class="field">
-                <div class="mini-label">Collection Date</div>
-                <input class="form-control" value="26/02/2026">
-                <i class="bi bi-calendar3 date-icon"></i>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="collection-date" placeholder="Collection Date" value="">
+                <label for="collection-date">Collection Date</label>
               </div>
             </div>
 
             <div class="col-md-6">
-              <div class="field">
-                <div class="mini-label">Available Hour</div>
-                <select class="form-select">
-                  <option selected>9:00am - 10:00am</option>
-                  <option>10:00am - 11:00am</option>
-                  <option>11:00am - 12:00pm</option>
-                  <option>1:00pm - 2:00pm</option>
+              <div class="form-floating">
+                <select class="form-select field_req" id="available-hour" name="available-hour">
+                  <option value="">Select</option>
+                  <option value="1">9:00am - 10:00am</option>
+                  <option value="2">10:00am - 11:00am</option>
+                  <option value="3" selected="selected">11:00am - 12:00pm</option>
                 </select>
+                <label for="available-hour">Available Hour</label>
               </div>
             </div>
           </div>
-
+          <br>
           <div class="hint">
             <i class="bi bi-info-circle mt-1"></i>
             <div>We'll give you a call before we come for collection.</div>
+          </div>
+        </div>
+
+
+        <!-- Search and select closest location -->
+        <div class="panel mt-3">
+          <div class="panel-head">
+            <span class="bar"></span>
+            <div>Search &amp; select one closest location to you</div>
+          </div>
+
+          <div class="row g-3 align-items-end">
+            <div class="col-lg-3">
+              <div class="form-floating">
+                <select class="form-select field_req" id="dropoff-type" name="dropoff-type">
+                  <option value="">Select</option>
+                  <option value="1">Locker</option>
+                  <option value="2">Post Office</option>
+                  <option value="3" selected="selected">POPStation</option>
+                </select>
+                <label for="dropoff-type">Dropoff Type</label>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="form-floating">
+                <input type="text" class="form-control" id="area-street" placeholder="Area/ Street" value="">
+                <label for="area-street">Area/ Street</label>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="form-floating">
+                <select class="form-select field_req" id="dropoff-date" name="dropoff-date">
+                  <option value="">Select</option>
+                  <option value="1">Tomorrow</option>
+                  <option value="2">Today</option>
+                  <option value="3" selected="selected">Next 3 days</option>
+                </select>
+                <label for="dropoff-date">Dropoff Date</label>
+              </div>
+            </div>
+
+            <div class="col-lg-3 d-grid">
+              <button class="btn btn-square">Search</button>
+            </div>
+          </div>
+
+          <div class="d-flex flex-column gap-3 mt-3">
+            <!-- Location 1 (selected) -->
+            <div class="loc-radio">
+              <input type="radio" name="dropLoc" id="loc1" checked>
+              <label class="w-100" for="loc1">
+                <div class="loc-card">
+                  <div class="loc-ring" aria-hidden="true"></div>
+                  <div>
+                    <p class="loc-title mb-0">POPStation@Geylang PO</p>
+                    <div class="log-info-container">
+                      <div class="loc-info">
+                        <i class="bi bi-geo-alt"></i>
+                        <span>447 Geylang Road, Level 1 Geylang Post Office, Singapore 389...</span>
+                      </div>
+                      <div class="loc-info"><i class="bi bi-clock"></i> Open 24 Hours</div>
+                      <div class="loc-info"><i class="bi bi-bullseye"></i> 1.55km</div>
+                    </div>
+                  </div>
+                  <a href="#" class="view-map">View Map</a>
+                </div>
+              </label>
+            </div>
+
+            <!-- Location 2 -->
+            <div class="loc-radio">
+              <input type="radio" name="dropLoc" id="loc2">
+              <label class="w-100" for="loc2">
+                <div class="loc-card">
+                  <div class="loc-ring" aria-hidden="true"></div>
+                  <div>
+                    <p class="loc-title mb-0">POPStation@Geylang PO</p>
+                    <div class="log-info-container">
+                      <div class="loc-info">
+                        <i class="bi bi-geo-alt"></i>
+                        <span>447 Geylang Road, Level 1 Geylang Post Office, Singapore 389...</span>
+                      </div>
+                      <div class="loc-info"><i class="bi bi-clock"></i> Open 24 Hours</div>
+                      <div class="loc-info"><i class="bi bi-bullseye"></i> 1.55km</div>
+                    </div>
+                  </div>
+                  <a href="#" class="view-map">View Map</a>
+                </div>
+              </label>
+            </div>
+
+            <!-- Location 3 -->
+            <div class="loc-radio">
+              <input type="radio" name="dropLoc" id="loc3">
+              <label class="w-100" for="loc3">
+                <div class="loc-card">
+                  <div class="loc-ring" aria-hidden="true"></div>
+                  <div>
+                    <p class="loc-title mb-0">POPStation@Geylang PO</p>
+                    <div class="log-info-container">
+                      <div class="loc-info">
+                        <i class="bi bi-geo-alt"></i>
+                        <span>447 Geylang Road, Level 1 Geylang Post Office, Singapore 389...</span>
+                      </div>
+                      <div class="loc-info"><i class="bi bi-clock"></i> Open 24 Hours</div>
+                      <div class="loc-info"><i class="bi bi-bullseye"></i> 1.55km</div>
+                    </div>
+                  </div>
+                  <a href="#" class="view-map">View Map</a>
+                </div>
+              </label>
+            </div>
           </div>
         </div>
 

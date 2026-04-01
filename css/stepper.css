@@ -10,7 +10,7 @@
     display: flex;
     align-items: flex-start;
     gap: 10px;
-    padding: 9px 8px;
+    padding: 8% 8px;
     border-radius: 12px;
     color: var(--grey-dark);
     font-weight: 600;
@@ -39,7 +39,7 @@
 
 .vline {
     position: absolute;
-    top: 22px;
+    top: 26px;
     width: 2px;
     height: 26px;
     background: var(--grey-line);
@@ -57,6 +57,7 @@
 .step.active .dot {
     border-color: var(--brand);
     box-shadow: 0 0 0 4px var(--brand);
+    border-width: 1px;
 }
 
 .step.active .dot::after {

@@ -50,13 +50,28 @@ a:hover {
     padding: 12px 16px;
     font-weight: 800;
     border: 1px solid var(--brand);
-    color: rgba(15, 23, 42, .86);
+    color: var(--black);
     background: var(--white);
 }
 
 .btn-outline-brand:hover {
     background: rgba(0, 166, 230, .08);
     border-color: var(--brand-dark-2);
+}
+
+.btn-square {
+    border-radius: 16px;
+    font-weight: 800;
+    padding: 16px 16px;
+    background: var(--brand);
+    border-color: var(--brand);
+    color: var(--white);
+}
+
+.btn-square:hover {
+    background: var(--brand-2);
+    border-color: var(--brand-2);
+    color: var(--white);
 }
 
 /* custom radio card*/
@@ -127,7 +142,7 @@ a:hover {
 
 .radio-card input:checked+label .radio-card-container .ring {
     border-color: var(--brand);
-    box-shadow: 0 0 0 4px var(--brand-weak);
+    box-shadow: 0 0 0 4px var(--brand-2);
 }
 
 .radio-card input:checked+label .radio-card-container .ring::after {
@@ -375,4 +390,97 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
 .suggest li:hover {
     background: #f3f4f6;
     cursor: pointer;
+}
+
+/* Location list radio cards */
+.loc-radio {
+    position: relative;
+}
+
+.loc-radio input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.loc-card {
+    border: 2px solid var(--grey-line);
+    border-radius: 16px;
+    padding: 14px 14px;
+    cursor: pointer;
+    transition: .15s ease;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.loc-card:hover {
+    border-color: var(--brand);
+}
+
+.loc-ring {
+    width: 20px;
+    height: 20px;
+    border-radius: 999px;
+    border: 2px solid var(--black);
+    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+}
+
+.loc-ring::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background: transparent;
+}
+
+.loc-title {
+    font-weight: 800;
+    margin: 0;
+    font-size: 14px;
+}
+
+.loc-info-container {
+    gap: 8px;
+    display: flex;
+}
+
+.loc-info {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--black);
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.loc-info i {
+    color: var(--grey-dark);
+}
+
+.view-map {
+    color: var(--brand);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.view-map:hover {
+    text-decoration: underline;
+}
+
+.loc-radio input:checked+label .loc-card {
+    border-color: var(--brand);
+    box-shadow: var(--shadow);
+    background: var(--brand-light);
+}
+
+.loc-radio input:checked+label .loc-card .loc-ring {
+    border-color: var(--brand);
+}
+
+.loc-radio input:checked+label .loc-card .loc-ring::after {
+    background: var(--brand);
 }
