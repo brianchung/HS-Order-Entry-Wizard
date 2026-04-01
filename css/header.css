@@ -19,8 +19,8 @@
 }
 
 .btn-icon:hover {
-    background: var(--light-grey);
-    border-color: var(--light-grey);
+    background: var(--grey-light);
+    border-color: var(--grey-line);
 }
 
 .badge-float {
@@ -40,8 +40,8 @@
 }
 
 .user-btn:hover {
-    background: var(--light-grey);
-    border-color: var(--light-grey);
+    background: var(--grey-light);
+    border-color: var(--grey-line);
 }
 
 

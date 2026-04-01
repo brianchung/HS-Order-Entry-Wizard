@@ -484,3 +484,12 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
 .loc-radio input:checked+label .loc-card .loc-ring::after {
     background: var(--brand);
 }
+
+.btn-continue,
+.btn-next,
+.handover-courier, 
+.handover-dropoff,
+.addr-search,
+.addr-manual {
+    display: none;
+}

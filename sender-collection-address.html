@@ -130,7 +130,7 @@
 
           <div class="col-md-6">
             <div class="radio-card">
-              <input type="radio" name="addrMode" id="modeManual" checked>
+              <input type="radio" name="addrMode" id="modeManual">
               <label class="w-100" for="modeManual">
                 <div class="radio-card-container d-flex gap-3 align-items-center">
                   <div class="ring" aria-hidden="true"></div>
@@ -146,7 +146,7 @@
         </div>
 
         <!-- search address -->
-        <div class="panel mt-3">
+        <div class="panel mt-3 addr-search">
           <div class="panel-head">
             <span class="bar"></span>
             <div>Search Address</div>
@@ -188,7 +188,7 @@
         </div>
 
         <!-- enter manually -->
-        <div class="panel mt-3">
+        <div class="panel mt-3 addr-manual">
           <div class="panel-head">
             <span class="bar"></span>
             <div>Enter Address</div>
@@ -238,7 +238,7 @@
         <div class="btn-container">
           <a class="backlink" href="sender-handover-method.html">Back</a>
 
-          <button class="btn btn-primary float-end" onclick="location.href='#'">
+          <button class="btn btn-primary float-end" onclick="location.href='#'" disabled>
             Next - Recepient <i class="bi bi-chevron-right ms-1"></i>
           </button>
         </div>
@@ -354,7 +354,8 @@
                 <div class="accordion-body">
                   <div class="sum-item"><i class="bi bi-person"></i> Brian Chung</div>
                   <div class="sum-item"><i class="bi bi-telephone"></i> +65 4809800</div>
-                  <div class="sum-item"><i class="bi bi-geo"></i> Drop-off</div>
+                  <div class="sum-item"><i class="bi bi-calendar3"></i> Collection 26/02/2026 | 9:00am - 10:00am</div>
+                  <div class="sum-item"><i class="bi bi-geo-alt"></i> 156 TAMPINES STREET 12, 521156 Singapore</div>
                 </div>
               </div>
             </div>
@@ -365,6 +366,7 @@
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
       <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+      <script src="js/address-method.js"></script>
 </body>
 
 </html>
