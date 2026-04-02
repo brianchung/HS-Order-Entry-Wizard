@@ -105,20 +105,21 @@
 
       <!-- Main -->
       <main class="col-xxl-8 col-xl-8 col-lg-8 main">
-        <div class="page-title">Return instruction</div>
-        <div class="page-sub">What happen if we can’t deliver your parcel?</div>
+        <div class="page-title">Insurance</div>
+        <div class="page-sub">Protect your shipment with insurance.</div>
+
 
         <div class="row g-3">
           <div class="col-md-6">
             <div class="radio-card">
-              <input type="radio" name="returnMode" id="retOrigin">
-              <label class="w-100" for="retOrigin">
+              <input type="radio" name="insurance" id="insNo">
+              <label class="w-100" for="insNo">
                 <div class="radio-card-container d-flex gap-3 align-items-center">
                   <div class="ring" aria-hidden="true"></div>
-                  <div class="icon-tile"><i class="bi bi-reply fs-4"></i></div>
+                  <div class="icon-tile"><i class="bi bi-shield fs-3"></i></div>
                   <div>
-                    <p class="radio-card-name">Return to Origin</p>
-                    <p class="radio-card-desc">At Sender’s Expense</p>
+                    <p class="radio-card-name">No Insurance</p>
+                    <p class="radio-card-desc">I don't need an insurance for parcel.</p>
                   </div>
                 </div>
               </label>
@@ -127,103 +128,35 @@
 
           <div class="col-md-6">
             <div class="radio-card">
-              <input type="radio" name="returnMode" id="retAbandon">
-              <label class="w-100" for="retAbandon">
+              <input type="radio" name="insurance" id="insBasic">
+              <label class="w-100" for="insBasic">
                 <div class="radio-card-container d-flex gap-3 align-items-center">
                   <div class="ring" aria-hidden="true"></div>
-                  <div class="icon-tile">
-                    <i class="bi bi-x-square fs-4"></i>
-                  </div>
+                  <div class="icon-tile"><i class="bi bi-shield fs-3"></i></div>
                   <div>
-                    <p class="radio-card-name">Abandon Shipment</p>
-                    <p class="radio-card-desc">We’ll stop processing this shipment.</p>
+                    <p class="radio-card-name">Basic</p>
+                    <p class="radio-card-desc">Basic protection against loss.</p>
                   </div>
                 </div>
               </label>
             </div>
           </div>
         </div>
-
-        <!-- return details -->
-        <div class="panel mt-3 return-origin">
-          <div class="panel-head">
-            <span class="bar"></span>
-            <div>Return Details</div>
+        <br>
+        <div class="hint">
+            <i class="bi bi-info-circle mt-1"></i>
+            <div>You can skip this selection and continue to next step if you do not wish to have any insurance.
+            We recommend our user to have an insurance for their parcel.
+          <div class="mt-1"><a href="#">View Benefits</a></div>
           </div>
-
-          <div class="d-grid gap-3">
-            <div class="form-check mb-0">
-              <input class="form-check-input" type="checkbox" id="sameAsSender" checked>
-              <label class="mb-0" for="sameAsSender">Use the same details as sender address.</label>
-            </div>
-
-            <div class="addr return-addr">
-              <div>156 TAMPINES STREET 12, None</div>
-              <div>521156 Singapore</div>
-            </div>
-
-            <div class="row g-3 return-addr-manual">
-              <div class="col-lg-6">
-                <div class="form-floating">
-                  <input type="text" class="form-control" id="address-1" value="" placeholder="Address Line 1">
-                  <label for="address-1">Address Line 1</label>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="form-floating">
-                  <input type="text" class="form-control" id="address-2" value="" placeholder="Address Line 2">
-                  <label for="address-2">Address Line 2</label>
-                </div>
-              </div>
-
-              <div class="col-lg-4">
-                <div class="form-floating">
-                  <input type="text" class="form-control" id="city" value="" placeholder="City">
-                  <label for="city">City</label>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="form-floating">
-                  <input type="text" class="form-control" id="postcode" value="" placeholder="Postcode">
-                  <label for="postcode">City</label>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="form-floating">
-                  <select class="form-select" id="country" name="country" disabled>
-                    <option value="">Select</option>
-                    <option value="1" selected="selected">Singapore</option>
-                    <option value="2">Malaysia</option>
-                    <option value="3">UK</option>
-                  </select>
-                  <label for="country">Prefix</label>
-                </div>
-              </div>
-            </div>
+            
           </div>
-        </div>
-
-        <!-- abandon shipment -->
-        <div class="panel mt-3 return-abandon">
-          <div class="panel-head">
-            <span class="bar"></span>
-            <div>Abandon Shipment</div>
-          </div>
-
-          <div class="warn">
-            <i class="bi bi-exclamation-triangle-fill"></i>
-            <div>
-              Chooses to give up the parcel and stop the delivery/return process.
-              <strong>Important:</strong> Once you abandon it, it’s often irreversible.
-            </div>
-          </div>
-        </div>
 
         <!-- Continue -->
         <div class="btn-container">
-          <a class="backlink" href="recipient-handover-method.html">Back</a>
+          <a class="backlink" href="extra-notification.html">Back</a>
 
-          <button class="btn btn-primary float-end" onclick="location.href='extra-notification.html'">
+          <button class="btn btn-primary float-end" onclick="location.href='#'">
             Continue <i class="bi bi-chevron-right ms-1"></i>
           </button>
         </div>
@@ -383,10 +316,15 @@
                 data-bs-parent="#extra-summary">
                 <div class="accordion-body">
                   <div class="sum-item"><i class="bi bi-x-square"></i> Abandon Shipment</div>
+                  <div class="sum-item"><i class="bi bi-chat-square-dots"></i> SMS</div>
                 </div>
               </div>
             </div>
           </div>
+
+
+
+
         </div>
       </aside>
 

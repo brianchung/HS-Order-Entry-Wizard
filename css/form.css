@@ -111,6 +111,19 @@ a:hover {
     background: var(--white);
 }
 
+
+.radio-card-container .check {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 18px;
+    height: 18px;
+    border-radius: 2px;
+    border: 2px solid var(--black);
+    background: var(--white);
+}
+
+
 .icon-tile {
     width: 44px;
     height: 44px;
@@ -142,7 +155,6 @@ a:hover {
 
 .radio-card input:checked+label .radio-card-container .ring {
     border-color: var(--brand);
-    /* box-shadow: 0 0 0 4px var(--brand-2); */
 }
 
 .radio-card input:checked+label .radio-card-container .ring::after {
@@ -151,6 +163,15 @@ a:hover {
     inset: 2px;
     background: var(--brand);
     border-radius: 999px;
+}
+
+.radio-card input:checked+label .radio-card-container .check {
+    border-color: var(--brand);
+}
+
+.radio-card input:checked+label .radio-card-container .check::after {
+    content: "\f633";
+    position: absolute;
 }
 
 .radio-card input:checked+label .radio-card-container .radio-card-name {
@@ -487,7 +508,7 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
 
 .btn-continue,
 .btn-next,
-.handover-courier, 
+.handover-courier,
 .handover-dropoff,
 .addr-search,
 .addr-manual,
@@ -496,4 +517,3 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
 .return-addr-manual {
     display: none;
 }
-
