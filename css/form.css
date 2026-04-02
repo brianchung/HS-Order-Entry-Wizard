@@ -490,6 +490,10 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
 .handover-courier, 
 .handover-dropoff,
 .addr-search,
-.addr-manual {
+.addr-manual,
+.return-origin,
+.return-abandon,
+.return-addr-manual {
     display: none;
 }
+

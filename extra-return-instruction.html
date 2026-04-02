@@ -75,14 +75,14 @@
             </div>
             <div>Sender</div>
           </li>
-          <li class="step active">
+          <li class="step completed">
             <div class="dotwrap">
-              <div class="dot"></div>
+              <div class="dot"><i class="bi bi-check-lg"></i></div>
               <div class="vline"></div>
             </div>
             <div>Recipient</div>
           </li>
-          <li class="step">
+          <li class="step active">
             <div class="dotwrap">
               <div class="dot"></div>
               <div class="vline"></div>
@@ -105,22 +105,20 @@
 
       <!-- Main -->
       <main class="col-xxl-8 col-xl-8 col-lg-8 main">
-        <div class="page-title">Delivery Details</div>
-        <div class="page-sub">How should we deliver the parcel to the recipient?</div>
+        <div class="page-title">Return instruction</div>
+        <div class="page-sub">What happen if we can’t deliver your parcel?</div>
 
         <div class="row g-3">
           <div class="col-md-6">
             <div class="radio-card">
-              <input type="radio" name="senderHandover" id="handoverPickup">
-              <label class="w-100" for="handoverPickup">
+              <input type="radio" name="returnMode" id="retOrigin">
+              <label class="w-100" for="retOrigin">
                 <div class="radio-card-container d-flex gap-3 align-items-center">
                   <div class="ring" aria-hidden="true"></div>
-                  <div class="icon-tile">
-                    <i class="bi bi-truck fs-4"></i>
-                  </div>
+                  <div class="icon-tile"><i class="bi bi-reply fs-4"></i></div>
                   <div>
-                    <p class="radio-card-name">Deliver to Door</p>
-                    <p class="radio-card-desc">We’ll deliver the parcel to the recipient’s address.</p>
+                    <p class="radio-card-name">Return to Origin</p>
+                    <p class="radio-card-desc">At Sender’s Expense</p>
                   </div>
                 </div>
               </label>
@@ -129,16 +127,16 @@
 
           <div class="col-md-6">
             <div class="radio-card">
-              <input type="radio" name="senderHandover" id="handoverDropoff">
-              <label class="w-100" for="handoverDropoff">
+              <input type="radio" name="returnMode" id="retAbandon">
+              <label class="w-100" for="retAbandon">
                 <div class="radio-card-container d-flex gap-3 align-items-center">
                   <div class="ring" aria-hidden="true"></div>
                   <div class="icon-tile">
-                    <i class="bi bi-inbox fs-4"></i>
+                    <i class="bi bi-x-square fs-4"></i>
                   </div>
                   <div>
-                    <p class="radio-card-name">Deliver to Pickup Point</p>
-                    <p class="radio-card-desc">The recipient can collect it from a locker or post office.</p>
+                    <p class="radio-card-name">Abandon Shipment</p>
+                    <p class="radio-card-desc">We’ll stop processing this shipment.</p>
                   </div>
                 </div>
               </label>
@@ -146,131 +144,87 @@
           </div>
         </div>
 
-        <!-- delivery Date & Time -->
-        <div class="panel mt-3 handover-courier">
+        <!-- return details -->
+        <div class="panel mt-3  return-origin">
           <div class="panel-head">
             <span class="bar"></span>
-            <span>Delivery Date</span>
+            <div>Return Details</div>
           </div>
-          <br>
-          <div class="hint">
-            <i class="bi bi-info-circle mt-1"></i>
-            <div>Next-day delivery — Estimated to be delivered to the recipient tomorrow.</div>
+
+          <div class="d-grid gap-3">
+            <div class="form-check mb-0">
+              <input class="form-check-input" type="checkbox" id="sameAsSender" checked>
+              <label class="mb-0" for="sameAsSender">Use the same details as sender address.</label>
+            </div>
+
+            <div class="addr return-addr">
+              <div>156 TAMPINES STREET 12, None</div>
+              <div>521156 Singapore</div>
+            </div>
+
+            <div class="row g-3 return-addr-manual">
+              <div class="col-lg-6">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="address-1" value="" placeholder="Address Line 1">
+                  <label for="address-1">Address Line 1</label>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="address-2" value="" placeholder="Address Line 2">
+                  <label for="address-2">Address Line 2</label>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="city" value="" placeholder="City">
+                  <label for="city">City</label>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="postcode" value="" placeholder="Postcode">
+                  <label for="postcode">City</label>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="form-floating">
+                  <select class="form-select" id="country" name="country" disabled>
+                    <option value="">Select</option>
+                    <option value="1" selected="selected">Singapore</option>
+                    <option value="2">Malaysia</option>
+                    <option value="3">UK</option>
+                  </select>
+                  <label for="country">Prefix</label>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-
-        <!-- Search and select closest location -->
-        <div class="panel mt-3 handover-dropoff">
+        <!-- abandon shipment -->
+        <div class="panel mt-3 return-abandon">
           <div class="panel-head">
             <span class="bar"></span>
-            <div>Search &amp; select one closest location to recipient</div>
+            <div>Abandon Shipment</div>
           </div>
 
-          <div class="row g-3 align-items-end">
-            <div class="col-lg-4">
-              <div class="form-floating">
-                <select class="form-select field_req" id="dropoff-type" name="dropoff-type">
-                  <option value="">Select</option>
-                  <option value="1">Locker</option>
-                  <option value="2">Post Office</option>
-                  <option value="3" selected="selected">POPStation</option>
-                </select>
-                <label for="dropoff-type">Dropoff Type</label>
-              </div>
-            </div>
-
-            <div class="col-lg-4">
-              <div class="form-floating">
-                <input type="text" class="form-control" id="area-street" placeholder="Area/ Street" value="">
-                <label for="area-street">Area/ Street</label>
-              </div>
-            </div>
-
-            <div class="col-lg-3 d-grid">
-              <button class="btn btn-square">Search</button>
-            </div>
-          </div>
-
-          <div class="d-flex flex-column gap-3 mt-3">
-            <!-- Location 1 (selected) -->
-            <div class="loc-radio">
-              <input type="radio" name="dropLoc" id="loc1" checked>
-              <label class="w-100" for="loc1">
-                <div class="loc-card">
-                  <div class="loc-ring" aria-hidden="true"></div>
-                  <div>
-                    <p class="loc-title mb-0">POPStation@Geylang PO</p>
-                    <div class="log-info-container">
-                      <div class="loc-info">
-                        <i class="bi bi-geo-alt"></i>
-                        <span>447 Geylang Road, Level 1 Geylang Post Office, Singapore 389...</span>
-                      </div>
-                      <div class="loc-info"><i class="bi bi-clock"></i> Open 24 Hours</div>
-                      <div class="loc-info"><i class="bi bi-bullseye"></i> 1.55km</div>
-                    </div>
-                  </div>
-                  <a href="#" class="view-map">View Map</a>
-                </div>
-              </label>
-            </div>
-
-            <!-- Location 2 -->
-            <div class="loc-radio">
-              <input type="radio" name="dropLoc" id="loc2">
-              <label class="w-100" for="loc2">
-                <div class="loc-card">
-                  <div class="loc-ring" aria-hidden="true"></div>
-                  <div>
-                    <p class="loc-title mb-0">POPStation@Geylang PO</p>
-                    <div class="log-info-container">
-                      <div class="loc-info">
-                        <i class="bi bi-geo-alt"></i>
-                        <span>447 Geylang Road, Level 1 Geylang Post Office, Singapore 389...</span>
-                      </div>
-                      <div class="loc-info"><i class="bi bi-clock"></i> Open 24 Hours</div>
-                      <div class="loc-info"><i class="bi bi-bullseye"></i> 1.55km</div>
-                    </div>
-                  </div>
-                  <a href="#" class="view-map">View Map</a>
-                </div>
-              </label>
-            </div>
-
-            <!-- Location 3 -->
-            <div class="loc-radio">
-              <input type="radio" name="dropLoc" id="loc3">
-              <label class="w-100" for="loc3">
-                <div class="loc-card">
-                  <div class="loc-ring" aria-hidden="true"></div>
-                  <div>
-                    <p class="loc-title mb-0">POPStation@Geylang PO</p>
-                    <div class="log-info-container">
-                      <div class="loc-info">
-                        <i class="bi bi-geo-alt"></i>
-                        <span>447 Geylang Road, Level 1 Geylang Post Office, Singapore 389...</span>
-                      </div>
-                      <div class="loc-info"><i class="bi bi-clock"></i> Open 24 Hours</div>
-                      <div class="loc-info"><i class="bi bi-bullseye"></i> 1.55km</div>
-                    </div>
-                  </div>
-                  <a href="#" class="view-map">View Map</a>
-                </div>
-              </label>
+          <div class="warn">
+            <i class="bi bi-exclamation-triangle-fill"></i>
+            <div>
+              Chooses to give up the parcel and stop the delivery/return process.
+              <strong>Important:</strong> Once you abandon it, it’s often irreversible.
             </div>
           </div>
         </div>
 
         <!-- Continue -->
         <div class="btn-container">
-          <a class="backlink" href="recipient-contact-details.html">Back</a>
+          <a class="backlink" href="recipient-handover-method.html">Back</a>
 
-          <button class="btn btn-primary float-end btn-continue" onclick="location.href='recipient-collection-address.html'">
+          <button class="btn btn-primary float-end" onclick="location.href='#'" disabled>
             Continue <i class="bi bi-chevron-right ms-1"></i>
-          </button>
-
-          <button class="btn btn-primary float-end btn-next" onclick="location.href='extra-return-instruction.html'">
-            Next - Extra <i class="bi bi-chevron-right ms-1"></i>
           </button>
         </div>
       </main>
@@ -286,7 +240,7 @@
 
         <div class="summary-acc">
           <!-- route summary -->
-          <div class="accordion" id="summaryAcc">
+          <div class="accordion" id="route-summary">
             <div class="accordion-item border-0">
               <h2 class="accordion-header" id="routeHead">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#routeBody"
@@ -298,7 +252,7 @@
               </h2>
 
               <div id="routeBody" class="accordion-collapse collapse show" aria-labelledby="routeHead"
-                data-bs-parent="#summaryAcc">
+                data-bs-parent="#route-summary">
                 <div class="accordion-body">
                   <div class="route-grid">
                     <div>
@@ -319,7 +273,7 @@
             </div>
           </div>
           <!-- parcel summary -->
-          <div class="accordion" id="package">
+          <div class="accordion" id="package-summary">
             <div class="accordion-item border-0">
               <h2 class="accordion-header" id="parcelHead">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#parcelBody"
@@ -330,7 +284,7 @@
                 </button>
               </h2>
               <div id="parcelBody" class="accordion-collapse collapse show" aria-labelledby="parcelHead"
-                data-bs-parent="#summaryAcc">
+                data-bs-parent="#package-summary">
                 <div class="accordion-body">
                   <div class="sum-item"><span class="material-symbols-outlined">box</span> Package - Custom</div>
                   <div class="sum-item"><span class="material-symbols-outlined">box</span> Package - Small</div>
@@ -351,7 +305,7 @@
                 </button>
               </h2>
               <div id="svcBody" class="accordion-collapse collapse show" aria-labelledby="svcHead"
-                data-bs-parent="#summaryAcc">
+                data-bs-parent="#service-summary">
                 <div class="accordion-body">
                   <div class="sum-item">
                     <div class="sum-left"><span class="material-symbols-outlined">local_shipping</span> Next Day
@@ -381,11 +335,12 @@
                 </button>
               </h2>
               <div id="senderBody" class="accordion-collapse collapse show" aria-labelledby="senderHead"
-                data-bs-parent="#summaryAcc">
+                data-bs-parent="#sender-summary">
                 <div class="accordion-body">
                   <div class="sum-item"><i class="bi bi-person"></i> Brian Chung</div>
                   <div class="sum-item"><i class="bi bi-telephone"></i> +65 4809800</div>
-                  <div class="sum-item"><i class="bi bi-geo"></i> Courier Pickup</div>
+                  <div class="sum-item"><i class="bi bi-calendar3"></i> Collection 26/02/2026 | 9:00am - 10:00am</div>
+                  <div class="sum-item"><i class="bi bi-geo-alt"></i> 156 TAMPINES STREET 12, 521156 Singapore</div>
                 </div>
               </div>
             </div>
@@ -403,22 +358,45 @@
                 </button>
               </h2>
               <div id="recipientBody" class="accordion-collapse collapse show" aria-labelledby="recipientHead"
-                data-bs-parent="#summaryAcc">
+                data-bs-parent="#recipient-summary">
                 <div class="accordion-body">
                   <div class="sum-item"><i class="bi bi-person"></i> Brian Chung</div>
                   <div class="sum-item"><i class="bi bi-telephone"></i> +65 4809800</div>
                   <div class="sum-item"><i class="bi bi-calendar3"></i> Collection 26/02/2026 | 9:00am - 10:00am</div>
+                  <div class="sum-item"><i class="bi bi-geo-alt"></i> 156 TAMPINES STREET 12, 521156 Singapore</div>
                 </div>
               </div>
             </div>
           </div>
+
+          <!-- extra -->
+          <div class="accordion" id="extra-summary">
+            <div class="accordion-item border-0">
+              <h2 class="accordion-header" id="extraHead">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#extraBody"
+                  aria-expanded="true" aria-controls="extraBody">
+                  <i class="bi bi-plus-circle me-2"></i> Extra
+                  <i class="bi bi-chevron-up chev" aria-hidden="true"></i>
+                </button>
+              </h2>
+              <div id="extraBody" class="accordion-collapse collapse show" aria-labelledby="extraHead"
+                data-bs-parent="#extra-summary">
+                <div class="accordion-body">
+                  <div class="sum-item"><i class="bi bi-x-square"></i> Abandon Shipment</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
 
         </div>
       </aside>
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
       <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-      <script src="js/handover-method.js"></script>
+      <script src="js/return-method.js"></script>
 </body>
 
 </html>

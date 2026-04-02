@@ -10,7 +10,7 @@
 .helpbox {
     left: 18px;
     bottom: 18px;
-    border: 1px dashed #cbd5e1;
+    border: 1px dashed var(--grey);
     background: var(--white);
     border-radius: 14px;
     padding: 12px 12px;
@@ -20,9 +20,9 @@
 
 /*hint*/
 .hint {
-    background: #eef8ff;
-    border: 1px solid #d7f0ff;
-    color: #0b4a6f;
+    background: var( --brand-light);
+    border: 1px solid var(--brand-2);
+    color: var(--black);
     border-radius: 12px;
     padding: 10px 10px;
     display: flex;
@@ -33,4 +33,22 @@
 
 .hint .mt-1 {
     margin-top: 0 !important;
+}
+
+/* warn */
+.warn {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    background: var(--error-2);
+    border: 1px solid var(--error);
+    border-radius: 16px;
+    padding: 12px 12px;
+    font-size: 14px;
+    color: var(--black);
+}
+
+.warn i {
+    color: var(--error);
+    margin-top: 2px;
 }
