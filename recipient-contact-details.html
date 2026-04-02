@@ -68,14 +68,14 @@
             </div>
             <div>Parcel</div>
           </li>
-          <li class="step active">
+          <li class="step completed">
             <div class="dotwrap">
-              <div class="dot"></div>
+              <div class="dot"><i class="bi bi-check-lg"></i></div>
               <div class="vline"></div>
             </div>
             <div>Sender</div>
           </li>
-          <li class="step">
+          <li class="step active">
             <div class="dotwrap">
               <div class="dot"></div>
               <div class="vline"></div>
@@ -103,209 +103,69 @@
         </div>
       </aside>
 
+
       <!-- Main -->
       <main class="col-xxl-8 col-xl-8 col-lg-8 main">
-        <div class="page-title">Handover Method</div>
-        <div class="page-sub">How will the parcel reach us?</div>
+        <div class="page-title">Recipient Details</div>
+        <div class="page-sub">Let us know who will receive the parcel.</div>
 
-        <div class="row g-3">
-          <div class="col-md-6">
-            <div class="radio-card">
-              <input type="radio" name="senderHandover" id="handoverPickup">
-              <label class="w-100" for="handoverPickup">
-                <div class="radio-card-container d-flex gap-3 align-items-center">
-                  <div class="ring" aria-hidden="true"></div>
-                  <div class="icon-tile">
-                    <i class="bi bi-truck fs-4"></i>
-                  </div>
-                  <div>
-                    <p class="radio-card-name">Arrange Courier Pickup</p>
-                    <p class="radio-card-desc">We come to you and collect the parcel.</p>
-                  </div>
-                </div>
-              </label>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="radio-card">
-              <input type="radio" name="senderHandover" id="handoverDropoff">
-              <label class="w-100" for="handoverDropoff">
-                <div class="radio-card-container d-flex gap-3 align-items-center">
-                  <div class="ring" aria-hidden="true"></div>
-                  <div class="icon-tile">
-                    <i class="bi bi-inbox fs-4"></i>
-                  </div>
-                  <div>
-                    <p class="radio-card-name">Drop Off</p>
-                    <p class="radio-card-desc">You bring it to a locker or post office.</p>
-                  </div>
-                </div>
-              </label>
-            </div>
-          </div>
-        </div>
-
-        <!-- Courier Pickup Date & Time -->
-        <div class="panel mt-3 handover-courier">
+        <div class="panel">
           <div class="panel-head">
             <span class="bar"></span>
-            <span>Courier Pickup Date &amp; Time</span>
+            <span>Name &amp; Contact</span>
           </div>
 
-          <div class="field-group-label">Date &amp; Time</div>
-
+          <div class="field-group-label">Name</div>
           <div class="row g-3">
-            <div class="col-md-6">
-              <div class="form-floating">
-                <input type="text" class="form-control" id="collection-date" placeholder="Collection Date" value="">
-                <label for="collection-date">Collection Date</label>
-              </div>
+            <div class="col-lg-6 form-floating">
+              <input type="text" class="form-control" id="sender-contact-name" value="" placeholder="Contact Name">
+              <label for="sender-contact-name">Contact Name</label>
             </div>
 
-            <div class="col-md-6">
-              <div class="form-floating">
-                <select class="form-select field_req" id="available-hour" name="available-hour">
-                  <option value="">Select</option>
-                  <option value="1">9:00am - 10:00am</option>
-                  <option value="2">10:00am - 11:00am</option>
-                  <option value="3" selected="selected">11:00am - 12:00pm</option>
-                </select>
-                <label for="available-hour">Available Hour</label>
-              </div>
+            <div class="col-lg-6 form-floating">
+              <input type="text" class="form-control" id="sender-company-name" value=""
+                placeholder="Company Name (optional)">
+              <label for="sender-company-name">Company Name (optional)</label>
+            </div>
+
+          </div>
+          <br>
+          <div class="field-group-label">Contact</div>
+          <div class="row g-3 align-items-end">
+            <div class="form-floating col-lg-2">
+              <select class="form-select" id="sender-phone-prefix" name="sender-phone-prefix">
+                <option value="">Select</option>
+                <option value="1" selected="selected">+65</option>
+                <option value="2">+60</option>
+                <option value="3">+66</option>
+              </select>
+              <label for="sender-phone-prefix">Prefix</label>
+            </div>
+
+            <div class="col-lg-4 form-floating">
+              <input type="number" class="form-control" id="sender-phone" value="" placeholder="Phone Number">
+              <label for="sender-phone">Phone Number</label>
+            </div>
+
+            <div class="col-lg-6 form-floating">
+              <input type="email" class="form-control" id="sender-email" value="" placeholder="Email">
+              <label for="sender-email">Email</label>
             </div>
           </div>
           <br>
-          <div class="hint">
-            <i class="bi bi-info-circle mt-1"></i>
-            <div>We'll give you a call before we come for collection.</div>
+          <div class="field-group-label">Instruction</div>
+          <div class="col-lg-12 form-floating">
+            <textarea type="text" class="form-control" id="sender-instruction" value=""
+              placeholder="Instruction (optional)"></textarea>
+            <label for="sender-instruction">Instruction (optional)</label>
           </div>
         </div>
-
-
-        <!-- Search and select closest location -->
-        <div class="panel mt-3 handover-dropoff">
-          <div class="panel-head">
-            <span class="bar"></span>
-            <div>Search &amp; select one closest location to you</div>
-          </div>
-
-          <div class="row g-3 align-items-end">
-            <div class="col-lg-3">
-              <div class="form-floating">
-                <select class="form-select field_req" id="dropoff-type" name="dropoff-type">
-                  <option value="">Select</option>
-                  <option value="1">Locker</option>
-                  <option value="2">Post Office</option>
-                  <option value="3" selected="selected">POPStation</option>
-                </select>
-                <label for="dropoff-type">Dropoff Type</label>
-              </div>
-            </div>
-
-            <div class="col-lg-3">
-              <div class="form-floating">
-                <input type="text" class="form-control" id="area-street" placeholder="Area/ Street" value="">
-                <label for="area-street">Area/ Street</label>
-              </div>
-            </div>
-
-            <div class="col-lg-3">
-              <div class="form-floating">
-                <select class="form-select field_req" id="dropoff-date" name="dropoff-date">
-                  <option value="">Select</option>
-                  <option value="1">Tomorrow</option>
-                  <option value="2">Today</option>
-                  <option value="3" selected="selected">Next 3 days</option>
-                </select>
-                <label for="dropoff-date">Dropoff Date</label>
-              </div>
-            </div>
-
-            <div class="col-lg-3 d-grid">
-              <button class="btn btn-square">Search</button>
-            </div>
-          </div>
-
-          <div class="d-flex flex-column gap-3 mt-3">
-            <!-- Location 1 (selected) -->
-            <div class="loc-radio">
-              <input type="radio" name="dropLoc" id="loc1" checked>
-              <label class="w-100" for="loc1">
-                <div class="loc-card">
-                  <div class="loc-ring" aria-hidden="true"></div>
-                  <div>
-                    <p class="loc-title mb-0">POPStation@Geylang PO</p>
-                    <div class="log-info-container">
-                      <div class="loc-info">
-                        <i class="bi bi-geo-alt"></i>
-                        <span>447 Geylang Road, Level 1 Geylang Post Office, Singapore 389...</span>
-                      </div>
-                      <div class="loc-info"><i class="bi bi-clock"></i> Open 24 Hours</div>
-                      <div class="loc-info"><i class="bi bi-bullseye"></i> 1.55km</div>
-                    </div>
-                  </div>
-                  <a href="#" class="view-map">View Map</a>
-                </div>
-              </label>
-            </div>
-
-            <!-- Location 2 -->
-            <div class="loc-radio">
-              <input type="radio" name="dropLoc" id="loc2">
-              <label class="w-100" for="loc2">
-                <div class="loc-card">
-                  <div class="loc-ring" aria-hidden="true"></div>
-                  <div>
-                    <p class="loc-title mb-0">POPStation@Geylang PO</p>
-                    <div class="log-info-container">
-                      <div class="loc-info">
-                        <i class="bi bi-geo-alt"></i>
-                        <span>447 Geylang Road, Level 1 Geylang Post Office, Singapore 389...</span>
-                      </div>
-                      <div class="loc-info"><i class="bi bi-clock"></i> Open 24 Hours</div>
-                      <div class="loc-info"><i class="bi bi-bullseye"></i> 1.55km</div>
-                    </div>
-                  </div>
-                  <a href="#" class="view-map">View Map</a>
-                </div>
-              </label>
-            </div>
-
-            <!-- Location 3 -->
-            <div class="loc-radio">
-              <input type="radio" name="dropLoc" id="loc3">
-              <label class="w-100" for="loc3">
-                <div class="loc-card">
-                  <div class="loc-ring" aria-hidden="true"></div>
-                  <div>
-                    <p class="loc-title mb-0">POPStation@Geylang PO</p>
-                    <div class="log-info-container">
-                      <div class="loc-info">
-                        <i class="bi bi-geo-alt"></i>
-                        <span>447 Geylang Road, Level 1 Geylang Post Office, Singapore 389...</span>
-                      </div>
-                      <div class="loc-info"><i class="bi bi-clock"></i> Open 24 Hours</div>
-                      <div class="loc-info"><i class="bi bi-bullseye"></i> 1.55km</div>
-                    </div>
-                  </div>
-                  <a href="#" class="view-map">View Map</a>
-                </div>
-              </label>
-            </div>
-          </div>
-        </div>
-
         <!-- Continue -->
         <div class="btn-container">
-          <a class="backlink" href="sender-contact-details.html">Back</a>
+          <a class="backlink" href="sender-handover-method.html">Back</a>
 
-          <button class="btn btn-primary float-end btn-continue" onclick="location.href='sender-collection-address.html'">
+          <button class="btn btn-primary float-end" onclick="location.href='recipient-handover-method.html'">
             Continue <i class="bi bi-chevron-right ms-1"></i>
-          </button>
-
-          <button class="btn btn-primary float-end btn-next" onclick="location.href='recipient-contact-details.html'">
-            Next - Recipient <i class="bi bi-chevron-right ms-1"></i>
           </button>
         </div>
       </main>
@@ -420,7 +280,27 @@
                 <div class="accordion-body">
                   <div class="sum-item"><i class="bi bi-person"></i> Brian Chung</div>
                   <div class="sum-item"><i class="bi bi-telephone"></i> +65 4809800</div>
-                  <div class="sum-item"><i class="bi bi-geo"></i> Courier Pickup</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- recipient -->
+          <div class="accordion" id="recipient-summary">
+            <div class="accordion-item border-0">
+              <h2 class="accordion-header" id="recipientHead">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#recipientBody"
+                  aria-expanded="true" aria-controls="recipientBody">
+                  <i class="bi bi-person me-2"></i>
+                  Recipient
+                  <i class="bi bi-chevron-up chev" aria-hidden="true"></i>
+                </button>
+              </h2>
+              <div id="recipientBody" class="accordion-collapse collapse show" aria-labelledby="recipientHead"
+                data-bs-parent="#summaryAcc">
+                <div class="accordion-body">
+                  <div class="sum-item"><i class="bi bi-person"></i> Brian Chung</div>
+                  <div class="sum-item"><i class="bi bi-telephone"></i> +65 4809800</div>
                 </div>
               </div>
             </div>
@@ -431,7 +311,6 @@
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
       <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-      <script src="js/handover-method.js"></script>
 </body>
 
 </html>
