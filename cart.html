@@ -104,182 +104,139 @@
       </aside>
 
       <!-- Main -->
-      <main class="col-xxl-8 col-xl-8 col-lg-8 main">
-        
+      <main class="main-contentx col-xxl-8 col-xl-8 col-lg-8 main">
+        <section class="cart-section">
+          <div>
+            <h1 class="page-title">Cart</h1>
+            <div class="page-subtitle">1 items selected.</div>
 
-        <!-- Continue -->
-        <div class="btn-container">
-          <a class="backlink" href="extra-notification.html">Back</a>
+            <div class="cart-toolbar">
+              <label class="check-label mb-0">
+                <input class="form-check-input" type="checkbox" checked>
+                <span>Select All</span>
+              </label>
 
-          <button class="btn btn-primary float-end" onclick="location.href='#'">
-            Continue <i class="bi bi-chevron-right ms-1"></i>
-          </button>
-        </div>
+              <a href="#" class="remove-link error">
+                <i class="bi bi-trash"></i>
+                <span>Remove</span>
+              </a>
+            </div>
+
+            <div class="order-card">
+              <div class="order-top">
+                <div class="order-head-left">
+                  <label class="check-label mb-0">
+                    <input class="form-check-input" type="checkbox" checked>
+                  </label>
+
+                  <a href="#" class="order-id">000000000014244717</a>
+                </div>
+
+                <div class="courier-logo">
+                  <img class="courier-logo-img" src="images/sp.png" alt="courier logo">
+                </div>
+              </div>
+
+              <div class="order-cart-box">
+                <div class="cart-row">
+                  <div class="cart-item">
+                    <i class="bi bi-sign-turn-right"></i>
+                    <span>Route:&nbsp; Singapore 521156 → Singapore 600002</span>
+                  </div>
+                  <div class="cart-item">
+                    <i class="bi bi-clock"></i>
+                    <span>Sending Date:&nbsp; 20/01/2026</span>
+                  </div>
+                </div>
+
+                <div class="cart-row">
+                  <div class="cart-item">
+                    <i class="bi bi-send"></i>
+                    <span>Service:&nbsp; <span class="meta-strong">NEXT DAY DELIVERY</span></span>
+                  </div>
+                  <div class="cart-item">
+                    <i class="bi bi-coin"></i>
+                    <span>Charge:&nbsp; $70.56</span>
+                  </div>
+                  <div class="cart-item">
+                    <i class="bi bi-cash-stack"></i>
+                    <span>Cash on Delivery:&nbsp; No</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="order-card">
+              <div class="order-top">
+                <div class="order-head-left">
+                  <label class="check-label mb-0">
+                    <input class="form-check-input" type="checkbox" checked>
+                  </label>
+
+                  <a href="#" class="order-id">000000000014244808</a>
+                </div>
+
+                <div class="courier-logo">
+                  <img class="courier-logo-img" src="images/sp.png" alt="courier logo">
+                </div>
+              </div>
+
+              <div class="order-cart-box">
+                <div class="cart-row">
+                  <div class="cart-item">
+                    <i class="bi bi-sign-turn-right"></i>
+                    <span>Route:&nbsp; Singapore 521156 → Singapore 600002</span>
+                  </div>
+                  <div class="cart-item">
+                    <i class="bi bi-clock"></i>
+                    <span>Sending Date:&nbsp; 20/01/2026</span>
+                  </div>
+                </div>
+
+                <div class="cart-row">
+                  <div class="cart-item">
+                    <i class="bi bi-send"></i>
+                    <span>Service:&nbsp; <span class="meta-strong">NEXT DAY DELIVERY</span></span>
+                  </div>
+                  <div class="cart-item">
+                    <i class="bi bi-coin"></i>
+                    <span>Charge:&nbsp; $70.56</span>
+                  </div>
+                  <div class="cart-item">
+                    <i class="bi bi-cash-stack"></i>
+                    <span>Cash on Delivery:&nbsp; No</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="order-actions">
+              <button class="btn btn-outline-brand">
+                <i class="bi bi-plus-lg me-1"></i>Next Order
+              </button>
+            </div>
+          </div>
+        </section>
+
+
       </main>
 
-      <!-- Summary -->
-      <aside class="col-xxl-2 col-xl-2 col-lg-2 right-rail">
-        <div class="summary-top">
-          <div>Summary</div>
-          <button class="btn btn-sm btn-light border" type="button" aria-label="Expand">
-            <i class="bi bi-box-arrow-up-right"></i>
-          </button>
-        </div>
+      <!-- payment -->
+      <aside class="side-panelx col-xxl-2 col-xl-2 col-lg-2 right-rail">
+        <div class="promo-card">
+          <div class="promo-title">Promotion</div>
 
-        <div class="summary-acc">
-          <!-- route summary -->
-          <div class="accordion" id="route-summary">
-            <div class="accordion-item border-0">
-              <h2 class="accordion-header" id="routeHead">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#routeBody"
-                  aria-expanded="true" aria-controls="routeBody">
-                  <span class="material-symbols-outlined">route</span>
-                  Route
-                  <i class="bi bi-chevron-up chev" aria-hidden="true"></i>
-                </button>
-              </h2>
-
-              <div id="routeBody" class="accordion-collapse collapse show" aria-labelledby="routeHead"
-                data-bs-parent="#route-summary">
-                <div class="accordion-body">
-                  <div class="route-grid">
-                    <div>
-                      <p class="route-label">Singapore</p>
-                      <p class="route-val">521156</p>
-                    </div>
-
-                    <div class="arrow">→</div>
-
-                    <div>
-                      <p class="route-label">Malaysia</p>
-                      <p class="route-val">63000</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-          <!-- parcel summary -->
-          <div class="accordion" id="package-summary">
-            <div class="accordion-item border-0">
-              <h2 class="accordion-header" id="parcelHead">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#parcelBody"
-                  aria-expanded="true" aria-controls="parcelBody">
-                  <span class="material-symbols-outlined">box</span>
-                  Parcel
-                  <i class="bi bi-chevron-up chev" aria-hidden="true"></i>
-                </button>
-              </h2>
-              <div id="parcelBody" class="accordion-collapse collapse show" aria-labelledby="parcelHead"
-                data-bs-parent="#package-summary">
-                <div class="accordion-body">
-                  <div class="sum-item"><span class="material-symbols-outlined">box</span> Package - Custom</div>
-                  <div class="sum-item"><span class="material-symbols-outlined">box</span> Package - Small</div>
-                </div>
-              </div>
-            </div>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Promotion Code">
+            <button class="btn btn-square" type="button">Apply</button>
           </div>
 
-          <!-- service summary -->
-          <div class="accordion" id="service-summary">
-            <div class="accordion-item border-0">
-              <h2 class="accordion-header" id="svcHead">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#svcBody"
-                  aria-expanded="true" aria-controls="svcBody">
-                  <i class="bi bi-list-check me-2"></i>
-                  Service
-                  <i class="bi bi-chevron-up chev" aria-hidden="true"></i>
-                </button>
-              </h2>
-              <div id="svcBody" class="accordion-collapse collapse show" aria-labelledby="svcHead"
-                data-bs-parent="#service-summary">
-                <div class="accordion-body">
-                  <div class="sum-item">
-                    <div class="sum-left"><span class="material-symbols-outlined">local_shipping</span> Next Day
-                      Delivery</div>
-                    <div class="fw-bold">$70.56</div>
-                  </div>
-                  <div class="sum-item">
-                    <div class="sum-left"><span class="material-symbols-outlined">schedule</span> Next Day</div>
-                  </div>
-                  <div class="sum-item">
-                    <div class="sum-left"><span class="material-symbols-outlined">location_on</span> With Tracking</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="promo-divider"></div>
 
-          <!-- Sender -->
-          <div class="accordion" id="sender-summary">
-            <div class="accordion-item border-0">
-              <h2 class="accordion-header" id="senderHead">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#senderBody"
-                  aria-expanded="true" aria-controls="senderBody">
-                  <i class="bi bi-person me-2"></i>
-                  Sender
-                  <i class="bi bi-chevron-up chev" aria-hidden="true"></i>
-                </button>
-              </h2>
-              <div id="senderBody" class="accordion-collapse collapse show" aria-labelledby="senderHead"
-                data-bs-parent="#sender-summary">
-                <div class="accordion-body">
-                  <div class="sum-item"><i class="bi bi-person"></i> Brian Chung</div>
-                  <div class="sum-item"><i class="bi bi-telephone"></i> +65 4809800</div>
-                  <div class="sum-item"><i class="bi bi-calendar3"></i> Collection 26/02/2026 | 9:00am - 10:00am</div>
-                  <div class="sum-item"><i class="bi bi-geo-alt"></i> 156 TAMPINES STREET 12, 521156 Singapore</div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="amount-label">Total Amount to Pay</div>
+          <div class="amount-value">$70.56</div>
 
-          <!-- recipient -->
-          <div class="accordion" id="recipient-summary">
-            <div class="accordion-item border-0">
-              <h2 class="accordion-header" id="recipientHead">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#recipientBody"
-                  aria-expanded="true" aria-controls="recipientBody">
-                  <i class="bi bi-person me-2"></i>
-                  Recipient
-                  <i class="bi bi-chevron-up chev" aria-hidden="true"></i>
-                </button>
-              </h2>
-              <div id="recipientBody" class="accordion-collapse collapse show" aria-labelledby="recipientHead"
-                data-bs-parent="#recipient-summary">
-                <div class="accordion-body">
-                  <div class="sum-item"><i class="bi bi-person"></i> Brian Chung</div>
-                  <div class="sum-item"><i class="bi bi-telephone"></i> +65 4809800</div>
-                  <div class="sum-item"><i class="bi bi-calendar3"></i> Collection 26/02/2026 | 9:00am - 10:00am</div>
-                  <div class="sum-item"><i class="bi bi-geo-alt"></i> 156 TAMPINES STREET 12, 521156 Singapore</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- extra -->
-          <div class="accordion" id="extra-summary">
-            <div class="accordion-item border-0">
-              <h2 class="accordion-header" id="extraHead">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#extraBody"
-                  aria-expanded="true" aria-controls="extraBody">
-                  <i class="bi bi-plus-circle me-2"></i> Extra
-                  <i class="bi bi-chevron-up chev" aria-hidden="true"></i>
-                </button>
-              </h2>
-              <div id="extraBody" class="accordion-collapse collapse show" aria-labelledby="extraHead"
-                data-bs-parent="#extra-summary">
-                <div class="accordion-body">
-                  <div class="sum-item"><i class="bi bi-x-square"></i> Abandon Shipment</div>
-                  <div class="sum-item"><i class="bi bi-chat-square-dots"></i> SMS</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-
+          <button class="btn-pay">Pay Now</button>
         </div>
       </aside>
 

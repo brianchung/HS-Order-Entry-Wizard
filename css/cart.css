@@ -1,0 +1,120 @@
+.cart-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    gap: 16px;
+}
+
+.order-card {
+    border: 1px solid var(--grey-line);
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 8px;
+}
+
+.order-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.order-head-left {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    min-width: 0;
+    flex: 1;
+}
+
+.order-id {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--brand);
+    text-decoration: none;
+    line-height: 1.2;
+    word-break: break-all;
+}
+
+.order-cart-box {
+    background: var(--grey-light);
+    border-radius: 8px;
+    padding: 16px;
+    margin-left: 34px;
+}
+
+.cart-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 18px;
+    margin-bottom: 8px;
+}
+
+.cart-row:last-child {
+    margin-bottom: 0;
+}
+
+.cart-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--black);
+    line-height: 1.25;
+}
+
+.cart-item i {
+    font-size: 14px;
+    color: var(--black);
+}
+
+.meta-strong {
+    font-weight: 400;
+}
+
+.order-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
+
+.promo-card {
+    border: 1px solid var(--grey-line);
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.promo-title {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.promo-card .form-control {
+    height: 44px;
+    border-radius: 8px 0 0 8px;
+    font-size: 14px;
+    box-shadow: none;
+    border-color: var(--grey-line);
+    background: var(--white);
+}
+
+.promo-divider {
+    border-top: 1px dashed var(--grey-line);
+    margin: 14px 0 12px;
+}
+
+.amount-label {
+    font-size: 14px;
+    color: var(--black);
+    margin-bottom: 4px;
+}
+
+.amount-value {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
