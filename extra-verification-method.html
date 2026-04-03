@@ -105,22 +105,23 @@
 
       <!-- Main -->
       <main class="col-xxl-8 col-xl-8 col-lg-8 main">
-        <div class="page-title">Verification</div>
-        <div class="page-sub">Verify identity during parcel pickup or delivery.</div>
+        <h1 class="page-title">Verification</h1>
+        <div class="page-subtitle">
+          Verify identity during parcel pickup or delivery.
+        </div>
+
 
         <div class="row g-3">
           <div class="col-md-6">
             <div class="radio-card">
-              <input type="radio" name="verify" id="verYes">
-              <label class="w-100" for="verYes">
+              <input type="radio" name="verifyMethod" id="verCollection">
+              <label class="w-100" for="verCollection">
                 <div class="radio-card-container d-flex gap-3 align-items-center">
                   <div class="ring" aria-hidden="true"></div>
-                  <div class="icon-tile">
-                    <span class="ok-icon"><i class="bi bi-check-lg"></i></span>
-                  </div>
+                  <div class="icon-tile"><i class="bi bi-person-vcard"></i></div>
                   <div>
-                    <p class="radio-card-name">Yes</p>
-                    <p class="radio-card-desc">Verify sender/ recipient details</p>
+                    <p class="radio-card-name">Collection</p>
+                    <p class="radio-card-desc">Check sender's details</p>
                   </div>
                 </div>
               </label>
@@ -129,16 +130,14 @@
 
           <div class="col-md-6">
             <div class="radio-card">
-              <input type="radio" name="verify" id="verNo">
-              <label class="w-100" for="verNo">
+              <input type="radio" name="verifyMethod" id="verDelivery">
+              <label class="w-100" for="verDelivery">
                 <div class="radio-card-container d-flex gap-3 align-items-center">
                   <div class="ring" aria-hidden="true"></div>
-                  <div class="icon-tile">
-                    <span class="no-icon"><i class="bi bi-x-lg"></i></span>
-                  </div>
+                  <div class="icon-tile"><i class="bi bi-truck"></i></div>
                   <div>
-                    <p class="radio-card-name">No</p>
-                    <p class="radio-card-desc">No verification needed.</p>
+                    <p class="radio-card-name">Delivery</p>
+                    <p class="radio-card-desc">Check recipient's details.</p>
                   </div>
                 </div>
               </label>
@@ -146,16 +145,62 @@
           </div>
         </div>
 
+        <!-- verification details -->
+        <div class="panel mt-3">
+          <div class="panel-head">
+            <span class="bar"></span>
+            <div>Details</div>
+          </div>
+
+
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="radio-card">
+                <input type="radio" name="idType" id="idLicense">
+                <label class="w-100" for="idLicense">
+                  <div class="radio-card-container d-flex gap-3 align-items-center">
+                    <div class="ring" aria-hidden="true"></div>
+                    <div class="icon-tile"><i class="bi bi-postcard"></i></div>
+                    <div>
+                      <p class="radio-card-name">Driver License</p>
+                      <p class="radio-card-desc">Check driver license's numbers</p>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="radio-card">
+                <input type="radio" name="idType" id="idNRIC">
+                <label class="w-100" for="idNRIC">
+                  <div class="radio-card-container d-flex gap-3 align-items-center">
+                    <div class="ring" aria-hidden="true"></div>
+                    <div class="icon-tile"><i class="bi bi-person-badge"></i></div>
+                    <div>
+                      <p class="radio-card-name">NRIC</p>
+                      <p class="radio-card-desc">Check NRIC number</p>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="col-lg-12">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="verify-id-no" value="" placeholder="Id Number">
+              <label for="verify-id-no">Id Number</label>
+            </div>
+          </div>
+        </div>
+
         <!-- Continue -->
         <div class="btn-container">
-          <a class="backlink" href="extra-notification.html">Back</a>
+          <a class="backlink" href="extra-verification.html">Back</a>
 
-          <button class="btn btn-primary float-end" onclick="location.href='extra-verification-method.html'">
-            Continue (verify yes) <i class="bi bi-chevron-right ms-1"></i>
-          </button>
-
-           <button class="btn btn-primary float-end" onclick="location.href='extra-cod.html'">
-            Continue (cod) <i class="bi bi-chevron-right ms-1"></i>
+          <button class="btn btn-primary float-end" onclick="location.href='extra-cod.html'">
+            Continue <i class="bi bi-chevron-right ms-1"></i>
           </button>
         </div>
       </main>

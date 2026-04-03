@@ -82,14 +82,14 @@
             </div>
             <div>Recipient</div>
           </li>
-          <li class="step active">
+          <li class="step completed">
             <div class="dotwrap">
-              <div class="dot"></div>
+              <div class="dot"><i class="bi bi-check-lg"></i></div>
               <div class="vline"></div>
             </div>
             <div>Extra</div>
           </li>
-          <li class="step">
+          <li class="step active">
             <div class="dotwrap">
               <div class="dot"></div>
             </div>
@@ -105,57 +105,14 @@
 
       <!-- Main -->
       <main class="col-xxl-8 col-xl-8 col-lg-8 main">
-        <div class="page-title">Verification</div>
-        <div class="page-sub">Verify identity during parcel pickup or delivery.</div>
-
-        <div class="row g-3">
-          <div class="col-md-6">
-            <div class="radio-card">
-              <input type="radio" name="verify" id="verYes">
-              <label class="w-100" for="verYes">
-                <div class="radio-card-container d-flex gap-3 align-items-center">
-                  <div class="ring" aria-hidden="true"></div>
-                  <div class="icon-tile">
-                    <span class="ok-icon"><i class="bi bi-check-lg"></i></span>
-                  </div>
-                  <div>
-                    <p class="radio-card-name">Yes</p>
-                    <p class="radio-card-desc">Verify sender/ recipient details</p>
-                  </div>
-                </div>
-              </label>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="radio-card">
-              <input type="radio" name="verify" id="verNo">
-              <label class="w-100" for="verNo">
-                <div class="radio-card-container d-flex gap-3 align-items-center">
-                  <div class="ring" aria-hidden="true"></div>
-                  <div class="icon-tile">
-                    <span class="no-icon"><i class="bi bi-x-lg"></i></span>
-                  </div>
-                  <div>
-                    <p class="radio-card-name">No</p>
-                    <p class="radio-card-desc">No verification needed.</p>
-                  </div>
-                </div>
-              </label>
-            </div>
-          </div>
-        </div>
+        
 
         <!-- Continue -->
         <div class="btn-container">
           <a class="backlink" href="extra-notification.html">Back</a>
 
-          <button class="btn btn-primary float-end" onclick="location.href='extra-verification-method.html'">
-            Continue (verify yes) <i class="bi bi-chevron-right ms-1"></i>
-          </button>
-
-           <button class="btn btn-primary float-end" onclick="location.href='extra-cod.html'">
-            Continue (cod) <i class="bi bi-chevron-right ms-1"></i>
+          <button class="btn btn-primary float-end" onclick="location.href='#'">
+            Continue <i class="bi bi-chevron-right ms-1"></i>
           </button>
         </div>
       </main>
@@ -315,7 +272,6 @@
                 <div class="accordion-body">
                   <div class="sum-item"><i class="bi bi-x-square"></i> Abandon Shipment</div>
                   <div class="sum-item"><i class="bi bi-chat-square-dots"></i> SMS</div>
-                  <div class="sum-item"><i class="bi bi-shield"></i> Basic</div>
                 </div>
               </div>
             </div>
