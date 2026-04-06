@@ -30,8 +30,8 @@
 }
 
 .dot {
-    width: 20px;
-    height: 20px;
+    width: 26px;
+    height: 26px;
     border-radius: 50%;
     border: 2px solid var(--grey-line);
     background: var(--white);
@@ -67,6 +67,8 @@
     border-color: var(--brand);
     box-shadow: 0 0 0 4px var(--brand);
     border-width: 1px;
+    width: 20px;
+    height: 20px;
 }
 
 .step.active .dot::after {
@@ -89,6 +91,7 @@
 .step.completed .dot i {
     display: block;
     color: var(--white);
+    font-size: 18px;
 }
 
 .step.completed .vline {
@@ -96,6 +99,10 @@
 }
 
 @media only screen and (max-width: 992px) {
+    .app-row {
+        min-height: 0;
+    }
+
     .stepper {
         display: flex;
         height: auto;
@@ -112,9 +119,13 @@
         display: block;
     }
 
+    .step.active .dot {
+        top: 4px;
+    }
+
     .vline {
         position: absolute;
-        top: 10px;
+        top: 12px;
         height: 2px;
         left: 20px;
         width: 14vw;
@@ -124,7 +135,11 @@
         display: none;
     }
 
-    .left-rail {
+    /* .left-rail {
         border-right: 0px;
+    } */
+
+    .right-rail {
+        display: none;
     }
 }

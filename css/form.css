@@ -172,6 +172,9 @@ a:hover {
 .radio-card input:checked+label .radio-card-container .check::after {
     content: "\f633";
     position: absolute;
+    font-family: bootstrap-icons !important;
+    top: -4px;
+    left: -2px;
 }
 
 .radio-card input:checked+label .radio-card-container .radio-card-name {

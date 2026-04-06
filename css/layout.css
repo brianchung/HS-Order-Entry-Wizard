@@ -16,7 +16,7 @@ body {
 
 .left-rail {
     background: var(--white);
-    border-right: 1px solid var(--grey-line);
+    /* border-right: 1px solid var(--grey-line); */
     padding: 18px 12px;
 }
 
