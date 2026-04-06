@@ -183,6 +183,10 @@ a:hover {
 
 .btn-container {
     padding: 16px 0;
+    min-height: 80px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .field-group-label {
