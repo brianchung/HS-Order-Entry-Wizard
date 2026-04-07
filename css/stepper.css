@@ -114,7 +114,8 @@
         display: grid;
         width: stretch;
         place-items: center;
-        padding: 16px;
+        padding: 16px 8px;
+        font-size: 12px;
     }
 
     .stepper .step.active .stepper-text {
