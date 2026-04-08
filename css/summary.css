@@ -10,10 +10,16 @@
 
 .accordion {
     border: 1px solid var(--grey-line);
-    border-radius: 14px;
+    border-radius: 8px;
     overflow: hidden;
     background: var(--white);
     margin-bottom: 8px;
+}
+
+.accordion-header .material-symbols-outlined:nth-child(1),
+.accordion-body .material-symbols-outlined  {
+    font-size: 18px;
+    margin-right: 8px;
 }
 
 .summary-acc .accordion .accordion-button {
@@ -43,6 +49,11 @@
     padding: 12px;
     border-top: 1px solid var(--grey-line);
     font-size: 14px;
+}
+
+.summary-acc .accordion .accordion-body .sum-item {
+    display: flex;
+    align-items: center;
 }
 
 /* route */

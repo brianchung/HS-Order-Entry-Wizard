@@ -8,8 +8,12 @@
     z-index: 1020;
 }
 
+.topbar .material-symbols-outlined {
+    font-size: 20px;
+}
+
 .btn-icon {
-    width: 60px;
+    width: 40px;
     height: 40px;
     border-radius: 10px;
     display: grid;
@@ -18,20 +22,32 @@
     background: transparent;
 }
 
+.btn-cart {
+    width: 60px;
+}
+
 .btn-icon:hover {
     background: var(--grey-light);
     border-color: var(--grey-line);
 }
 
 .badge-float {
+    display: flex;
     position: absolute;
     top: 4px;
     right: 4px;
     font-size: 12px;
+    background-color: var(--warning);
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 .rounded-circle {
-    width: 24px;
+    width: 28px;
+    height: 28px;
+    align-items: center;
 }
 
 .user-btn {

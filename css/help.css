@@ -31,6 +31,11 @@
     font-size: 14px;
 }
 
+.hint .material-symbols-outlined {
+    color: var(--brand);
+    font-size: 20px;
+}
+
 .hint .mt-1 {
     margin-top: 0 !important;
 }

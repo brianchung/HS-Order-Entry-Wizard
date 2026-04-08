@@ -22,18 +22,17 @@
   <!-- Top bar -->
   <div class="topbar d-flex align-items-center px-3">
     <button class="btn-icon" type="button" aria-label="Menu">
-      <i class="bi bi-list fs-4"></i>
+      <span class="material-symbols-outlined">menu</span>
     </button>
 
     <div class="d-flex align-items-center gap-2 ms-2">
-      <i class="bi bi-box-seam text-primary"></i>
       <div class="fw-bold small">Order Entry</div>
     </div>
 
     <div class="ms-auto d-flex align-items-center gap-2">
       <div class="position-relative">
-        <button class="btn-icon" type="button" aria-label="Cart">
-          <i class="bi bi-cart3 fs-5"></i>
+        <button class="btn-icon btn-cart" type="button" aria-label="Cart">
+          <span class="material-symbols-outlined">shopping_cart</span>
         </button>
         <span class="badge text-bg-warning rounded-pill badge-float">2</span>
       </div>
@@ -41,7 +40,7 @@
       <button class="user-btn d-flex align-items-center gap-2 border rounded-pill px-2 py-1" type="button"
         aria-label="Cart">
         <div class="bg-light border rounded-circle d-grid">
-          <i class="bi bi-person"></i>
+          <span class="material-symbols-outlined">person</span>
         </div>
         <div class="fw-bold small">Guest</div>
       </button>
@@ -110,7 +109,7 @@
         <div class="page-sub">These is the available services that fits your parcel. Select a service to view delivery
           time and total cost.</div>
 
-        <div class="row g-3">
+        <div class="row g-3 h-80">
           <!-- Service cards (left) -->
           <div class="col-lg-8">
             <div class="service-wrap">
@@ -256,11 +255,11 @@
         </div>
 
         <!-- Continue -->
-        <div class="btn-container">
+        <div class="btn-container mt-auto pt-4 d-flex align-items-center">
           <a class="backlink" href="package-size-info.html">Back</a>
 
           <button class="btn btn-primary float-end" onclick="location.href='parcel-details.html'">
-            Next - Parcel <i class="bi bi-chevron-right ms-1"></i>
+            Next - Parcel <span class="material-symbols-outlined">keyboard_arrow_right</span>
           </button>
         </div>
       </main>
@@ -283,7 +282,7 @@
                   aria-expanded="true" aria-controls="routeBody">
                   <span class="material-symbols-outlined">route</span>
                   Route
-                  <i class="bi bi-chevron-up chev" aria-hidden="true"></i>
+                  <span class="material-symbols-outlined">keyboard_arrow_up</span>
                 </button>
               </h2>
 
@@ -296,7 +295,7 @@
                       <p class="route-val">521156</p>
                     </div>
 
-                    <div class="arrow">→</div>
+                    <div class="arrow"><span class="material-symbols-outlined">arrow_forward</span></div>
 
                     <div>
                       <p class="route-label">Malaysia</p>
@@ -316,7 +315,7 @@
                   aria-expanded="true" aria-controls="parcelBody">
                   <span class="material-symbols-outlined">box</span>
                   Parcel
-                  <i class="bi bi-chevron-up chev" aria-hidden="true"></i>
+                  <span class="material-symbols-outlined">keyboard_arrow_up</span>
                 </button>
               </h2>
 
@@ -336,9 +335,9 @@
               <h2 class="accordion-header" id="svcHead">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#svcBody"
                   aria-expanded="true" aria-controls="svcBody">
-                  <i class="bi bi-list-check me-2"></i>
+                  <span class="material-symbols-outlined">list</span>
                   Service
-                  <i class="bi bi-chevron-up chev" aria-hidden="true"></i>
+                  <span class="material-symbols-outlined">keyboard_arrow_up</span>
                 </button>
               </h2>
               <div id="svcBody" class="accordion-collapse collapse show" aria-labelledby="svcHead"

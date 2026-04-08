@@ -21,7 +21,7 @@ body {
 }
 
 .main {
-    padding: 22px 22px 96px;
+    padding: 22px;
     /* space for floating Continue */
     background-color: var(--white);
 }
@@ -157,4 +157,9 @@ body {
 
 .duty-head a:hover {
     text-decoration: underline;
+}
+
+.h-80 {
+    /* height: 80% !important; */
+    height: 70vh !important;
 }

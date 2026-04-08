@@ -2,6 +2,7 @@ a {
     color: var(--brand);
     text-decoration: none;
     font-weight: normal;
+    user-select: none;
 }
 
 a:hover {
@@ -38,6 +39,9 @@ a:hover {
     font-weight: 800;
     box-shadow: 0 10px 26px var(--brand-light);
     min-width: 160px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .btn-primary:hover {
@@ -94,6 +98,7 @@ a:hover {
     cursor: pointer;
     transition: .15s ease;
     position: relative;
+    user-select: none;
 }
 
 .radio-card-container:hover {
@@ -513,6 +518,14 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
     background: var(--brand);
 }
 
+.route-btn {
+    justify-content: right;
+}
+
+.row > .form-floating > label {
+    left: 8px;
+}
+
 .btn-continue,
 .btn-next,
 .handover-courier,
@@ -521,6 +534,8 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
 .addr-manual,
 .return-origin,
 .return-abandon,
-.return-addr-manual {
+.return-addr-manual,
+#btn-cart,
+#btn-invoice {
     display: none;
 }

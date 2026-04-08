@@ -12,7 +12,7 @@ radioCard.on( "click", function() {
             courierContainer.show();
             dropoffContainer.hide();
 
-            btnContinue.show();
+            btnContinue.css('display', 'flex');
             btnNext.hide();
             break;
         case "handoverDropoff":
@@ -20,7 +20,7 @@ radioCard.on( "click", function() {
             dropoffContainer.show();
 
             btnContinue.hide();
-            btnNext.show();
+            btnNext.css('display', 'flex');
             break;
     }
 
