@@ -1,12 +1,12 @@
 .location-panel {
     --bs-offcanvas-width: 80%;
     background: #ffffff;
-    border-left: 1px solid #d4d9de;
+    border-left: 1px solid var(--grey-light);
 }
 
 .location-panel .offcanvas-header {
     padding: 14px 18px;
-    border-bottom: 1px solid #bcc7d1;
+    border-bottom: 1px solid var(--grey-light);
     align-items: center;
 }
 

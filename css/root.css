@@ -4,6 +4,7 @@
   --brand-dark-1: #0074A6;
   --brand-dark-2: #0094D4;
   --brand-light: #E9F7FF;
+  --brand-light-2: #31C1FF;
 
   --black: #1f2937;
   --grey-dark: #5B5B5B;
@@ -15,7 +16,9 @@
   --error: #EE0000;
   --error-2: #FFC8C8;
   --warning: #EE8A00;
+  --warning-2: #FFE8CD;
   --success: #00B000;
+  --success-2: #C8FFC8;
   --white: #FCFCFC;
 
   --s-16: 16px;
