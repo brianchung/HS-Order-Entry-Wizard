@@ -189,6 +189,7 @@ a:hover {
     font-family: bootstrap-icons !important;
     top: -4px;
     left: -2px;
+    color: var(--brand);
 }
 
 .radio-card input:checked+label .radio-card-container .radio-card-name {
@@ -231,6 +232,9 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
 .svc-radio {
     position: relative;
     min-height: 150px;
+    height: stretch;
+    display: flex;
+    /* justify-content: center; */
 }
 
 .svc-radio input {
@@ -248,6 +252,8 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
     transition: .15s ease;
     min-height: 120px;
     position: relative;
+    height: stretch;
+    display: grid;
 }
 
 .svc-card:hover {
@@ -413,7 +419,7 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
     align-items: center;
     gap: 8px;
     padding: 10px 10px;
-    border-bottom: 1px solid var(--grey-line);
+    /* border-bottom: 1px solid var(--grey-line); */
 }
 
 .search-box input {
@@ -579,4 +585,15 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
 #btn-cart,
 #btn-invoice {
     display: none;
+}
+
+@media only screen and (max-width: 992px) {
+    .search-row {
+        display: grid;
+        gap: 8px;
+    }
+
+    .loc-card {
+        display: inline-grid;
+    }
 }
