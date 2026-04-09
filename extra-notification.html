@@ -107,41 +107,44 @@
         <div class="page-title">Notification</div>
         <div class="page-sub">Select how to notify recipient when parcel is ready for delivery.</div>
 
-        <div class="row g-3 h-80">
-          <div class="col-md-6">
-            <div class="radio-card">
-              <input type="checkbox" id="notifyEmail">
-              <label class="w-100" for="notifyEmail">
-                <div class="radio-card-container d-flex gap-3 align-items-center">
-                  <div class="check" aria-hidden="true"></div>
-                  <div class="icon-tile">
-                    <i class="bi bi-at fs-3"></i>
+        <div class="h-80">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="radio-card">
+                <input type="checkbox" id="notifyEmail">
+                <label class="w-100" for="notifyEmail">
+                  <div class="radio-card-container d-flex gap-3 align-items-center">
+                    <div class="check" aria-hidden="true"></div>
+                    <div class="icon-tile">
+                      <span class="material-symbols-outlined">alternate_email</span>
+                    </div>
+                    <div>
+                      <p class="radio-card-name">Email</p>
+                      <p class="radio-card-desc">To recipient's email</p>
+                    </div>
                   </div>
-                  <div>
-                    <p class="radio-card-name">Email</p>
-                    <p class="radio-card-desc">To recipient's email</p>
-                  </div>
-                </div>
-              </label>
+                </label>
+              </div>
             </div>
-          </div>
 
-          <div class="col-md-6">
-            <div class="radio-card">
-              <input type="checkbox" id="notifySms">
-              <label class="w-100" for="notifySms">
-                <div class="radio-card-container d-flex gap-3 align-items-center">
-                  <div class="check" aria-hidden="true"></div>
-                  <div class="icon-tile"><i class="bi bi-chat-square-dots fs-3"></i></div>
-                  <div>
-                    <p class="radio-card-name">SMS</p>
-                    <p class="radio-card-desc">To recipient's phone number</p>
+            <div class="col-md-6">
+              <div class="radio-card">
+                <input type="checkbox" id="notifySms">
+                <label class="w-100" for="notifySms">
+                  <div class="radio-card-container d-flex gap-3 align-items-center">
+                    <div class="check" aria-hidden="true"></div>
+                    <div class="icon-tile"><span class="material-symbols-outlined">mark_chat_unread</span></div>
+                    <div>
+                      <p class="radio-card-name">SMS</p>
+                      <p class="radio-card-desc">To recipient's phone number</p>
+                    </div>
                   </div>
-                </div>
-              </label>
+                </label>
+              </div>
             </div>
           </div>
         </div>
+
         <!-- Continue -->
         <div class="btn-container mt-auto pt-4 d-flex align-items-center">
           <a class="backlink" href="extra-return-instruction.html">Back</a>
@@ -157,7 +160,7 @@
         <div class="summary-top">
           <div>Summary</div>
           <button class="btn btn-sm btn-light border" type="button" aria-label="Expand">
-            <i class="bi bi-box-arrow-up-right"></i>
+            <span class="material-symbols-outlined">right_panel_close</span>
           </button>
         </div>
 
@@ -252,7 +255,7 @@
               <h2 class="accordion-header" id="senderHead">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#senderBody"
                   aria-expanded="true" aria-controls="senderBody">
-                  <i class="bi bi-person me-2"></i>
+                  <span class="material-symbols-outlined">person</span>
                   Sender
                   <span class="material-symbols-outlined">keyboard_arrow_up</span>
                 </button>
@@ -260,10 +263,12 @@
               <div id="senderBody" class="accordion-collapse collapse show" aria-labelledby="senderHead"
                 data-bs-parent="#sender-summary">
                 <div class="accordion-body">
-                  <div class="sum-item"><i class="bi bi-person"></i> Brian Chung</div>
-                  <div class="sum-item"><i class="bi bi-telephone"></i> +65 4809800</div>
-                  <div class="sum-item"><i class="bi bi-calendar3"></i> Collection 26/02/2026 | 9:00am - 10:00am</div>
-                  <div class="sum-item"><i class="bi bi-geo-alt"></i> 156 TAMPINES STREET 12, 521156 Singapore</div>
+                  <div class="sum-item"><span class="material-symbols-outlined">person</span> Brian Chung</div>
+                  <div class="sum-item"><span class="material-symbols-outlined">call</span> +65 4809800</div>
+                  <div class="sum-item"><span class="material-symbols-outlined">calendar_today</span> Collection
+                    26/02/2026 | 9:00am - 10:00am</div>
+                  <div class="sum-item"><span class="material-symbols-outlined">location_on</span> 156 TAMPINES STREET
+                    12, 521156 Singapore</div>
                 </div>
               </div>
             </div>
@@ -275,7 +280,7 @@
               <h2 class="accordion-header" id="recipientHead">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#recipientBody"
                   aria-expanded="true" aria-controls="recipientBody">
-                  <i class="bi bi-person me-2"></i>
+                  <span class="material-symbols-outlined">person</span>
                   Recipient
                   <span class="material-symbols-outlined">keyboard_arrow_up</span>
                 </button>
@@ -283,10 +288,12 @@
               <div id="recipientBody" class="accordion-collapse collapse show" aria-labelledby="recipientHead"
                 data-bs-parent="#recipient-summary">
                 <div class="accordion-body">
-                  <div class="sum-item"><i class="bi bi-person"></i> Brian Chung</div>
-                  <div class="sum-item"><i class="bi bi-telephone"></i> +65 4809800</div>
-                  <div class="sum-item"><i class="bi bi-calendar3"></i> Collection 26/02/2026 | 9:00am - 10:00am</div>
-                  <div class="sum-item"><i class="bi bi-geo-alt"></i> 156 TAMPINES STREET 12, 521156 Singapore</div>
+                  <div class="sum-item"><span class="material-symbols-outlined">person</span> Brian Chung</div>
+                  <div class="sum-item"><span class="material-symbols-outlined">call</span> +65 4809800</div>
+                  <div class="sum-item"><span class="material-symbols-outlined">calendar_today</span> Collection
+                    26/02/2026 | 9:00am - 10:00am</div>
+                  <div class="sum-item"><span class="material-symbols-outlined">location_on</span> 156 TAMPINES STREET
+                    12, 521156 Singapore</div>
                 </div>
               </div>
             </div>
@@ -298,15 +305,16 @@
               <h2 class="accordion-header" id="extraHead">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#extraBody"
                   aria-expanded="true" aria-controls="extraBody">
-                  <i class="bi bi-plus-circle me-2"></i> Extra
+                  <span class="material-symbols-outlined">add_circle</span> Extra
                   <span class="material-symbols-outlined">keyboard_arrow_up</span>
                 </button>
               </h2>
               <div id="extraBody" class="accordion-collapse collapse show" aria-labelledby="extraHead"
                 data-bs-parent="#extra-summary">
                 <div class="accordion-body">
-                  <div class="sum-item"><i class="bi bi-x-square"></i> Abandon Shipment</div>
-                  <div class="sum-item"><i class="bi bi-chat-square-dots"></i> SMS</div>
+                  <div class="sum-item"><span class="material-symbols-outlined">disabled_by_default</span> Abandon
+                    Shipment</div>
+                  <div class="sum-item"><span class="material-symbols-outlined">mark_chat_unread</span> SMS</div>
                 </div>
               </div>
             </div>

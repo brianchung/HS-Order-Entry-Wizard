@@ -3,9 +3,9 @@ function togglePassword() {
 	const btn = document.getElementById('togglePw');
     if (passwordField.type === 'password') {
         passwordField.type = 'text';
-		btn.innerHTML = '<i class="bi bi-eye-slash"></i>';
+		btn.innerHTML = '<span class="material-symbols-outlined">visibility_off</span>';
     } else {
         passwordField.type = 'password';
-		btn.innerHTML = '<i class="bi bi-eye"></i>';
+		btn.innerHTML = '<span class="material-symbols-outlined">visibility</span>';
     }
 }

@@ -56,6 +56,9 @@ a:hover {
     border: 1px solid var(--brand);
     color: var(--black);
     background: var(--white);
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .btn-outline-brand:hover {

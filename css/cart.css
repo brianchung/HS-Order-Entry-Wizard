@@ -93,15 +93,6 @@
     margin-bottom: 12px;
 }
 
-.promo-card .form-control {
-    height: 44px;
-    border-radius: 8px 0 0 8px;
-    font-size: 14px;
-    box-shadow: none;
-    border-color: var(--grey-line);
-    background: var(--white);
-}
-
 .promo-divider {
     border-top: 1px dashed var(--grey-line);
     margin: 14px 0 12px;

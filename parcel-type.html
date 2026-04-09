@@ -53,27 +53,44 @@
       <section class="col-xxl-2 col-xl-2 col-lg-2 left-rail">
         <ul class="stepper">
           <li class="step active">
-            <div class="dotwrap"><div class="dot"></div><div class="vline"></div></div>
+            <div class="dotwrap">
+              <div class="dot"></div>
+              <div class="vline"></div>
+            </div>
             <div class="stepper-text">Quote</div>
           </li>
           <li class="step">
-            <div class="dotwrap"><div class="dot"></div><div class="vline"></div></div>
+            <div class="dotwrap">
+              <div class="dot"></div>
+              <div class="vline"></div>
+            </div>
             <div class="stepper-text">Parcel</div>
           </li>
           <li class="step">
-            <div class="dotwrap"><div class="dot"></div><div class="vline"></div></div>
+            <div class="dotwrap">
+              <div class="dot"></div>
+              <div class="vline"></div>
+            </div>
             <div class="stepper-text">Sender</div>
           </li>
           <li class="step">
-            <div class="dotwrap"><div class="dot"></div><div class="vline"></div></div>
+            <div class="dotwrap">
+              <div class="dot"></div>
+              <div class="vline"></div>
+            </div>
             <div class="stepper-text">Recipient</div>
           </li>
           <li class="step">
-            <div class="dotwrap"><div class="dot"></div><div class="vline"></div></div>
+            <div class="dotwrap">
+              <div class="dot"></div>
+              <div class="vline"></div>
+            </div>
             <div class="stepper-text">Extra</div>
           </li>
           <li class="step">
-            <div class="dotwrap"><div class="dot"></div></div>
+            <div class="dotwrap">
+              <div class="dot"></div>
+            </div>
             <div class="stepper-text">Cart</div>
           </li>
         </ul>
@@ -90,40 +107,42 @@
         <div class="page-title">Parcel Type</div>
         <div class="page-sub">What types of parcel are you sending?</div>
 
-        <div class="row g-3 h-80">
-          <div class="col-md-6">        
-            <div class="radio-card disable-selection">
-              <input type="radio" name="parcelType" id="typeMail">
-              <label class="w-100" for="typeMail">
-                <div class="radio-card-container d-flex gap-3 align-items-center">
-                  <div class="ring" aria-hidden="true"></div>
-                  <div class="icon-tile">
-                    <span class="material-symbols-outlined">mail</span>
+        <div class="h-80">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="radio-card disable-selection">
+                <input type="radio" name="parcelType" id="typeMail">
+                <label class="w-100" for="typeMail">
+                  <div class="radio-card-container d-flex gap-3 align-items-center">
+                    <div class="ring" aria-hidden="true"></div>
+                    <div class="icon-tile">
+                      <span class="material-symbols-outlined">mail</span>
+                    </div>
+                    <div>
+                      <p class="radio-card-name">Mail</p>
+                      <p class="radio-card-desc">Letters or flat mail</p>
+                    </div>
                   </div>
-                  <div>
-                    <p class="radio-card-name">Mail</p>
-                    <p class="radio-card-desc">Letters or flat mail</p>
-                  </div>
-                </div>
-              </label>
+                </label>
+              </div>
             </div>
-          </div>
 
-          <div class="col-md-6">
-            <div class="radio-card disable-selection">
-              <input type="radio" name="parcelType" id="typePackage">
-              <label class="w-100" for="typePackage">
-                <div class="radio-card-container d-flex gap-3 align-items-center">
-                  <div class="ring" aria-hidden="true"></div>
-                  <div class="icon-tile">
-                    <span class="material-symbols-outlined">box</span>
+            <div class="col-md-6">
+              <div class="radio-card disable-selection">
+                <input type="radio" name="parcelType" id="typePackage">
+                <label class="w-100" for="typePackage">
+                  <div class="radio-card-container d-flex gap-3 align-items-center">
+                    <div class="ring" aria-hidden="true"></div>
+                    <div class="icon-tile">
+                      <span class="material-symbols-outlined">box</span>
+                    </div>
+                    <div>
+                      <p class="radio-card-name">Package</p>
+                      <p class="radio-card-desc">Parcels, boxes, or goods with value</p>
+                    </div>
                   </div>
-                  <div>
-                    <p class="radio-card-name">Package</p>
-                    <p class="radio-card-desc">Parcels, boxes, or goods with value</p>
-                  </div>
-                </div>
-              </label>
+                </label>
+              </div>
             </div>
           </div>
         </div>
@@ -142,7 +161,7 @@
         <div class="summary-top">
           <div>Summary</div>
           <button class="btn btn-sm btn-light border" type="button" aria-label="Expand">
-            <i class="bi bi-box-arrow-up-right"></i>
+            <span class="material-symbols-outlined">right_panel_close</span>
           </button>
         </div>
 

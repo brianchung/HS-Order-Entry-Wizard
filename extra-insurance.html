@@ -103,7 +103,7 @@
       </section>
 
       <!-- Main -->
-      <main class="col-xxl-8 col-xl-8 col-lg-8 main">
+      <main class="col-xxl-7 col-xl-7 col-lg-7 main">
         <div class="page-title">Insurance</div>
         <div class="page-sub">Protect your shipment with insurance.</div>
 
@@ -115,7 +115,7 @@
                 <label class="w-100" for="insNo">
                   <div class="radio-card-container d-flex gap-3 align-items-center">
                     <div class="ring" aria-hidden="true"></div>
-                    <div class="icon-tile"><i class="bi bi-shield fs-3"></i></div>
+                    <div class="icon-tile"><span class="material-symbols-outlined">remove_moderator</span></div>
                     <div>
                       <p class="radio-card-name">No Insurance</p>
                       <p class="radio-card-desc">I don't need an insurance for parcel.</p>
@@ -131,7 +131,7 @@
                 <label class="w-100" for="insBasic">
                   <div class="radio-card-container d-flex gap-3 align-items-center">
                     <div class="ring" aria-hidden="true"></div>
-                    <div class="icon-tile"><i class="bi bi-shield fs-3"></i></div>
+                    <div class="icon-tile"><span class="material-symbols-outlined">shield</span></div>
                     <div>
                       <p class="radio-card-name">Basic</p>
                       <p class="radio-card-desc">Basic protection against loss.</p>
@@ -141,7 +141,7 @@
               </div>
             </div>
 
-            <div class="row g-3 gap-3">
+            <div class="col-md-12">
               <div class="hint">
                 <span class="material-symbols-outlined">info</span>
                 <div>You can skip this selection and continue to next step if you do not wish to have any insurance.
@@ -164,11 +164,11 @@
       </main>
 
       <!-- Summary -->
-      <section class="col-xxl-2 col-xl-2 col-lg-2 right-rail">
+      <section class="col-xxl-3 col-xl-3 col-lg-3 right-rail">
         <div class="summary-top">
           <div>Summary</div>
           <button class="btn btn-sm btn-light border" type="button" aria-label="Expand">
-            <i class="bi bi-box-arrow-up-right"></i>
+            <span class="material-symbols-outlined">right_panel_close</span>
           </button>
         </div>
 
@@ -263,7 +263,7 @@
               <h2 class="accordion-header" id="senderHead">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#senderBody"
                   aria-expanded="true" aria-controls="senderBody">
-                  <i class="bi bi-person me-2"></i>
+                  <span class="material-symbols-outlined">person</span>
                   Sender
                   <span class="material-symbols-outlined">keyboard_arrow_up</span>
                 </button>
@@ -271,10 +271,10 @@
               <div id="senderBody" class="accordion-collapse collapse show" aria-labelledby="senderHead"
                 data-bs-parent="#sender-summary">
                 <div class="accordion-body">
-                  <div class="sum-item"><i class="bi bi-person"></i> Brian Chung</div>
-                  <div class="sum-item"><i class="bi bi-telephone"></i> +65 4809800</div>
-                  <div class="sum-item"><i class="bi bi-calendar3"></i> Collection 26/02/2026 | 9:00am - 10:00am</div>
-                  <div class="sum-item"><i class="bi bi-geo-alt"></i> 156 TAMPINES STREET 12, 521156 Singapore</div>
+                  <div class="sum-item"><span class="material-symbols-outlined">person</span> Brian Chung</div>
+                  <div class="sum-item"><span class="material-symbols-outlined">call</span> +65 4809800</div>
+                  <div class="sum-item"><span class="material-symbols-outlined">calendar_today</span> Collection 26/02/2026 | 9:00am - 10:00am</div>
+                  <div class="sum-item"><span class="material-symbols-outlined">location_on</span> 156 TAMPINES STREET 12, 521156 Singapore</div>
                 </div>
               </div>
             </div>
@@ -286,7 +286,7 @@
               <h2 class="accordion-header" id="recipientHead">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#recipientBody"
                   aria-expanded="true" aria-controls="recipientBody">
-                  <i class="bi bi-person me-2"></i>
+                  <span class="material-symbols-outlined">person</span>
                   Recipient
                   <span class="material-symbols-outlined">keyboard_arrow_up</span>
                 </button>
@@ -294,10 +294,10 @@
               <div id="recipientBody" class="accordion-collapse collapse show" aria-labelledby="recipientHead"
                 data-bs-parent="#recipient-summary">
                 <div class="accordion-body">
-                  <div class="sum-item"><i class="bi bi-person"></i> Brian Chung</div>
-                  <div class="sum-item"><i class="bi bi-telephone"></i> +65 4809800</div>
-                  <div class="sum-item"><i class="bi bi-calendar3"></i> Collection 26/02/2026 | 9:00am - 10:00am</div>
-                  <div class="sum-item"><i class="bi bi-geo-alt"></i> 156 TAMPINES STREET 12, 521156 Singapore</div>
+                  <div class="sum-item"><span class="material-symbols-outlined">person</span> Brian Chung</div>
+                  <div class="sum-item"><span class="material-symbols-outlined">call</span> +65 4809800</div>
+                  <div class="sum-item"><span class="material-symbols-outlined">calendar_today</span> Collection 26/02/2026 | 9:00am - 10:00am</div>
+                  <div class="sum-item"><span class="material-symbols-outlined">location_on</span> 156 TAMPINES STREET 12, 521156 Singapore</div>
                 </div>
               </div>
             </div>
@@ -309,15 +309,15 @@
               <h2 class="accordion-header" id="extraHead">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#extraBody"
                   aria-expanded="true" aria-controls="extraBody">
-                  <i class="bi bi-plus-circle me-2"></i> Extra
+                  <span class="material-symbols-outlined">add_circle</span> Extra
                   <span class="material-symbols-outlined">keyboard_arrow_up</span>
                 </button>
               </h2>
               <div id="extraBody" class="accordion-collapse collapse show" aria-labelledby="extraHead"
                 data-bs-parent="#extra-summary">
                 <div class="accordion-body">
-                  <div class="sum-item"><i class="bi bi-x-square"></i> Abandon Shipment</div>
-                  <div class="sum-item"><i class="bi bi-chat-square-dots"></i> SMS</div>
+                  <div class="sum-item"><span class="material-symbols-outlined">disabled_by_default</span> Abandon Shipment</div>
+                  <div class="sum-item"><span class="material-symbols-outlined">mark_chat_unread</span> SMS</div>
                 </div>
               </div>
             </div>

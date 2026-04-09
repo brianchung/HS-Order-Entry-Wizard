@@ -49,6 +49,8 @@
     padding: 12px;
     border-top: 1px solid var(--grey-line);
     font-size: 14px;
+    gap: 8px;
+    display: grid;
 }
 
 .summary-acc .accordion .accordion-body .sum-item {
