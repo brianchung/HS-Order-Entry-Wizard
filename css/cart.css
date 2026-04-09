@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin: 16px 0;
     gap: 16px;
 }
 
@@ -15,7 +15,7 @@
 
 .order-top {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     gap: 10px;
     margin-bottom: 12px;
@@ -23,7 +23,7 @@
 
 .order-head-left {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 14px;
     min-width: 0;
     flex: 1;
@@ -48,7 +48,7 @@
 .cart-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 14px 18px;
+    gap: 16px;
     margin-bottom: 8px;
 }
 
@@ -65,9 +65,14 @@
     line-height: 1.25;
 }
 
-.cart-item i {
-    font-size: 14px;
-    color: var(--black);
+.cart-item .material-symbols-outlined {
+    font-size: 18px;
+    color: var(--grey-dark);
+}
+
+.cart-item span:nth-child(2) {
+    display: flex;
+    gap: 4px;
 }
 
 .meta-strong {
