@@ -328,6 +328,12 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
     box-shadow: var(--shadow);
 }
 
+.svc-radio .info-link {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+
 /* details card (right of grid) */
 .details-card {
     border: 1px solid var(--grey-line);
@@ -348,10 +354,10 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
     gap: 6px;
     padding-bottom: 16px;
     margin-bottom: 16px;
-    padding-top: 16px;
+    /* padding-top: 16px; */
     color: var(--black);
     border: 1px 0;
-    border-bottom: 2px solid var(--grey-line);
+    border-bottom: 2px solid var(--grey-light);
 }
 
 .kv {
@@ -364,6 +370,7 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
 
 .kv .k {
     color: var(--grey-dark);
+    font-size: 14px;
 }
 
 .total {
