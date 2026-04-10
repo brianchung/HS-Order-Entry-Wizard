@@ -104,9 +104,21 @@
 
       <!-- Main content -->
       <main class="col-xxl-7 col-xl-7 col-lg-7 main">
-        <div class="page-title">Route Selection</div>
-        <div class="page-sub">Choose your shipping scope and define the
-          destination points.</div>
+        <div class="row page-title-container">
+          <div class="col-md-10 col-lg-12 ">
+            <div class="page-title">Route Selection</div>
+            <div class="page-sub">Choose your shipping scope and define the
+              destination points.</div>
+          </div>
+
+          <!-- summary mobile toggle -->
+          <div class="col-md-2 d-lg-none">
+            <button class="btn btn-outline-brand" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#summaryPanel" aria-controls="summaryPanel">
+              <span>Summary</span>
+            </button>
+          </div>
+        </div>
 
         <div class="g-3 h-80">
           <!-- Route cards -->
@@ -287,7 +299,7 @@
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#routeBody"
                   aria-expanded="true" aria-controls="routeBody">
                   <span class="material-symbols-outlined">route</span>
-                  <div class="accordion-title w-100">Route</div> 
+                  <div class="accordion-title w-100">Route</div>
                   <span class="material-symbols-outlined">keyboard_arrow_up</span>
                 </button>
               </h2>
@@ -315,6 +327,53 @@
           </div>
         </div>
       </section>
+
+      <!-- mobile summary panel -->
+      <div class="offcanvas offcanvas-end summary-panel" tabindex="-1" id="summaryPanel"
+        aria-labelledby="summaryPanelLabel">
+        <div class="offcanvas-header border-bottom">
+          <h5 class="offcanvas-title fw-bold" id="summaryLabel">Summary</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+          <div class="summary-acc">
+            <div class="accordion" id="route-summary">
+              <div class="accordion-item border-0">
+                <h2 class="accordion-header" id="routeHead">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#routeBody"
+                    aria-expanded="true" aria-controls="routeBody">
+                    <span class="material-symbols-outlined">route</span>
+                    <div class="accordion-title w-100">Route</div>
+                    <span class="material-symbols-outlined">keyboard_arrow_up</span>
+                  </button>
+                </h2>
+
+                <div id="routeBody" class="accordion-collapse collapse show" aria-labelledby="routeHead"
+                  data-bs-parent="#route-summary">
+                  <div class="accordion-body">
+                    <div class="route-grid">
+                      <div>
+                        <p class="route-label">Singapore</p>
+                        <p class="route-val">521156</p>
+                      </div>
+
+                      <div class="arrow"><span class="material-symbols-outlined">arrow_forward</span></div>
+
+                      <div>
+                        <p class="route-label">Malaysia</p>
+                        <p class="route-val">63000</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 
