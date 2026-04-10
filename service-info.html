@@ -105,9 +105,24 @@
 
       <!-- Main -->
       <main class="col-xxl-7 col-xl-7 col-lg-7 main">
-        <div class="page-title">Service</div>
-        <div class="page-sub">These is the available services that fits your parcel. Select a service to view delivery
-          time and total cost.</div>
+
+        <div class="row page-title-container">
+          <div class="col-md-10 col-lg-12 ">
+            <div class="page-title">Service</div>
+            <div class="page-sub">These is the available services that fits your parcel. Select a service to view
+              delivery
+              time and total cost.
+            </div>
+          </div>
+
+          <!-- summary mobile toggle -->
+          <div class="col-md-2 d-lg-none">
+            <button class="btn btn-outline-brand" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#summaryPanel" aria-controls="summaryPanel">
+              <span>Summary</span>
+            </button>
+          </div>
+        </div>
 
         <div class="row g-3 h-80">
           <!-- Service cards (left) -->
@@ -124,8 +139,10 @@
                         <p class="svc-name">Economy Int Retail Doc</p>
                         <div class="svc-price text-muted">From <span class="text-dark fw-bold">$34.76</span></div>
                         <div class="svc-meta">
-                          <span class="pill"><span class="material-symbols-outlined green">check_circle</span> Lowest cost</span>
-                          <div class="svc-line"><span class="material-symbols-outlined">schedule</span> ETA 3-4 days</div>
+                          <span class="pill"><span class="material-symbols-outlined green">check_circle</span> Lowest
+                            cost</span>
+                          <div class="svc-line"><span class="material-symbols-outlined">schedule</span> ETA 3-4 days
+                          </div>
                         </div>
                       </div>
                     </label>
@@ -141,8 +158,10 @@
                         <p class="svc-name">Next Day Delivery</p>
                         <div class="svc-price text-muted">From <span class="text-dark fw-bold">$70.00</span></div>
                         <div class="svc-meta">
-                          <span class="pill"><span class="material-symbols-outlined green">check_circle</span> Fastest delivery</span>
-                          <div class="svc-line"><span class="material-symbols-outlined">schedule</span> ETA Next Day</div>
+                          <span class="pill"><span class="material-symbols-outlined green">check_circle</span> Fastest
+                            delivery</span>
+                          <div class="svc-line"><span class="material-symbols-outlined">schedule</span> ETA Next Day
+                          </div>
                         </div>
                       </div>
                     </label>
@@ -158,7 +177,8 @@
                         <p class="svc-name">Tracked Letterbox Mail</p>
                         <div class="svc-price text-muted">From <span class="text-dark fw-bold">$65.00</span></div>
                         <div class="svc-meta">
-                          <div class="svc-line"><span class="material-symbols-outlined">schedule</span> ETA 4-5 days</div>
+                          <div class="svc-line"><span class="material-symbols-outlined">schedule</span> ETA 4-5 days
+                          </div>
                         </div>
                       </div>
                     </label>
@@ -174,7 +194,8 @@
                         <p class="svc-name">Speedpost Standard</p>
                         <div class="svc-price text-muted">From <span class="text-dark fw-bold">$34.76</span></div>
                         <div class="svc-meta">
-                          <div class="svc-line"><span class="material-symbols-outlined">schedule</span> ETA 4-5 days</div>
+                          <div class="svc-line"><span class="material-symbols-outlined">schedule</span> ETA 4-5 days
+                          </div>
                         </div>
                       </div>
                     </label>
@@ -190,13 +211,14 @@
                         <p class="svc-name">Smartpac</p>
                         <div class="svc-price text-muted">From <span class="text-dark fw-bold">$70.00</span></div>
                         <div class="svc-meta">
-                          <div class="svc-line"><span class="material-symbols-outlined">schedule</span> ETA 4-5 days</div>
+                          <div class="svc-line"><span class="material-symbols-outlined">schedule</span> ETA 4-5 days
+                          </div>
                         </div>
                       </div>
                     </label>
                   </div>
                 </div>
-              
+
                 <div class="col-12 col-md-6">
                   <div class="svc-radio">
                     <input type="radio" name="svc" id="svc1">
@@ -206,7 +228,8 @@
                         <p class="svc-name">Priority Int Retail Doc</p>
                         <div class="svc-price text-muted">From <span class="text-dark fw-bold">$65.00</span></div>
                         <div class="svc-meta">
-                          <div class="svc-line"><span class="material-symbols-outlined">schedule</span> ETA 1-2 days</div>
+                          <div class="svc-line"><span class="material-symbols-outlined">schedule</span> ETA 1-2 days
+                          </div>
                         </div>
                       </div>
                     </label>
@@ -265,9 +288,9 @@
       <section class="col-xxl-3 col-xl-3 col-lg-3 right-rail">
         <div class="summary-top">
           <div>Summary</div>
-          <button class="btn btn-sm btn-light border" type="button" aria-label="Expand">
+          <!--<button class="btn btn-sm btn-light border" type="button" aria-label="Expand">
             <span class="material-symbols-outlined">right_panel_close</span>
-          </button>
+          </button>-->
         </div>
 
         <div class="summary-acc">
@@ -278,7 +301,7 @@
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#routeBody"
                   aria-expanded="true" aria-controls="routeBody">
                   <span class="material-symbols-outlined">route</span>
-                  Route
+                  <div class="accordion-title w-100">Route</div>
                   <span class="material-symbols-outlined">keyboard_arrow_up</span>
                 </button>
               </h2>
@@ -311,7 +334,7 @@
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#parcelBody"
                   aria-expanded="true" aria-controls="parcelBody">
                   <span class="material-symbols-outlined">box</span>
-                  Parcel
+                  <div class="accordion-title w-100">Parcel</div>
                   <span class="material-symbols-outlined">keyboard_arrow_up</span>
                 </button>
               </h2>
@@ -333,7 +356,7 @@
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#svcBody"
                   aria-expanded="true" aria-controls="svcBody">
                   <span class="material-symbols-outlined">list</span>
-                  Service
+                  <div class="accordion-title w-100">Service</div>
                   <span class="material-symbols-outlined">keyboard_arrow_up</span>
                 </button>
               </h2>
@@ -341,14 +364,17 @@
                 data-bs-parent="#service-summary">
                 <div class="accordion-body">
                   <div class="sum-item">
-                    <div class="sum-left"><span class="material-symbols-outlined">local_shipping</span> Next Day Delivery</div>
+                    <span class="material-symbols-outlined">local_shipping</span>
+                    Next Day Delivery
                     <div class="fw-bold">$70.56</div>
                   </div>
                   <div class="sum-item">
-                    <div class="sum-left"><span class="material-symbols-outlined">schedule</span> Next Day</div>
+                    <span class="material-symbols-outlined">
+                      schedule</span> Next Day
                   </div>
                   <div class="sum-item">
-                    <div class="sum-left"><span class="material-symbols-outlined">location_on</span> With Tracking</div>
+                    <span class="material-symbols-outlined">location_on</span>
+                    With Tracking
                   </div>
                 </div>
               </div>
@@ -358,6 +384,106 @@
         </div>
       </section>
 
+      <!-- mobile summary panel -->
+      <div class="offcanvas offcanvas-end summary-panel" tabindex="-1" id="summaryPanel"
+        aria-labelledby="summaryPanelLabel">
+        <div class="offcanvas-header border-bottom">
+          <h5 class="offcanvas-title fw-bold" id="summaryLabel">Summary</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+          <div class="summary-acc">
+            <!-- route summary -->
+            <div class="accordion" id="route-summary">
+              <div class="accordion-item border-0">
+                <h2 class="accordion-header" id="routeHead">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#routeBody"
+                    aria-expanded="true" aria-controls="routeBody">
+                    <span class="material-symbols-outlined">route</span>
+                    <div class="accordion-title w-100">Route</div>
+                    <span class="material-symbols-outlined">keyboard_arrow_up</span>
+                  </button>
+                </h2>
+
+                <div id="routeBody" class="accordion-collapse collapse show" aria-labelledby="routeHead"
+                  data-bs-parent="#route-summary">
+                  <div class="accordion-body">
+                    <div class="route-grid">
+                      <div>
+                        <p class="route-label">Singapore</p>
+                        <p class="route-val">521156</p>
+                      </div>
+
+                      <div class="arrow"><span class="material-symbols-outlined">arrow_forward</span></div>
+
+                      <div>
+                        <p class="route-label">Malaysia</p>
+                        <p class="route-val">63000</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- parcel summary -->
+            <div class="accordion" id="package-summary">
+              <div class="accordion-item border-0">
+                <h2 class="accordion-header" id="parcelHead">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#parcelBody"
+                    aria-expanded="true" aria-controls="parcelBody">
+                    <span class="material-symbols-outlined">box</span>
+                    <div class="accordion-title w-100">Parcel</div>
+                    <span class="material-symbols-outlined">keyboard_arrow_up</span>
+                  </button>
+                </h2>
+
+                <div id="parcelBody" class="accordion-collapse collapse show" aria-labelledby="parcelHead"
+                  data-bs-parent="#package-summary">
+                  <div class="accordion-body">
+                    <div class="sum-item"><span class="material-symbols-outlined">box</span> Package - Custom</div>
+                    <div class="sum-item"><span class="material-symbols-outlined">box</span> Package - Small</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- service summary -->
+            <div class="accordion" id="service-summary">
+              <div class="accordion-item border-0">
+                <h2 class="accordion-header" id="svcHead">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#svcBody"
+                    aria-expanded="true" aria-controls="svcBody">
+                    <span class="material-symbols-outlined">list</span>
+                    <div class="accordion-title w-100">Service</div>
+                    <span class="material-symbols-outlined">keyboard_arrow_up</span>
+                  </button>
+                </h2>
+                <div id="svcBody" class="accordion-collapse collapse show" aria-labelledby="svcHead"
+                  data-bs-parent="#service-summary">
+                  <div class="accordion-body">
+                    <div class="sum-item">
+                      <span class="material-symbols-outlined">local_shipping</span>
+                      Next Day Delivery
+                      <div class="fw-bold">$70.56</div>
+                    </div>
+                    <div class="sum-item">
+                      <span class="material-symbols-outlined">
+                        schedule</span> Next Day
+                    </div>
+                    <div class="sum-item">
+                      <span class="material-symbols-outlined">location_on</span>
+                      With Tracking
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 

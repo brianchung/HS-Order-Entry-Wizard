@@ -165,9 +165,9 @@
       <section class="col-xxl-3 col-xl-3 col-lg-3 right-rail">
         <div class="summary-top">
           <div>Summary</div>
-          <button class="btn btn-sm btn-light border" type="button" aria-label="Expand">
+          <!--<button class="btn btn-sm btn-light border" type="button" aria-label="Expand">
             <span class="material-symbols-outlined">right_panel_close</span>
-          </button>
+          </button>-->
         </div>
 
         <div class="summary-acc">
@@ -178,7 +178,7 @@
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#routeBody"
                   aria-expanded="true" aria-controls="routeBody">
                   <span class="material-symbols-outlined">route</span>
-                  Route
+                  <div class="accordion-title w-100">Route</div> 
                   <span class="material-symbols-outlined">keyboard_arrow_up</span>
                 </button>
               </h2>
@@ -210,8 +210,8 @@
               <h2 class="accordion-header" id="parcelHead">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#parcelBody"
                   aria-expanded="true" aria-controls="parcelBody">
-                  <span class="material-symbols-outlined">box</span>
-                  Parcel
+                  <span class="material-symbols-outlined">box</span> 
+                  <div class="accordion-title w-100">Parcel</div>
                   <span class="material-symbols-outlined">keyboard_arrow_up</span>
                 </button>
               </h2>
@@ -232,7 +232,7 @@
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#svcBody"
                   aria-expanded="true" aria-controls="svcBody">
                   <span class="material-symbols-outlined">list</span>
-                  Service
+                  <div class="accordion-title w-100">Service</div>
                   <span class="material-symbols-outlined">keyboard_arrow_up</span>
                 </button>
               </h2>
@@ -240,15 +240,17 @@
                 data-bs-parent="#service-summary">
                 <div class="accordion-body">
                   <div class="sum-item">
-                    <div class="sum-left"><span class="material-symbols-outlined">local_shipping</span> Next Day
-                      Delivery</div>
+                    <span class="material-symbols-outlined">local_shipping</span> 
+                    Next Day Delivery
                     <div class="fw-bold">$70.56</div>
                   </div>
                   <div class="sum-item">
-                    <div class="sum-left"><span class="material-symbols-outlined">schedule</span> Next Day</div>
+                    <span class="material-symbols-outlined">
+                    schedule</span> Next Day
                   </div>
                   <div class="sum-item">
-                    <div class="sum-left"><span class="material-symbols-outlined">location_on</span> With Tracking</div>
+                    <span class="material-symbols-outlined">location_on</span> 
+                    With Tracking
                   </div>
                 </div>
               </div>
@@ -262,7 +264,7 @@
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#senderBody"
                   aria-expanded="true" aria-controls="senderBody">
                   <span class="material-symbols-outlined">person</span>
-                  Sender
+                  <div class="accordion-title w-100">Sender</div>
                   <span class="material-symbols-outlined">keyboard_arrow_up</span>
                 </button>
               </h2>
@@ -285,7 +287,7 @@
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#recipientBody"
                   aria-expanded="true" aria-controls="recipientBody">
                   <span class="material-symbols-outlined">person</span>
-                  Recipient
+                  <div class="accordion-title w-100">Recipient</div>
                   <span class="material-symbols-outlined">keyboard_arrow_up</span>
                 </button>
               </h2>
@@ -307,7 +309,8 @@
               <h2 class="accordion-header" id="extraHead">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#extraBody"
                   aria-expanded="true" aria-controls="extraBody">
-                  <span class="material-symbols-outlined">add_circle</span> Extra
+                  <span class="material-symbols-outlined">add_circle</span> 
+                  <div class="accordion-title w-100">Extra</div>
                   <span class="material-symbols-outlined">keyboard_arrow_up</span>
                 </button>
               </h2>

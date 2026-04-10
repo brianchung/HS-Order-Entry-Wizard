@@ -86,3 +86,7 @@
 #package .sum-item {
     font-size: 14px;
 }
+
+.sum-item .fw-bold {
+    margin-left: 16px;
+}
