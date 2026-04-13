@@ -196,6 +196,14 @@ a:hover {
     color: var(--brand);
 }
 
+.radio-card .icon-small {
+    font-size: 14px;
+}
+
+.radio-card .icon-medium {
+    font-size: 16px;
+}
+
 .btn-container {
     padding: 16px 0;
     min-height: 80px;
