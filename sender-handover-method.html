@@ -259,7 +259,9 @@
                         </div>
                       </div>
                     </div>
-                    <a href="#" class="view-map">View Map</a>
+
+                    <a href="#" class="view-map btn-open-panel" data-bs-toggle="offcanvas"
+                      data-bs-target="#locationOffcanvas" aria-controls="locationOffcanvas">View Map</a>
                   </div>
                 </label>
               </div>
@@ -568,6 +570,45 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- dropoff location details -->
+      <div class="offcanvas offcanvas-end location-offcanvas" tabindex="-1" id="locationOffcanvas"
+        aria-labelledby="locationOffcanvasLabel">
+        <div class="offcanvas-header border-bottom">
+          <h5 class="location-title" id="locationOffcanvasLabel">
+            POPStation@AZ Building
+          </h5>
+          <button type="button" class="btn-close location-close" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body p-3">
+          <div class="row g-2">
+            <div class="location-meta">
+              <span class="material-symbols-outlined">location_on</span>
+              <div>140 Paya Lebar Road, AZ Building, Singapore 409015</div>
+            </div>
+
+            <div class="location-meta">
+              <span class="material-symbols-outlined">nest_clock_farsight_analog</span>
+              <div>Open 24 Hours</div>
+            </div>
+
+            <div class="location-meta loc-info">
+              <span class="material-symbols-outlined">location_searching</span>
+              <div>Approx 0.022 Km</div>
+            </div>
+          </div>
+
+
+          <div class="map-wrapper ratio ratio-1x1">
+            <iframe
+              src="https://www.google.com/maps?q=140%20Paya%20Lebar%20Road%2C%20AZ%20Building%2C%20Singapore%20409015&z=15&output=embed"
+              style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="POPStation map"></iframe>
           </div>
         </div>
       </div>

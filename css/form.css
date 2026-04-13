@@ -577,7 +577,8 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
     display: flex;
 }
 
-.service-offcanvas {
+.service-offcanvas,
+.location-offcanvas {
     --bs-offcanvas-width: 50%;
 }
 
@@ -586,6 +587,24 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
     border: 1px solid var(--grey-line);
     border-top: 0;
     border-radius: 0 0 8px 8px;
+}
+
+.location-meta {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--black);
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.location-meta .material-symbols-outlined {
+    color: var(--grey-dark);
+    font-size: 18px;
+}
+
+.map-wrapper {
+    margin-top: 24px;
 }
 
 .btn-continue,
