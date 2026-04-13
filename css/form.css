@@ -202,6 +202,13 @@ a:hover {
     align-items: center;
     display: flex;
     justify-content: space-between;
+
+    /* position: absolute; */
+    bottom: 0px;
+    padding: 16px;
+    background: var(--white);
+    width: stretch;
+    width: -webkit-fill-available;
 }
 
 .field-group-label {
@@ -234,7 +241,6 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
     min-height: 150px;
     height: stretch;
     display: flex;
-    /* justify-content: center; */
 }
 
 .svc-radio input {
@@ -360,7 +366,6 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
     gap: 6px;
     padding-bottom: 16px;
     margin-bottom: 16px;
-    /* padding-top: 16px; */
     color: var(--black);
     border: 1px 0;
     border-bottom: 2px solid var(--grey-light);
@@ -419,7 +424,6 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
     align-items: center;
     gap: 8px;
     padding: 10px 10px;
-    /* border-bottom: 1px solid var(--grey-line); */
 }
 
 .search-box input {
@@ -512,8 +516,9 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
     white-space: nowrap;
 }
 
-.loc-info i {
+.loc-info .material-symbols-outlined {
     color: var(--grey-dark);
+    font-size: 18px;
 }
 
 .view-map {
@@ -565,7 +570,6 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
     position: relative;
     top: 4px;
     font-size: 18px;
-    /* text-decoration: none; */
 }
 
 .add-btn {
@@ -594,6 +598,26 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
     }
 
     .loc-card {
-        display: inline-grid;
+        display: grid;
+    }
+
+    .loc-info {
+        white-space: wrap;
+    }
+
+    .main {
+        padding-bottom: 120px;
+    }
+
+    .btn-container {
+        position: fixed;
+        bottom: 0;
+        width: stretch;
+        left: 0;
+        padding: 16px;
+        background-color: #fff;
+        border-top: 1px solid var(--grey-light);
+        z-index: 100;
+        width: -webkit-fill-available;
     }
 }

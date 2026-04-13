@@ -116,6 +116,8 @@
         place-items: center;
         padding: 16px 8px;
         font-size: 12px;
+        /* firefox */
+        width: -webkit-fill-available;
     }
 
     .stepper .step.active .stepper-text {
