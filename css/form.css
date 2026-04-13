@@ -577,6 +577,17 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
     display: flex;
 }
 
+.service-offcanvas {
+    --bs-offcanvas-width: 50%;
+}
+
+.service-tab-content {
+    padding: 16px;
+    border: 1px solid var(--grey-line);
+    border-top: 0;
+    border-radius: 0 0 8px 8px;
+}
+
 .btn-continue,
 .btn-next,
 .handover-courier,

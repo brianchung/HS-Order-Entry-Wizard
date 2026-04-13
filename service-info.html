@@ -189,7 +189,10 @@
                     <input type="radio" name="svc" id="svc5">
                     <label class="w-100" for="svc5">
                       <div class="svc-card">
-                        <span class="info-link material-symbols-outlined">info</span>
+                        <button class="btn btn-open-panel" type="button" data-bs-toggle="offcanvas"
+                          data-bs-target="#serviceDetailsOffcanvas" aria-controls="serviceDetailsOffcanvas">
+                          <span class="info-link material-symbols-outlined">info</span>
+                        </button>
                         <p class="svc-name">Speedpost Standard</p>
                         <div class="svc-price text-muted">From <span class="text-dark fw-bold">$34.76</span></div>
                         <div class="svc-meta">
@@ -483,6 +486,121 @@
           </div>
         </div>
       </div>
+
+      <!-- service info -->
+      <div class="offcanvas offcanvas-end service-offcanvas" tabindex="-1" id="serviceDetailsOffcanvas"
+        aria-labelledby="serviceDetailsOffcanvasLabel">
+        <div class="offcanvas-header border-bottom">
+          <h5 class="offcanvas-title fw-bold" id="serviceDetailsOffcanvasLabel">
+            Speedpost Standard
+          </h5>
+          <button type="button" class="btn-close service-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body p-3 p-sm-4">
+          <div class="service-desc">
+            Quick, efficient, and value-for-money local courier services with flexible
+            drop-off options and reliable, tracked returns.
+          </div>
+
+          <ul class="nav nav-tabs service-tabs" id="serviceTab" role="tablist">
+            <li class="nav-item flex-fill" role="presentation">
+              <button class="nav-link active w-100" id="information-tab" data-bs-toggle="tab"
+                data-bs-target="#information-tab-pane" type="button" role="tab" aria-controls="information-tab-pane"
+                aria-selected="true">
+                <i class="bi bi-info-circle-fill"></i>
+                Information
+              </button>
+            </li>
+
+            <li class="nav-item flex-fill" role="presentation">
+              <button class="nav-link w-100" id="note-tab" data-bs-toggle="tab" data-bs-target="#note-tab-pane" type="button"
+                role="tab" aria-controls="note-tab-pane" aria-selected="false">
+                <i class="bi bi-list-ul"></i>
+                Note
+              </button>
+            </li>
+          </ul>
+
+          <div class="tab-content service-tab-content" id="serviceTabContent">
+            <div class="tab-pane fade show active" id="information-tab-pane" role="tabpanel"
+              aria-labelledby="information-tab" tabindex="0">
+              <div class="table-responsive">
+                <table class="table service-table">
+                  <tbody>
+                    <tr>
+                      <th>Max Weight</th>
+                      <td>≤30kg</td>
+                    </tr>
+                    <tr>
+                      <th>Tracking</th>
+                      <td>Yes</td>
+                    </tr>
+                    <tr>
+                      <th>ETA Time</th>
+                      <td>1 working day</td>
+                    </tr>
+                    <tr>
+                      <th>Max Dimensions</th>
+                      <td>
+                        600 × 400 × 300mm (max length: 1.5m; L + 2W + 2H must not exceed 3m)
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Type of Delivery</th>
+                      <td>Doorstep / POPStation</td>
+                    </tr>
+                    <tr>
+                      <th>Compensation</th>
+                      <td>
+                        Up to $150 per article or the declared value of shipment,
+                        whichever is lower
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Features</th>
+                      <td>
+                        Web &amp; Mobile Tracking<br>
+                        • Sending options, drop off at POPStop, POPDrop and POPStation<br>
+                        Locate the nearest drop off here
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>How to Book?</th>
+                      <td>
+                        Online via ezy2ship<br>
+                        • All Post Offices
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="note-tab-pane" role="tabpanel" aria-labelledby="note-tab" tabindex="0">
+              <div class="note-box">
+                <p>Delivery only available from Mon – Sat, 9am to 10pm, excluding Public Holidays.</p>
+                <p>Rates are inclusive of prevailing GST for consumer shipping.</p>
+                <p>All items have maximum dimension. Should item exceed maximum dimension specified in the weight tier, the
+                next weight tier charge shall apply.</p>
+                <p>In the event of unsuccessful delivery:
+                - Standard: we will attempt to deliver the item again (up to 2 re-delivery attempts). Parcel will be
+                returned to sender if all 3 delivery attempts are unsuccessful.</p>
+                <p>Rates are inclusive of prevailing GST for consumer shipping.</p>
+                <p>There is no delivery to Changi Airport Transit Lounges, Paya Lebar Airport Communication Centre and
+                other Offshore Islands.</p>
+                <p>See the full list of restricted areas in Singapore</p>
+                <p>Shipper is responsible to declare the correct value of shipment.</p>
+                <p>Speedpost liability is limited to, and shall not exceed S$150 per article or the declared value of
+                shipment, whichever is lower. Optional enhanced liability coverage for your item is available, find out
+                more at here.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
     </div>
   </div>
 
