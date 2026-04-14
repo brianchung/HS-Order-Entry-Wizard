@@ -211,12 +211,13 @@ a:hover {
     display: flex;
     justify-content: space-between;
 
-    /* position: absolute; */
+    position: sticky;
     bottom: 0px;
-    padding: 16px;
-    background: var(--white);
+    padding: 16px 0;
+    background-color: var(--white);
     width: stretch;
     width: -webkit-fill-available;
+    z-index: 100;
 }
 
 .field-group-label {
@@ -603,7 +604,6 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
     gap: 6px;
     color: var(--black);
     font-size: 16px;
-    white-space: nowrap;
 }
 
 .location-meta .material-symbols-outlined {
@@ -657,5 +657,10 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
         border-top: 1px solid var(--grey-light);
         z-index: 100;
         width: -webkit-fill-available;
+    }
+
+    .service-offcanvas,
+    .location-offcanvas {
+        --bs-offcanvas-width: 100%;
     }
 }
