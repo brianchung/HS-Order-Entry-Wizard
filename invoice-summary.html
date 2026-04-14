@@ -164,18 +164,89 @@
         <div class="promo-card">
           <div class="details-title">Invoice</div>
           <div class="side-desc">View and print invoice(s).</div>
-          <button class="btn btn-outline-brand w-100">Print Invoice</button>
+          <button class="btn btn-outline-brand w-100" data-bs-toggle="offcanvas" data-bs-target="#printInvoicePanel"
+            aria-controls="printInvoicePanel"">Print Invoice</button>
 
-          <div class="promo-divider"></div>
+          <div class=" promo-divider">
+        </div>
 
-          <div class="details-title">Labels</div>
-          <div class="side-desc">View and print label(s).</div>
-          <button class="btn btn-primary w-100">
-            <span class="material-symbols-outlined">print</span> Print Labels
+        <div class="details-title">Labels</div>
+        <div class="side-desc">View and print label(s).</div>
+        <button class="btn btn-primary w-100" data-bs-toggle="offcanvas" data-bs-target="#printLabelPanel"
+          aria-controls="printLabelPanel">
+          <span class="material-symbols-outlined">print</span> Print Labels
+        </button>
+    </div>
+    </section>
+  </div>
+
+  <!-- print label -->
+  <div class="offcanvas offcanvas-end print-label-panel" tabindex="-1" id="printLabelPanel"
+    aria-labelledby="printLabelPanel">
+    <div class="offcanvas-header border-bottom">
+      <h5 class="offcanvas-title fw-bold" id="printLabelPanel">Label - ND0000000014244717</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body">
+      <div class="container-fluid">
+        <div class="row g-1 gap-1 top-row">
+          <div class="col-md-6 col-lg-6 form-floating">
+            <input type="text" class="form-control" id="recipient-email" value="" placeholder="recipient's email">
+            <label for="recipient-email">Recipient's Email</label>
+          </div>
+
+          <button class="btn btn-primary btn-send col-md-1 col-lg-1">Send</button>
+
+          <button class="btn btn-primary btn-download col-md-1 col-lg-1">
+            <i class="bi bi-download"></i>
+            Download
           </button>
         </div>
-      </section>
+      </div>
+
+      <div class="border bg-light pdf-frame-wrap h-100">
+        <iframe src="files/1570786_label.pdf" class="w-100 h-100 border-0 bg-white" title="PDF Preview">
+        </iframe>
+      </div>
+
     </div>
+  </div>
+
+  <!-- print invoice -->
+  <div class="offcanvas offcanvas-end print-invoice-panel" tabindex="-1" id="printInvoicePanel"
+    aria-labelledby="printInvoicePanel">
+    <div class="offcanvas-header border-bottom">
+      <h5 class="offcanvas-title fw-bold" id="printInvoicePanel">Invoice - ND0000000014244717</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body">
+      <div class="container-fluid">
+        <div class="row g-1 gap-1 top-row">
+          <div class="col-md-6 col-lg-6 form-floating">
+            <input type="text" class="form-control" id="recipient-email" value="" placeholder="recipient's email">
+            <label for="recipient-email">Recipient's Email</label>
+          </div>
+
+          <button class="btn btn-primary btn-send col-md-1 col-lg-1">Send</button>
+
+          <button class="btn btn-primary btn-download col-md-1 col-lg-1">
+            <i class="bi bi-download"></i>
+            Download
+          </button>
+        </div>
+      </div>
+
+      <div class="border bg-light pdf-frame-wrap h-100">
+        <iframe src="files/invoice.pdf" class="w-100 h-100 border-0 bg-white" title="PDF Preview">
+        </iframe>
+      </div>
+
+    </div>
+  </div>
+
+
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

@@ -587,7 +587,9 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
 }
 
 .service-offcanvas,
-.location-offcanvas {
+.location-offcanvas,
+.print-label-panel,
+.print-invoice-panel {
     --bs-offcanvas-width: 50%;
 }
 
@@ -613,6 +615,10 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
 
 .map-wrapper {
     margin-top: 24px;
+}
+
+.top-row {
+    margin-bottom: 24px;
 }
 
 .btn-continue,
@@ -660,7 +666,9 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
     }
 
     .service-offcanvas,
-    .location-offcanvas {
+    .location-offcanvas,
+    .print-label-panel,
+    .print-invoice-panel {
         --bs-offcanvas-width: 100%;
     }
 }
