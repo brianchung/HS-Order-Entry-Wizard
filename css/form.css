@@ -621,6 +621,10 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
     margin-bottom: 24px;
 }
 
+.support-panel {
+    background-color: var(--grey-light);
+}
+
 .btn-continue,
 .btn-next,
 .handover-courier,

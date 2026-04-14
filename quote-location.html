@@ -98,7 +98,8 @@
         <!-- Help box -->
         <div class="helpbox">
           <div class="mb-1">Need help with your shipment?</div>
-          <a href="#">Contact Support</a>
+          <a href="#" data-bs-toggle="offcanvas" data-bs-target="#supportOffcanvas"
+            aria-controls="supportOffcanvas">Contact Support</a>
         </div>
       </section>
 
@@ -287,9 +288,9 @@
       <section class="col-xxl-3 col-xl-3 col-lg-3 right-rail">
         <div class="summary-top">
           <div>Summary</div>
-          <button class="btn btn-sm btn-light border" type="button" aria-label="Expand">
+          <!-- <button class="btn btn-sm btn-light border" type="button" aria-label="Expand">
             <span class="material-symbols-outlined">right_panel_close</span>
-          </button>
+          </button> -->
         </div>
 
         <div class="summary-acc">
@@ -369,6 +370,70 @@
                 </div>
 
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- support -->
+      <div class="offcanvas offcanvas-end support-offcanvas w-50" tabindex="-1" id="supportOffcanvas"
+        aria-labelledby="supportOffcanvasLabel">
+        <div class="offcanvas-header border-bottom">
+          <h5 class="offcanvas-title fw-bold support-title" id="supportOffcanvasLabel">
+            Contact Support
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body p-3">
+          <form>
+            <div class="row g-2 mb-2">
+              <div class="col-12 col-md-6">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="supportName" placeholder="Name" value="Brian">
+                  <label for="supportName">Name</label>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="supportEmail" placeholder="Email"
+                    value="brian.chung@mail.com">
+                  <label for="supportEmail">Email</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-floating mb-3">
+              <textarea class="form-control" placeholder="Message" id="supportMessage" style="height: 110px"></textarea>
+              <label for="supportMessage">Message</label>
+            </div>
+
+            <div class="d-flex justify-content-end mb-4">
+              <button type="submit" class="btn btn-primary">
+                Send Message <i class="bi bi-chevron-right ms-1"></i>
+              </button>
+            </div>
+          </form>
+
+          <div class="support-panel rounded-4 p-3">
+            <div class="mb-3">
+              <div class="fw-bold mb-1">Email Support</div>
+              <div class="text-secondaryx mb-1">Email us and we’ll get back to you within 24 hours.</div>
+              <a href="mailto:support@hypaship.com" class="text-decoration-none">support@hypaship.com</a>
+            </div>
+
+            <div class="mb-3">
+              <div class="fw-bold mb-1">Chat Support</div>
+              <div class="text-secondaryx mb-1">Chat with our staff for instant access to support.</div>
+              <a href="#" class="text-decoration-none">Start Live Chat</a>
+            </div>
+
+            <div>
+              <div class="fw-bold mb-1">Call Us</div>
+              <div class="text-secondaryx mb-2">Mon - Fri, 9:00am - 5:00pm</div>
+              <div><a href="tel:130000000" class="text-decoration-none">1300 00 000</a></div>
+              <div><a href="tel:+654809001" class="text-decoration-none">+654809001</a></div>
             </div>
           </div>
         </div>
