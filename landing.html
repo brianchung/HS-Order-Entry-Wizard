@@ -378,19 +378,25 @@
               <li class="nav-item flex-fill" role="presentation">
                 <button class="nav-link active w-100" id="send-tab" data-bs-toggle="tab" data-bs-target="#send-pane"
                   type="button" role="tab" aria-controls="send-pane" aria-selected="true">
-                  Send
+                  Book
                 </button>
               </li>
               <li class="nav-item flex-fill" role="presentation">
                 <button class="nav-link w-100" id="track-tab" data-bs-toggle="tab" data-bs-target="#track-pane"
                   type="button" role="tab" aria-controls="track-pane" aria-selected="false">
-                  Track
+                  Track Parcel
+                </button>
+              </li>
+              <li class="nav-item flex-fill" role="presentation">
+                <button class="nav-link w-100" id="reschedule-tab" data-bs-toggle="tab" data-bs-target="#reschedule-pane"
+                  type="button" role="tab" aria-controls="reschedule-pane" aria-selected="false">
+                  Reschedule Parcel
                 </button>
               </li>
             </ul>
-
-            <!-- send location content -->
+      
             <div class="tab-content booking-tab-content" id="bookingTabContent">
+              <!-- send location content -->
               <div class="tab-pane fade show active" id="send-pane" role="tabpanel" aria-labelledby="send-tab"
                 tabindex="0">
 
@@ -550,7 +556,7 @@
                 </div>
 
                 <!-- Continue -->
-                <div class="btn-container">
+                <div class="btn-container route-btn">
                   <button class="btn btn-primary float-end" onclick="location.href='parcel-type.html'">
                     Continue <span class="material-symbols-outlined">keyboard_arrow_right</span>
                   </button>
@@ -558,7 +564,7 @@
               </div>
               <!-- tracking tab content -->
               <div class="tab-pane fade" id="track-pane" role="tabpanel" aria-labelledby="track-tab" tabindex="0">
-                <div class="panel track-pane-wrapx">
+                <div class="panel">
                   <div class="panel-head">
                     <span class="bar"></span>
                     <span>Track Your Parcel</span>
@@ -575,9 +581,31 @@
                   </div>
                 </div>
                 <!-- track -->
-                <div class="btn-container">
+                <div class="btn-container route-btn">
                   <button class="btn btn-primary float-end" onclick="location.href='#'">
                     Track <span class="material-symbols-outlined">keyboard_arrow_right</span>
+                  </button>
+                </div>
+
+              </div>
+
+              <!-- reschedule content -->
+               <div class="tab-pane fade" id="reschedule-pane" role="tabpanel" aria-labelledby="reschedule-tab" tabindex="0">
+                <div class="panel ">
+                  <div class="panel-head">
+                    <span class="bar"></span>
+                    <span>Reschedule Parcel</span>
+                  </div>
+                  <div class="form-floating col-12">
+                    <input type="text" class="form-control" id="reschedule-input" value=""
+                      placeholder="Enter consignment number">
+                    <label for="reschedule-input">Enter consignment number</label>
+                  </div>
+                </div>
+                <!-- reschedule -->
+                <div class="btn-container route-btn">
+                  <button class="btn btn-primary float-end" onclick="location.href='#'">
+                    Reschedule <span class="material-symbols-outlined">keyboard_arrow_right</span>
                   </button>
                 </div>
 
@@ -1102,6 +1130,7 @@
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
+  </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
