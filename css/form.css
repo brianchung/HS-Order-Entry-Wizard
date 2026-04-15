@@ -589,7 +589,8 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
 .service-offcanvas,
 .location-offcanvas,
 .print-label-panel,
-.print-invoice-panel {
+.print-invoice-panel,
+.summary-panel {
     --bs-offcanvas-width: 50%;
 }
 
@@ -672,7 +673,8 @@ div.panel.international .int-to>div.form-floating.col-md-6 {
     .service-offcanvas,
     .location-offcanvas,
     .print-label-panel,
-    .print-invoice-panel {
+    .print-invoice-panel,
+    .summary-panel {
         --bs-offcanvas-width: 100%;
     }
 }
