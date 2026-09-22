@@ -32,6 +32,22 @@
     padding: 13px 18px
 }
 
+.consent-box {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    border: 1px solid var(--grey-line);
+    border-radius: 18px;
+    padding: 14px;
+    margin-top: 12px
+}
+
+.consent-box .form-check-input {
+    flex: 0 0 auto;
+    margin-top: 2px
+}
+
+
 
 /*edit delivery instruction*/
 .instruction-item {
@@ -73,21 +89,6 @@
     resize: vertical
 }
 
-.edit-instructions-modal .consent-box {
-    display: flex;
-    gap: 10px;
-    align-items: flex-start;
-    border: 1px solid var(--grey-line);
-    border-radius: 18px;
-    padding: 14px;
-    margin-top: 12px
-}
-
-.edit-instructions-modal .consent-box .form-check-input {
-    flex: 0 0 auto;
-    margin-top: 2px
-}
-
 .edit-instructions-modal .legal-links {
     display: flex;
     flex-wrap: wrap;
@@ -103,3 +104,50 @@
 .instruction-fields[hidden] {
     display: none !important
 }
+
+/*i'll collect modal*/
+.info-card {
+    height: 100%;
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 1.25rem;
+    background: #fff;
+}
+
+.section-title {
+    position: relative;
+    padding-left: .85rem;
+    font-weight: 700;
+}
+
+.section-title::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 4px;
+    border-radius: 999px;
+    background: var(--brand);
+    content: "";
+}
+
+.pickup-map {
+    width: 100%;
+    min-height: 230px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .75rem;
+    background: #e9ecef;
+}
+
+.detail-row {
+    display: grid;
+    grid-template-columns: 1.25rem minmax(6rem, 1fr) auto;
+    gap: .4rem;
+    align-items: start;
+    margin-top: .65rem;
+}
+
+/*.detail-row strong {
+      text-align: right;
+    }*/
