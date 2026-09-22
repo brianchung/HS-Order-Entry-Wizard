@@ -1,33 +1,105 @@
-details-modal .modal-content {
+.modal-content {
     border: 0;
     border-radius: 16px;
 }
 
-.details-modal .modal-header {
+.modal-header {
     padding: 18px 12px;
     border-bottom: 1px solid var(--grey-line)
 }
 
-.details-modal .modal-title {
+.modal-title {
     font-size: 18px;
     font-weight: 800
 }
 
-.details-modal .modal-body {
+.modal-body {
     padding: 16px;
 }
 
-.details-modal .validation-alert .btn-close {
+.validation-alert .btn-close {
     margin-left: auto;
     padding: 0;
 }
 
-.details-modal .modal-footer {
+.modal-footer {
     padding: 6px 12px 12px;
     border: 0
 }
 
-.details-modal .modal-footer .btn-primary {
+.modal-footer .btn-primary {
     min-width: 137px;
     padding: 13px 18px
+}
+
+
+/*edit delivery instruction*/
+.instruction-item {
+    display: grid;
+    grid-template-columns: 16px 1fr;
+    column-gap: 8px;
+    margin-bottom: 12px;
+    font-size: 16px
+}
+
+.instruction-item>i {
+    margin-top: 2px;
+    color: var(--brand-dark-1)
+}
+
+.edit-instructions-modal .radio-card-container {
+    min-height: 66px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 12px 36px 12px 12px
+}
+
+.edit-instructions-modal .radio-card-container .ring {
+    top: 50%;
+    right: auto;
+    left: 12px;
+    transform: translateY(-50%)
+}
+
+.edit-instructions-modal .radio-card-container .radio-card-name {
+    padding-left: 28px;
+    font-size: 14px;
+    font-weight: 500
+}
+
+.edit-instructions-modal textarea.form-control {
+    min-height: 100px;
+    resize: vertical
+}
+
+.edit-instructions-modal .consent-box {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    border: 1px solid var(--grey-line);
+    border-radius: 18px;
+    padding: 14px;
+    margin-top: 12px
+}
+
+.edit-instructions-modal .consent-box .form-check-input {
+    flex: 0 0 auto;
+    margin-top: 2px
+}
+
+.edit-instructions-modal .legal-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 12px
+}
+
+.edit-instructions-modal .modal-footer {
+    padding: 0 16px 14px;
+    border: 0
+}
+
+.instruction-fields[hidden] {
+    display: none !important
 }
