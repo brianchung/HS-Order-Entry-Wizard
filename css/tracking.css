@@ -178,3 +178,10 @@
     font-weight: 500;
     line-height: 1;
 }
+
+/*right panel*/
+.tracking-right-panel {
+    background: var(--white);
+    border-left: 1px solid var(--grey-line);
+    padding: 14px 18px;
+}
