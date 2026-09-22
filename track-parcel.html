@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HypaShip - Track Parcel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Add this in <head> BEFORE your CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Top bar -->
+    <div class="topbar d-flex align-items-center px-3">
+        <button class="btn-icon" type="button" aria-label="Menu">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+
+        <div class="d-flex align-items-center gap-2 ms-2">
+            <div class="fw-bold small">Track Parcel</div>
+        </div>
+
+        <div class="ms-auto d-flex align-items-center gap-2">
+            <div class="position-relative">
+                <button class="btn-icon btn-cart" type="button" aria-label="Cart">
+                    <span class="material-symbols-outlined">shopping_cart</span>
+                </button>
+                <span class="badge text-bg-warning rounded-pill badge-float">2</span>
+            </div>
+
+            <button class="user-btn d-flex align-items-center gap-2 border rounded-pill px-2 py-1" type="button"
+                aria-label="Cart">
+                <div class="bg-light border rounded-circle d-grid">
+                    <span class="material-symbols-outlined">person</span>
+                </div>
+                <div class="fw-bold small">Guest</div>
+            </button>
+        </div>
+    </div>
+
+    <main class="container-fluid">
+        <div class="row g-0 app-row">
+
+            <!-- Left stepper -->
+            <section class="col-xxl-2 col-xl-2 col-lg-2 left-rail" aria-label="Parcel progress">
+                <ul class="stepper">
+                    <li class="step completed"><span class="dotwrap"><span class="dot"><i
+                                    class="bi bi-check-lg"></i></span><span class="vline"></span></span><span
+                            class="stepper-text">Pickup Request</span></li>
+                    <li class="step completed"><span class="dotwrap"><span class="dot"><i
+                                    class="bi bi-check-lg"></i></span><span class="vline"></span></span><span
+                            class="stepper-text">Pickup</span></li>
+                    <li class="step active"><span class="dotwrap"><span class="dot"></span><span
+                                class="vline"></span></span><span class="stepper-text">Transit</span></li>
+                    <li class="step"><span class="dotwrap"><span class="dot"></span><span
+                                class="vline"></span></span><span class="stepper-text">Delivery</span></li>
+                </ul>
+            </section>
+
+            <!-- Main -->
+            <section class="col-xxl-7 col-xl-7 col-lg-7 main">
+                <!--delivery address-->
+                <div class="row g-3">
+                    <div class="col-xl-6">
+                        <article class="panel">
+                            <div class="panel-head header-justify">
+                                <div class="left"><span class="bar"></span>
+                                    <h2 class="m-0 fs-6 fw-bold">Delivery Address</h2>
+                                </div><button class="btn btn-primary btn-compact"><i class="bi bi-eye"></i> Full
+                                    Details</button>
+                            </div>
+                            <table class="table address-table">
+                                <tbody>
+                                    <tr class="bottom-line">
+                                        <td><i class="bi bi-person me-2"></i>Contact Name:</td>
+                                        <td><b>A******m</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="bi bi-geo-alt me-2"></i>Street:</td>
+                                        <td><b>4*****l</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="bi bi-signpost me-2"></i>City:</td>
+                                        <td><b>S*******e</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="bi bi-123 me-2"></i>Zip Code:</td>
+                                        <td><b>3****9</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="bi bi-globe me-2"></i>Country:</td>
+                                        <td><b>S*******e</b></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </article>
+                    </div>
+                    <!--tracking detail-->
+                    <div class="col-xl-6">
+                        <article class="panel delivery-status">
+                            <div class="panel-head"><span class="bar"></span>
+                                <h2 class="m-0 fs-6 fw-bold">TRAC0001017</h2>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center gap-4">
+                                <i class="bi bi-truck truck"></i>
+                                <div>
+                                    <p>Your order is currently at</p>
+                                    <h3 class="fw-bold">TRANSIT DEPOT</h3>
+                                    <br>
+                                    <p>Estimated delivery</p>
+                                    <div class="fs-4 fw-bold lh-sm">16 Aug 2026,<br>07:00-12:00</div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <!--delivery history-->
+                    <div class="col-12">
+                        <article class="panel">
+                            <div class="panel-head"><span class="bar"></span>
+                                <h2 class="m-0 fs-6 fw-bold">Delivery History</h2>
+                            </div>
+                            <div class="history-list">
+                                <div class="history-row done"><span class="history-dot"><i
+                                            class="bi bi-check"></i></span>
+                                    <div class="event pt-2">Pickup Request</div>
+                                    <div class="event-details"><small>Thu, 12 Aug 2026, 00:03</small><br><strong>ORDER CREATED</strong> - Your
+                                        order has been created successfully.</div>
+                                </div>
+                                <div class="history-row done"><span class="history-dot"><i
+                                            class="bi bi-check"></i></span>
+                                    <div class="event pt-2">Pickup</div>
+                                    <div class="event-details"><small>Thu, 12 Aug 2026, 09:34</small><br><strong>COLLECTED</strong> - Your
+                                        order has been collected and is on its way to its destination.</div>
+                                </div>
+                                <div class="history-row current"><span class="history-dot"></span>
+                                    <div class="event pt-2">Transit</div>
+                                    <div class="event-details"><small>Thu, 12 Aug 2026, 11:25</small><br><strong>AT DEPOT</strong> - Your
+                                        order is at a transit depot.</div>
+                                </div>
+                                <div class="history-row pending"><span class="history-dot"></span>
+                                    <div class="event pt-2">Delivered</div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Summary -->
+            <aside class="col-xxl-3 col-xl-3 col-lg-3 right-rail">
+                <article class="support-card">
+                    <div class="d-flex gap-2 align-items-center mb-2">
+                        <div class="icon-tile"><i class="bi bi-exclamation-circle"></i></div><strong>Raise
+                            Complaint</strong>
+                    </div>
+                    <p>Report an issue with your delivery, service, or package.</p><a
+                        class="link-muted" href="#">Raise Complaint <i class="bi bi-chevron-right"></i></a>
+                </article>
+                <article class="support-card">
+                    <div class="d-flex gap-2 align-items-center mb-2">
+                        <div class="icon-tile"><i class="bi bi-chat-left-dots"></i></div><strong>Need Help?</strong>
+                    </div>
+                    <p>Get help with your account, orders, deliveries, or other questions.</p><a
+                        class="link-muted" href="#">Get Help <i class="bi bi-chevron-right"></i></a>
+                </article>
+                <article class="support-card">
+                    <div class="d-flex gap-2 align-items-center mb-2">
+                        <div class="icon-tile"><i class="bi bi-x-circle"></i></div><strong>Information
+                            Incorrect?</strong>
+                    </div>
+                    <p>If you think the above information is incorrect, please contact customer
+                        service:</p><a class="link-muted d-block" href="tel:+654807000"><i
+                            class="bi bi-telephone me-1"></i>+654807000</a><a class="link-muted d-block"
+                        href="mailto:customer@hypaship.com"><i class="bi bi-envelope me-1"></i>customer@hypaship.com</a>
+                </article>
+            </aside>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
