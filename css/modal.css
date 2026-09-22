@@ -1,0 +1,33 @@
+details-modal .modal-content {
+    border: 0;
+    border-radius: 16px;
+}
+
+.details-modal .modal-header {
+    padding: 18px 12px;
+    border-bottom: 1px solid var(--grey-line)
+}
+
+.details-modal .modal-title {
+    font-size: 18px;
+    font-weight: 800
+}
+
+.details-modal .modal-body {
+    padding: 16px;
+}
+
+.details-modal .validation-alert .btn-close {
+    margin-left: auto;
+    padding: 0;
+}
+
+.details-modal .modal-footer {
+    padding: 6px 12px 12px;
+    border: 0
+}
+
+.details-modal .modal-footer .btn-primary {
+    min-width: 137px;
+    padding: 13px 18px
+}

@@ -1,7 +1,9 @@
+/*delivery address card*/
 .address-table td {
     border: 0;
 }
-.address-table .bottom-line{
+
+.address-table .bottom-line {
     border-bottom: 1px solid var(--grey-light);
 }
 
@@ -11,12 +13,14 @@
     min-height: 100%;
 }
 
+/*track detail card*/
 .truck {
     font-size: 4.35rem;
     color: var(--brand-dark-1);
     line-height: 1
 }
 
+/*delivery history*/
 .history-list {
     position: relative;
     margin-top: 8px
@@ -57,13 +61,13 @@
     border-radius: 50%;
     display: grid;
     place-items: center;
-    background: var(--grey-line); 
+    background: var(--grey-line);
     color: var(--white);
     border: 7px solid var(--brand-light);
 }
 
 .history-row.done .history-dot {
-    background: var(--brand-light); 
+    background: var(--brand-light);
     color: var(--brand-dark-1);
     border: 0;
     font-size: 20px
@@ -82,6 +86,7 @@
     padding-bottom: 16px;
 }
 
+/*support card*/
 .support-card {
     border: 1px solid var(--grey-line);
     border-radius: 8px;
@@ -93,6 +98,83 @@
     width: 34px;
     height: 34px;
     border-radius: 7px;
-    background: var(--brand-light); 
+    background: var(--brand-light);
     font-size: 18px
+}
+
+/*actions*/
+.actions-title {
+    font-size: 16px;
+    font-weight: 800;
+    margin: 14px 0 10px
+}
+
+.action-card {
+    width: 100%;
+    /*height: 88px;*/
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 8px;
+    border: 1px solid var(--grey-line);
+    border-radius: 22px;
+    background: var(--white);
+    color: var(--black);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .18);
+    font: inherit;
+    text-align: left;
+    text-decoration: none;
+    transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease
+}
+
+.action-card:hover {
+    color: var(--black);
+    text-decoration: none;
+    transform: translateY(-2px);
+    border-color: var(--brand);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, .18)
+}
+
+.action-card .icon-tile {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: var(--brand-light);
+    font-size: 20px
+}
+
+/*.action-card-copy {
+    min-width: 0;
+    flex: 1
+}*/
+
+.action-card-title {
+    display: block;
+    font-weight: 800;
+    margin-bottom: 2px
+}
+
+.action-card-desc {
+    display: block;
+    line-height: 1.2
+}
+
+.action-card>.bi-chevron-right {
+    color: var(--brand-dark-1);
+    font-size: 18px
+}
+
+/*status chip*/
+.status-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 16px;
+    border-radius: 999px;
+    background: var(--success);
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
 }

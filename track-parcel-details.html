@@ -64,7 +64,7 @@
             </section>
 
             <!-- Main -->
-            <section class="col-xxl-7 col-xl-7 col-lg-7 main">      
+            <section class="col-xxl-7 col-xl-7 col-lg-7 main">
                 <div class="row g-3">
                     <!--delivery address-->
                     <div class="col-xl-6">
@@ -72,31 +72,30 @@
                             <div class="panel-head header-justify">
                                 <div class="left"><span class="bar"></span>
                                     <h2 class="m-0 fs-6 fw-bold">Delivery Address</h2>
-                                </div><button class="btn btn-primary btn-compact" type="button" data-bs-toggle="modal"
-                                    data-bs-target="#viewDetailsModal"><i class="bi bi-eye"></i> Full
-                                    Details</button>
+                                </div>
+                                <span id="confirmedChip" class="status-chip">Confirmed</span>
                             </div>
                             <table class="table address-table">
                                 <tbody>
                                     <tr class="bottom-line">
                                         <td><i class="bi bi-person me-2"></i>Contact Name:</td>
-                                        <td class="text-end"><b>A******m</b></td>
+                                        <td class="text-end"><b>Addie Clem</b></td>
                                     </tr>
                                     <tr>
                                         <td><i class="bi bi-geo-alt me-2"></i>Street:</td>
-                                        <td class="text-end"><b>4*****l</b></td>
+                                        <td class="text-end"><b>49 Sims Pl</b></td>
                                     </tr>
                                     <tr>
                                         <td><i class="bi bi-signpost me-2"></i>City:</td>
-                                        <td class="text-end"><b>S*******e</b></td>
+                                        <td class="text-end"><b>Singapore</b></td>
                                     </tr>
                                     <tr>
                                         <td><i class="bi bi-123 me-2"></i>Zip Code:</td>
-                                        <td class="text-end"><b>3****9</b></td>
+                                        <td class="text-end"><b>380049</b></td>
                                     </tr>
                                     <tr>
                                         <td><i class="bi bi-globe me-2"></i>Country:</td>
-                                        <td class="text-end"><b>S*******e</b></td>
+                                        <td class="text-end"><b>Singapore</b></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -120,6 +119,38 @@
                             </div>
                         </article>
                     </div>
+
+                    <!--actions-->
+                    <div id="trackingActions" class="col-12">
+                        <h2 class="actions-title">Actions</h2>
+                        <div class="row g-2">
+                            <div class="col-md-4">
+                                <button type="button" class="action-card"><span class="icon-tile"><i
+                                            class="bi bi-calendar2-week"></i></span><span class="action-card-copy"><span
+                                            class="action-card-title">Reschedule</span><span
+                                            class="action-card-desc">Receive your parcel at a different
+                                            date/time.</span></span><i class="bi bi-chevron-right"></i>
+                                </button>
+                            </div>
+                            <div class="col-md-4">
+                                <button type="button" class="action-card"><span class="icon-tile"><i
+                                            class="bi bi-archive"></i></span><span class="action-card-copy"><span
+                                            class="action-card-title">Delivery Instructions</span><span
+                                            class="action-card-desc">Provide delivery instructions to the
+                                            driver.</span></span><i class="bi bi-chevron-right"></i>
+                                </button>
+                            </div>
+                            <div class="col-md-4">
+                                <button type="button" class="action-card"><span class="icon-tile"><i
+                                            class="bi bi-mailbox"></i></span><span class="action-card-copy"><span
+                                            class="action-card-title">I'll Collect</span><span
+                                            class="action-card-desc">I will collect my parcel from a pickup
+                                            point.</span></span><i class="bi bi-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
                     <!--delivery history-->
                     <div class="col-12">
                         <article class="panel">
@@ -197,7 +228,7 @@
                         </div>
                         <div class="modal-body">
                             <p>By entering the zip code, it helps you get all the information aboutthe delivery.</p>
-                            
+
                             <div class="form-floating">
                                 <input type="number" class="form-control" id="zip_code" value="" placeholder="zip code">
                                 <label for="zip_code">Zip Code</label>
