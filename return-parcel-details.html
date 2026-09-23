@@ -285,6 +285,35 @@
   </div>
 
   <!--create return modal-->
+  <div class="modal fade details-modal" id="createReturnModal" tabindex="-1"
+    aria-labelledby="createReturnModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content return-label-modal">
+        <div class="modal-header">
+          <h5 class="modal-title" id="createReturnModalLabel">Label - TRAC0001017</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body return-label-body">
+          <form id="returnLabelForm" class="return-label-actions">
+            <div class="form-floating email-field">
+              <input type="email" class="form-control" id="returnLabelEmail"
+                value="brian.chung@mail.com" placeholder="Recipient's email" required>
+              <label for="returnLabelEmail">Recipient’s email</label>
+            </div>
+            <button type="submit" class="btn btn-primary return-label-button">Send</button>
+            <span class="return-label-divider" aria-hidden="true"></span>
+            <button type="button" class="btn btn-primary return-label-button" id="downloadLabelButton">
+              <i class="bi bi-download me-2"></i>Download Label
+            </button>
+          </form>
+
+          <div class="label-preview-wrap">
+            <img class="" src="images/label.png" alt="label">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <div class="toast-container position-fixed bottom-0 end-0 p-3">
@@ -299,22 +328,6 @@
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    $(function () {
-      $('#createReturnForm').on('submit', function (event) {
-        event.preventDefault();
-
-        if (!this.checkValidity()) {
-          event.stopPropagation();
-          $(this).addClass('was-validated');
-          return;
-        }
-
-        bootstrap.Modal.getOrCreateInstance('#createReturnModal').hide();
-        bootstrap.Toast.getOrCreateInstance('#returnToast').show();
-      });
-    });
-  </script>
 </body>
 
 </html>
