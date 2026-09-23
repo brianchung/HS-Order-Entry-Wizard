@@ -185,3 +185,42 @@
     border-left: 1px solid var(--grey-line);
     padding: 14px 18px;
 }
+
+/*customer rating*/
+.customer-rating {
+    display: flex;
+    gap: 12px;
+    margin: 6px 0 12px;
+    font-size: 28px;
+    line-height: 1;
+}
+
+.customer-rating .filled {
+    color: var(--yellow);
+}
+
+.customer-rating .empty {
+    color: var(--black);
+}
+
+/*return parcel proof card*/
+.proof-layout {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 14px;
+    align-items: center;
+}
+
+.proof-image {
+    display: grid;
+    width: 120px;
+    aspect-ratio: 1;
+    place-items: center;
+    background: var(--grey-light);
+    color: var(--white);
+    font-size: 3.5rem;
+}
+
+.proof-image img {
+    min-height: 140px;
+}

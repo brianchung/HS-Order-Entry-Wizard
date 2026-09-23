@@ -148,6 +148,52 @@
     margin-top: .65rem;
 }
 
-/*.detail-row strong {
-      text-align: right;
-    }*/
+
+/*proof of delivery*/
+.pod-preview,
+.pod-map {
+    width: 100%;
+    max-height: 320px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.proof-modal-body {
+    padding: 20px;
+}
+
+.proof-location-row {
+    min-height: 190px;
+}
+
+.proof-location-icon {
+    margin-top: 1px;
+    color: var(--brand-dark-1);
+    font-size: 18px;
+}
+
+.pod-map {
+    height: 200px;
+    border-radius: 0;
+}
+
+.pod-photo img {
+    width: 100%;
+    min-height: 200px;
+    object-fit: fill;
+    border-radius: 8px;
+}
+
+.signature-box {
+    display: flex;
+    width: min(100%, 380px);
+    min-height: 170px;
+    align-items: center;
+    padding: 12px;
+    color: var(--black);
+}
+
+.signature-box svg {
+    width: 100%;
+    height: auto;
+}
