@@ -17,13 +17,13 @@
 .truck {
     font-size: 4.35rem;
     color: var(--brand-dark-1);
-    line-height: 1
+    line-height: 1;
 }
 
 /*delivery history*/
 .history-list {
     position: relative;
-    margin-top: 8px
+    margin-top: 8px;
 }
 
 .history-row {
@@ -31,7 +31,7 @@
     grid-template-columns: 120px 1fr;
     min-height: 56px;
     position: relative;
-    padding-left: 42px
+    padding-left: 42px;
 }
 
 .history-row::before {
@@ -45,11 +45,12 @@
 }
 
 .history-row:first-child::before {
-    top: 15px
+    top: 15px;
 }
 
 .history-row:last-child::before {
-    bottom: 28px
+    /*bottom: 28px;*/
+    bottom: 100%;
 }
 
 .history-dot {
@@ -70,11 +71,11 @@
     background: var(--brand-light);
     color: var(--brand-dark-1);
     border: 0;
-    font-size: 20px
+    font-size: 20px;
 }
 
 .history-row.current .history-dot {
-    background: var(--brand)
+    background: var(--brand);
 }
 
 .history-row.pending {
@@ -99,14 +100,14 @@
     height: 34px;
     border-radius: 7px;
     background: var(--brand-light);
-    font-size: 18px
+    font-size: 18px;
 }
 
 /*actions*/
 .actions-title {
     font-size: 16px;
     font-weight: 800;
-    margin: 14px 0 10px
+    margin: 14px 0 10px;
 }
 
 .action-card {
@@ -125,7 +126,7 @@
     font: inherit;
     text-align: left;
     text-decoration: none;
-    transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease
+    transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
 }
 
 .action-card:hover {
@@ -133,7 +134,7 @@
     text-decoration: none;
     transform: translateY(-2px);
     border-color: var(--brand);
-    box-shadow: 0 5px 12px rgba(0, 0, 0, .18)
+    box-shadow: 0 5px 12px rgba(0, 0, 0, .18);
 }
 
 .action-card .icon-tile {
@@ -141,7 +142,7 @@
     height: 40px;
     border-radius: 8px;
     background: var(--brand-light);
-    font-size: 20px
+    font-size: 20px;
 }
 
 /*.action-card-copy {
@@ -152,17 +153,17 @@
 .action-card-title {
     display: block;
     font-weight: 800;
-    margin-bottom: 2px
+    margin-bottom: 2px;
 }
 
 .action-card-desc {
     display: block;
-    line-height: 1.2
+    line-height: 1.2;
 }
 
 .action-card>.bi-chevron-right {
     color: var(--brand-dark-1);
-    font-size: 18px
+    font-size: 18px;
 }
 
 /*status chip*/
@@ -223,4 +224,37 @@
 
 .proof-image img {
     min-height: 140px;
+}
+
+@media only screen and (max-width: 992px) {
+    .main {
+        padding-bottom: 0px;
+    }
+
+    .vline {
+        width: 22vw;
+    }
+
+    /*.action-card,
+    .radio-card-container {
+        min-height: 80px;
+    }*/
+
+    .action-card {
+        padding: 16px 8px;
+    }
+
+    .action-card-copy {
+        width: 80%;
+    }
+
+    .history-row {
+        display: block;
+    }
+
+    .history-row .event {
+        margin-left: 16px;
+        margin-bottom: 8px;
+    }
+
 }
